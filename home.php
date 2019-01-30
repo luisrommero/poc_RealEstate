@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<?php
+if(!isset($_COOKIE['user'])) {
+    // header("Location: public/"); // uncomment when cookies created
+    include('database/con.php'); // erase when cookies created
+    $con = connectionBD();       // erase when cookies created
+
+} else {
+  include('database/con.php');
+  $con = connectionBD();
+
+}
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -298,24 +310,27 @@
 						<a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="fa fa-user mr-20"></i><span class="right-nav-text">My portfolio</span></div><div class="pull-right"><i class="ti-angle-down"></i></div><div class="clearfix"></div></a>
 						<ul id="dashboard_dr" class="collapse collapse-level-1">
 							<li>
-								<a class="active-page" href="#">Pagos Recibidos</a>
+								<a class="active-page" href="home.php">Pagos Recibidos</a>
 							</li>
 							<li>
-								<a href="#"><div class="pull-left"><span>Resumen</span></div><div class="pull-right"><span class="label label-success">New</span></div><div class="clearfix"></div></a>
+								<a href="sumary.php"><div class="pull-left"><span>Resumen</span></div><div class="pull-right"><span class="label label-success">New</span></div><div class="clearfix"></div></a>
 							</li>
               <li>
-								<a href="#">Documentos</a>
+								<a href="docs.php">Documentos</a>
 							</li>
 						</ul>
 					</li>
           <li>
-						<a href="#"><div class="pull-left"><i class="fa fa-calendar mr-20"></i><span class="right-nav-text">Calendario de pagos</span></div><div class="clearfix"></div></a>
-					</li>
-					<li>
-						<a href="#"><div class="pull-left"><i class="fa fa-bar-chart-o mr-20"></i><span class="right-nav-text">Estadísticas</span></div><div class="clearfix"></div></a>
+						<a href="list.php"><div class="pull-left"><i class="fa fa-university mr-20"></i><span class="right-nav-text">Proyectos</span></div><div class="clearfix"></div></a>
 					</li>
           <li>
-						<a href="#"><div class="pull-left"><i class="ti-book mr-20"></i><span class="right-nav-text">Noticias</span></div><div class="clearfix"></div></a>
+						<a href="calendar.php"><div class="pull-left"><i class="fa fa-calendar mr-20"></i><span class="right-nav-text">Calendario de pagos</span></div><div class="clearfix"></div></a>
+					</li>
+					<li>
+						<a href="statistics.php"><div class="pull-left"><i class="fa fa-bar-chart-o mr-20"></i><span class="right-nav-text">Estadísticas</span></div><div class="clearfix"></div></a>
+					</li>
+          <li>
+						<a href="news.php"><div class="pull-left"><i class="fa fa-newspaper-o mr-20"></i><span class="right-nav-text">Noticias</span></div><div class="clearfix"></div></a>
 					</li>
 				</ul>
 			</div>
