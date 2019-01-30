@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <?php
 if(!isset($_COOKIE['user'])) {
-    // header("Location: public/"); // uncomment when cookies created
-    include('database/con.php'); // erase when cookies created
-    $con = connectionBD();       // erase when cookies created
+    header("Location: public/"); // uncomment when cookies created
 
 } else {
   include('database/con.php');

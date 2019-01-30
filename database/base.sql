@@ -23,3 +23,10 @@ id_list INT (11),
 name VARCHAR (25),
 amount FLOAT,
 FOREIGN KEY (id_list) REFERENCES list(id_list));
+
+create table p_img (
+id_img INT PRIMARY KEY AUTO_INCREMENT,
+id_list int (11),
+path_img VARCHAR (75),
+footer_img VARCHAR (15),
+FOREIGN KEY (id_list) REFERENCES list(id_list));

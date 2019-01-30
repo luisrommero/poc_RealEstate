@@ -1,3 +1,9 @@
+<?php
+if(isset($_COOKIE['user'])) {
+  header("Location: ../");
+
+}
+?>
 <!DOCTYPE html>
 
 <html lang="en-US">
