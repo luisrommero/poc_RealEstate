@@ -21,7 +21,7 @@ if(!isset($_COOKIE['user'])) {
 
     // Images table
     $path = ["public/assets/img/slide-01.jpg", "public/assets/img/slide-02.jpg","public/assets/img/slide-03.jpg"];
-    $footer_img = ["[footer_img?1]", "[footer_img?2]", "[footer_img?3]"];
+    $footer_img = ["[footer_img_1]", "[footer_img_2]", "[footer_img_3]"];
 
 } else {
   include('database/con.php');
@@ -38,16 +38,27 @@ if(!isset($_COOKIE['user'])) {
   <meta name="description" content="Admintres is a Dashboard & Admin Site Responsive Template by hencework." />
   <meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Admintres Admin, Admintresadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
   <meta name="author" content="hencework" />
-
   <!-- Favicon -->
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- Data table CSS -->
-  <link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+	<!-- Data table CSS -->
+	<link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
 
-  <!-- Custom CSS -->
-  <link href="assets/dist/css/style.css" rel="stylesheet" type="text/css">
+	<!-- Toast CSS -->
+	<link href="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css">
+
+	<!-- Morris Charts CSS -->
+    <link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css"/>
+
+	<!-- Chartist CSS -->
+	<link href="vendors/bower_components/chartist/dist/chartist.min.css" rel="stylesheet" type="text/css"/>
+
+	<!-- vector map CSS -->
+	<link href="vendors/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" type="text/css"/>
+
+	<!-- Custom CSS -->
+	<link href="assets/dist/css/style.css" rel="stylesheet" type="text/css">
 
   <!-- vector map CSS -->
   <link href="vendors/bower_components/jquery-wizard.js/css/wizard.css" rel="stylesheet" type="text/css" />
@@ -927,52 +938,139 @@ if(!isset($_COOKIE['user'])) {
             </div>
           </div>
           <div class="col-sm-8">
-            <form class="" id="investForm" method="post">
-              <div class="panel panel-default border-panel card-view">
-                <div class="panel-heading">
-                  <div class="pull-left">
-                    <h6 class="panel-title txt-dark">¿Desea invertir?</h6>
-                  </div>
-                  <div class="clearfix"></div>
+            <div class="panel panel-default border-panel card-view">
+              <div class="panel-heading">
+                <div class="pull-left">
+                  <h6 class="panel-title txt-dark">¿Desea invertir?</h6>
                 </div>
-                <div class="panel-wrapper collapse in">
-                  <div class="panel-body">
-                    <div id="example-basic">
-                      <h3><span class="head-font capitalize-font">Cantidad</span></h3>
-                      <section>
-                        <!-- range slider -->
-                        <p class="text-secondary ">Seleccione la cantidad que desea invertir.</p>
-                        <div class="mt-40">
-                          <input type="text" id="range_4" value="" name="range" />
+                <div class="clearfix"></div>
+              </div>
+              <div class="panel-wrapper collapse in">
+                <div class="panel-body">
+                  <form id="example-advanced-form">
+                    <h3>
+                      <span class="number"><i class="icon-bag txt-black"></i></span>
+                      <span class="head-font capitalize-font">Monto</span></h3>
+                    <fieldset>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-wrap">
+                            <div class="form-group">
+                              <div class="input-group">
+                                <div class="input-group-addon"><i class="icon-wallet"></i></div>
+                                <input type="text" class="form-control required"  name="Username" id="exampleInputuname" placeholder="Username">
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <!-- range slider -->
-                      </section>
-                      <h3><span class="head-font capitalize-font">KYC y AML</span></h3>
-                      <section>
-                        <p>
-                          Ex has movet ornatus, ei usu latine scripta molestiae. Sea ex aeterno adversarium,Lorem ipsum dolor sit amet, facer velit at per, possit accusamus vim an. Cu vel possit dolorum. Elit placerat molestiae mea ne te ferri errem
-                          noluisse quo, meis civibus ea est. Sit in quas nostrud,
-                        </p>
-                      </section>
-                      <h3><span class="head-font capitalize-font">M&eacute;todo de Pago</span></h3>
-                      <section>
-                        <p>
-                          eam aliquip probatus complectitur ei. Sale omnes persius sea ut, repudiare mnesarchum te nec. Ei ubique veritus mediocrem eos. Mel at per, possit accusamus vim an. Cu vel possit dolorum. Elit placerat molestiae mea ne te
-                          ferri errem noluisse quo, meis civibus ea est viris delectus recteque ad, mei persius suavitate ad.
-                        </p>
-                      </section>
-                      <h3><span class="head-font capitalize-font">Finalizar Inversi&oacute;n</span></h3>
-                      <section>
-                        <p>
-                          <input type="submit" name="" value="Aceptar">
-                        </p>
-                      </section>
-                    </div>
-                  </div>
+                      </div>
+                    </fieldset>
+
+                    <h3><span class="number"><i class="icon-user-following txt-black"></i></span><span class="head-font capitalize-font">KYC y AML</span></h3>
+                    <fieldset>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-wrap">
+                            <div class="form-group">
+                              <label class="control-label mb-10" for="postalCode">zip/postal code:</label>
+                              <input id="postalCode" type="text" name="zip_code"  data-mask="99999-9999" class="form-control required" value="" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <h3><span class="number"><i class="icon-credit-card txt-black"></i></span><span class="head-font capitalize-font">M&eacute;todo de pago</span></h3>
+                      <fieldset>
+                      <!--CREDIT CART PAYMENT-->
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label class="control-label mb-10" for="CreditCardType">card type:</label>
+                            <select id="CreditCardType" name="CreditCardType" class="form-control required">
+                              <option value="5">Visa</option>
+                              <option value="6">MasterCard</option>
+                              <option value="7">American Express</option>
+                              <option value="8">Discover</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label mb-10" for="cardNo">Credit Card Number:</label>
+                            <input type="text" id="cardNo" data-mask="9999-9999-9999-9999" class="form-control required" name="car_number" value="" />
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label mb-10" for="cvv">card cvv:</label>
+                            <input type="text" id="cvv" class="form-control  required" data-mask="999" name="car_code" value="" />
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label mb-10">expiration date:</label>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control required" name="month">
+                                  <option value="">Month</option>
+                                  <option value="1">01</option>
+                                  <option value="2">02</option>
+                                  <option value="3">03</option>
+                                  <option value="4">04</option>
+                                  <option value="5">05</option>
+                                  <option value="6">06</option>
+                                </select>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <select class="form-control required" name="year">
+                                  <option value="1">Year</option>
+                                  <option value="2">2001</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group mb-0">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <ul class="cards">
+                                  <li class="visa hand"><img src="assets/img/1-s.png" alt="card"/></li>
+                                  <li class="mastercard hand"><img src="assets/img/2-s.png" alt="card"/></li>
+                                  <li class="amex hand"><img src="assets/img/3-s.png" alt="card"/></li>
+                                  <li class="amex hand"><img src="assets/img/4-s.png" alt="card"/></li>
+                                  </ul>
+                                <div class="clearfix"></div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <!--CREDIT CART PAYMENT END-->
+                    </fieldset>
+
+                    <h3><span class="number"><i class="icon-basket-loaded txt-black"></i></span><span class="head-font capitalize-font">review cart</span></h3>
+                    <fieldset>
+                        <input type="submit" name="" value="Aceptar">
+                    </fieldset>
+                  </form>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
+
+          <!-- google maps -->
+          <div class="col-md-12 col-sm-12">
+            <div class="panel panel-default border-panel card-view">
+              <div class="panel-heading">
+                <div class="pull-left">
+                  <h6 class="panel-title txt-dark">Ubicaci&oacute;n</h6>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="panel-wrapper collapse in">
+                <div class="panel-body">
+                  <div id="map_canvas" style="height:500px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- google maps -->
+
           <!-- ==========content goes here========== -->
         </div>
         <!-- /Row -->
@@ -1003,18 +1101,31 @@ if(!isset($_COOKIE['user'])) {
 
   <!-- JavaScript -->
 
-  <!-- jQuery -->
-  <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
 
-  <!-- Bootstrap Core JavaScript -->
-  <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Init JavaScript -->
+    <script src="assets/dist/js/init.js"></script>
+    <script src="assets/dist/js/dashboard-data.js"></script>
 
   <!-- Data table JavaScript -->
   <script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
-  <script src="assets/dist/js/dataTables-data.js"></script>
 
   <!-- Slimscroll JavaScript -->
   <script src="assets/dist/js/jquery.slimscroll.js"></script>
+
+  <!-- Progressbar Animation JavaScript -->
+  <script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
+
+  <!-- Fancy Dropdown JS -->
+  <script src="assets/dist/js/dropdown-bootstrap-extended.js"></script>
+
+  <!-- Sparkline JavaScript -->
+  <script src="vendors/bower_components/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
 
   <!-- Owl JavaScript -->
   <script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
@@ -1022,12 +1133,29 @@ if(!isset($_COOKIE['user'])) {
   <!-- Switchery JavaScript -->
   <script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
 
-  <!-- Fancy Dropdown JS -->
-  <script src="assets/dist/js/dropdown-bootstrap-extended.js"></script>
+  <!-- Vector Maps JavaScript -->
+  <script src="vendors/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+  <script src="vendors/vectormap/jquery-jvectormap-us-aea-en.js"></script>
+  <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="assets/dist/js/vectormap-data.js"></script>
 
-  <!-- Init JavaScript -->
-  <script src="assets/dist/js/init.js"></script>
+  <!-- Toast JavaScript -->
+  <script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
 
+  <!-- Piety JavaScript -->
+  <script src="vendors/bower_components/peity/jquery.peity.min.js"></script>
+  <script src="assets/dist/js/peity-data.js"></script>
+
+  <!-- Chartist JavaScript -->
+  <script src="vendors/bower_components/chartist/dist/chartist.min.js"></script>
+
+  <!-- Morris Charts JavaScript -->
+    <script src="vendors/bower_components/raphael/raphael.min.js"></script>
+    <script src="vendors/bower_components/morris.js/morris.min.js"></script>
+    <script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+
+  <!-- ChartJS JavaScript -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
 
   <!-- Form Wizard JavaScript -->
   <script src="vendors/bower_components/jquery.steps/build/jquery.steps.min.js"></script>
@@ -1036,15 +1164,6 @@ if(!isset($_COOKIE['user'])) {
   <!-- Form Wizard Data JavaScript -->
   <script src="assets/dist/js/form-wizard-data.js"></script>
 
-
-  <!-- Ion.RangeSlider -->
-  <script src="vendors/bower_components/moment/min/moment.min.js"></script>
-  <script src="vendors/bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
-
-  <!-- RangeSlider Init JavaScript -->
-  <script src="assets/dist/js/rangeslider-data.js"></script>
-
-<script type="text/javascript" src="assets/dist/js/form.js"></script>
 </body>
 
 </html>
