@@ -48,6 +48,17 @@ if(!isset($_COOKIE['user'])) {
 
   <!-- Custom CSS -->
   <link href="assets/dist/css/style.css" rel="stylesheet" type="text/css">
+
+  <!-- vector map CSS -->
+  <link href="vendors/bower_components/jquery-wizard.js/css/wizard.css" rel="stylesheet" type="text/css" />
+
+  <!-- jquery-steps css -->
+  <link rel="stylesheet" href="vendors/bower_components/jquery.steps/demo/css/jquery.steps.css">
+
+  <!-- Ion.RangeSlider -->
+  <link href="vendors/bower_components/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet" type="text/css">
+  <link href="vendors/bower_components/ion.rangeSlider/css/ion.rangeSlider.skinModern.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -815,60 +826,62 @@ if(!isset($_COOKIE['user'])) {
             <div class="panel panel-default border-panel card-view">
               <div class="panel-heading">
                 <div class="pull-left">
-                  <h6 class="panel-title txt-dark"><?php echo $name_list ?></h6>
+                  <h6 class="panel-title txt-dark">
+                    <?php echo $name_list ?>
+                  </h6>
                   <!-- < ?php echo sizeof($path) ?> -->
                 </div>
                 <div class="clearfix"></div>
               </div>
               <div class="panel-wrapper collapse in">
-                <div  class="panel-body">
+                <div class="panel-body">
                   <!-- START carousel-->
                   <div id="testimonial_slider" data-ride="carousel" class="carousel slide testimonial-slider-wrap text-slider mb-85">
                     <ol class="carousel-indicators">
-                       <!--
+                      <!--
                        <li data-target="#testimonial_slider" data-slide-to="0" class="active"></li>
                        <li data-target="#testimonial_slider" data-slide-to="1"></li>
                        <li data-target="#testimonial_slider" data-slide-to="2"></li>
                        -->
-                       <?php for ($i=0; $i < sizeof($path); $i++) { ?>
-                         <?php if ($i == 0) { ?>
-                           <li data-target="#testimonial_slider" data-slide-to="<?php echo $i ?>" class="active"></li>
+                      <?php for ($i=0; $i < sizeof($path); $i++) { ?>
+                      <?php if ($i == 0) { ?>
+                      <li data-target="#testimonial_slider" data-slide-to="<?php echo $i ?>" class="active"></li>
 
-                         <?php } else { ?>
-                           <li data-target="#testimonial_slider" data-slide-to="<?php echo $i ?>"></li>
+                      <?php } else { ?>
+                      <li data-target="#testimonial_slider" data-slide-to="<?php echo $i ?>"></li>
 
-                         <?php } ?>
-                       <?php } ?>
+                      <?php } ?>
+                      <?php } ?>
                     </ol>
                     <div role="listbox" class="carousel-inner">
                       <?php for ($i=0; $i < sizeof($path); $i++) { ?>
-                        <?php if ($i == 0) { ?>
-                          <div class="item active">
-                            <div class="testimonial-wrap text-center">
-                              <img src="<?php echo $path[$i] ?>" width="500px">
-                              <span class="testi-pers-name block mt-15  txt-dark capitalize-font head-font">
-                                <?php echo $name_owner ?>
-                              </span>
-                              <span class="testi-pers-desg block capitalize-font">
-                                <?php echo $footer_img[$i] ?>
-                              </span>
-                            </div>
-                          </div>
+                      <?php if ($i == 0) { ?>
+                      <div class="item active">
+                        <div class="testimonial-wrap text-center">
+                          <img src="<?php echo $path[$i] ?>" width="500px">
+                          <span class="testi-pers-name block mt-15  txt-dark capitalize-font head-font">
+                            <?php echo $name_owner ?>
+                          </span>
+                          <span class="testi-pers-desg block capitalize-font">
+                            <?php echo $footer_img[$i] ?>
+                          </span>
+                        </div>
+                      </div>
 
-                        <?php } else { ?>
-                          <div class="item">
-                            <div class="testimonial-wrap text-center">
-                              <img src="<?php echo $path[$i] ?>" width="500px">
+                      <?php } else { ?>
+                      <div class="item">
+                        <div class="testimonial-wrap text-center">
+                          <img src="<?php echo $path[$i] ?>" width="500px">
 
-                              <span class="testi-pers-name block mt-15  txt-dark capitalize-font head-font">
-                                <?php echo $name_owner ?>
-                              </span>
-                              <span class="testi-pers-desg block capitalize-font">
-                                <?php echo $footer_img[$i] ?>
-                              </span>
-                            </div>
-                          </div>
-                        <?php } ?>
+                          <span class="testi-pers-name block mt-15  txt-dark capitalize-font head-font">
+                            <?php echo $name_owner ?>
+                          </span>
+                          <span class="testi-pers-desg block capitalize-font">
+                            <?php echo $footer_img[$i] ?>
+                          </span>
+                        </div>
+                      </div>
+                      <?php } ?>
                       <?php } ?>
                       <!-- <div class="item">
                         <div class="testimonial-wrap text-center">
@@ -906,13 +919,59 @@ if(!isset($_COOKIE['user'])) {
                     <div class="progress-bar progress-bar-info active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
                   </div>
                   <br>
-                  <p><?php echo $p_desc ?></p>
+                  <p>
+                    <?php echo $p_desc ?>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-8">
-
+          <div class="col-sm-8">
+            <form class="" id="investForm" method="post">
+              <div class="panel panel-default border-panel card-view">
+                <div class="panel-heading">
+                  <div class="pull-left">
+                    <h6 class="panel-title txt-dark">¿Desea invertir?</h6>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-wrapper collapse in">
+                  <div class="panel-body">
+                    <div id="example-basic">
+                      <h3><span class="head-font capitalize-font">Cantidad</span></h3>
+                      <section>
+                        <!-- range slider -->
+                        <p class="text-secondary ">Seleccione la cantidad que desea invertir.</p>
+                        <div class="mt-40">
+                          <input type="text" id="range_4" value="" name="range" />
+                        </div>
+                        <!-- range slider -->
+                      </section>
+                      <h3><span class="head-font capitalize-font">KYC y AML</span></h3>
+                      <section>
+                        <p>
+                          Ex has movet ornatus, ei usu latine scripta molestiae. Sea ex aeterno adversarium,Lorem ipsum dolor sit amet, facer velit at per, possit accusamus vim an. Cu vel possit dolorum. Elit placerat molestiae mea ne te ferri errem
+                          noluisse quo, meis civibus ea est. Sit in quas nostrud,
+                        </p>
+                      </section>
+                      <h3><span class="head-font capitalize-font">M&eacute;todo de Pago</span></h3>
+                      <section>
+                        <p>
+                          eam aliquip probatus complectitur ei. Sale omnes persius sea ut, repudiare mnesarchum te nec. Ei ubique veritus mediocrem eos. Mel at per, possit accusamus vim an. Cu vel possit dolorum. Elit placerat molestiae mea ne te
+                          ferri errem noluisse quo, meis civibus ea est viris delectus recteque ad, mei persius suavitate ad.
+                        </p>
+                      </section>
+                      <h3><span class="head-font capitalize-font">Finalizar Inversi&oacute;n</span></h3>
+                      <section>
+                        <p>
+                          <input type="submit" name="" value="Aceptar">
+                        </p>
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
           <!-- ==========content goes here========== -->
         </div>
@@ -970,6 +1029,22 @@ if(!isset($_COOKIE['user'])) {
   <script src="assets/dist/js/init.js"></script>
 
 
+  <!-- Form Wizard JavaScript -->
+  <script src="vendors/bower_components/jquery.steps/build/jquery.steps.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+
+  <!-- Form Wizard Data JavaScript -->
+  <script src="assets/dist/js/form-wizard-data.js"></script>
+
+
+  <!-- Ion.RangeSlider -->
+  <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+  <script src="vendors/bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>
+
+  <!-- RangeSlider Init JavaScript -->
+  <script src="assets/dist/js/rangeslider-data.js"></script>
+
+<script type="text/javascript" src="assets/dist/js/form.js"></script>
 </body>
 
 </html>
