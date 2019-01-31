@@ -1164,6 +1164,9 @@ if(!isset($_COOKIE['user'])) {
   <!-- Form Wizard Data JavaScript -->
   <script src="assets/dist/js/form-wizard-data.js"></script>
 
+  <!-- Google Map JavaScript -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxXt2P7-U38bK0xEFIT-ebZJ1ngK8wjww"></script>
+  <script src="assets/dist/js/gmap-data.js"></script>
 </body>
 
 </html>
