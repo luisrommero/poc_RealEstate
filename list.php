@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <?php
 if(!isset($_COOKIE['user'])) {
-    //header("Location: public/"); // uncomment when cookies created
+    // header("Location: public/"); // uncomment when cookies created
+    include('database/con.php'); // erase when cookies created
+    $con = connectionBD();       // erase when cookies created
 
 } else {
   include('database/con.php');
@@ -13,7 +15,7 @@ if(!isset($_COOKIE['user'])) {
 <head>
     <meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<title>Admintres I Fast build Admin dashboard for any platform</title>
+	<title>Campañas Activas</title>
 	<meta name="description" content="Admintres is a Dashboard & Admin Site Responsive Template by hencework." />
 	<meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Admintres Admin, Admintresadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
 	<meta name="author" content="hencework"/>
@@ -33,6 +35,7 @@ if(!isset($_COOKIE['user'])) {
 
 	<!-- Chartist CSS -->
 	<link href="vendors/bower_components/chartist/dist/chartist.min.css" rel="stylesheet" type="text/css"/>
+
 
 	<!-- vector map CSS -->
 	<link href="vendors/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" type="text/css"/>
@@ -597,22 +600,402 @@ if(!isset($_COOKIE['user'])) {
 					</li>
 				</ul>
 			</div>
-			<!-- /Right Sidebar Menu -->
-
-
-
         <!-- Main Content -->
 		<div class="page-wrapper">
-            <div class="container pt-30">
 				<!-- Row -->
         <div class="row">
           <!-- ==========content goes here========== -->
 
           <!-- ==========content goes here========== -->
-        </div>
-				<!-- /Row -->
+          <h4>Campañas Activas</h4>
+          <h5>Estas oportunidades están todavía aceptando inversiones</h5>
+						<div class="col-lg-12">
+							<div class="panel panel-default border-panel card-view">
+								<div class="panel-heading">
+									<div class="pull-left">
+										<img src="images/1.jpg" alt="DEPA" height= "180" width="400"></img>
+											<div class="pull-right">
+											<h4 class="panel-title txt-dark">Ernestina - Campaña 1</h4>
+													<h4 class="panel-title txt-dark">Por Zauda Arquitectura</h4>
+													<h7>Ernestina 11 COl. del Valle <br> C.P. 10000 CDMX </h7></div>
+														<div class="pull-right">
+															<table style="clear: both" class="table table-bordered table-striped" id="user">
+														<tbody>
+														<tr>
+															<h6 class="panel-title txt-dark">Cantidad Conseguida $5,507,871,40</h6>
+															<td style="width:35%">Instrumento</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">Deuda preferente</a></td>
+															</tr>
+														<tr>
+															<td>Financiamiento en Brig.mx</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$3,000,000,00</td>
+														</tr>
+														<tr>
+															<td>Inversión por persona</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$75,000,00</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+													<div class="pull-right">
+														<div class="progress progress-lg">
+													<div class="progress-bar progress-bar-success active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 68.15%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+													</div>
+														<table style="clear: both" class="table table-bordered table-striped" id="user">
+													<tbody>
+														<tr>
+															<td style="width:35%">Tasa anual estimada</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">%19.00</a></td>
+														</tr>
+														<tr>
+															<td>Plazo estimado</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>24 meses</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
 
-			</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="panel panel-default border-panel card-view">
+								<div class="panel-heading">
+									<div class="pull-left">
+										<img src="images/2.jpg" alt="DEPA" height= "180" width="400"></img>
+											<div class="pull-right">
+											<h4 class="panel-title txt-dark">Manrique Zuñiga - Campaña 4</h4>
+													<h4 class="panel-title txt-dark">Por 0&G Depeloment</h4>
+														<h7>Manrique Zúgiga 11 COl. del Valle <br> C.P. 10000 CDMX </h7></div>
+
+														<div class="pull-right">
+															<table style="clear: both" class="table table-bordered table-striped" id="user">
+														<tbody>
+														<tr>
+															<h6 class="panel-title txt-dark">Cantidad Conseguida $939,080,68</h6>
+															<td style="width:35%">Instrumento</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">Deuda preferente</a></td>
+															</tr>
+														<tr>
+															<td>Financiamiento en Brig.mx</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$5,000,000,00</td>
+														</tr>
+														<tr>
+															<td>Inversión por persona</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$25,000,00</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+													<div class="pull-right">
+														<div class="progress progress-lg">
+													<div class="progress-bar progress-bar-success active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 68.15%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+													</div>
+														<table style="clear: both" class="table table-bordered table-striped" id="user">
+													<tbody>
+														<tr>
+															<td style="width:35%">Tasa anual estimada</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">$16.00</a></td>
+														</tr>
+														<tr>
+															<td>Plazo estimado</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>10 meses</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+
+						<div class="row">
+						<div class="col-lg-12">
+							<div class="panel panel-default border-panel card-view">
+								<div class="panel-heading">
+									<div class="pull-left">
+										<img src="images/3.jpg" alt="DEPA" height= "180" width="400"></img>
+											<div class="pull-right">
+											<h4 class="panel-title txt-dark">Matías Romero - Campaña 3</h4>
+													<h4 class="panel-title txt-dark">Por Ztudio Arquitectura</h4>
+														<h7>Matías Romero 11 COl. del Valle <br> C.P. 10000 CDMX </h7></div>
+														<div class="pull-right">
+															<table style="clear: both" class="table table-bordered table-striped" id="user">
+														<tbody>
+														<tr>
+															<h6 class="panel-title txt-dark">Cantidad Conseguida $2,176,834,18</h6>
+															<td style="width:35%">Instrumento</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">Deuda preferente</a></td>
+															</tr>
+														<tr>
+															<td>Plazo estimado</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$2,300,000,00</td>
+														</tr>
+														<tr>
+															<td>Inversión por persona</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$5,000,00</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+													<div class="pull-right">
+														<div class="progress progress-lg">
+													<div class="progress-bar progress-bar-success active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 68.15%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+													</div>
+														<table style="clear: both" class="table table-bordered table-striped" id="user">
+													<tbody>
+														<tr>
+															<td style="width:35%">Tasa anual estimada</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">%17</a></td>
+														</tr>
+														<tr>
+															<td>Plazo estimado</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>17 meses</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+						</div>
+
+						<div class="row">
+						<div class="col-lg-12">
+							<div class="panel panel-default border-panel card-view">
+								<div class="panel-heading">
+									<div class="pull-left">
+										<img src="images/4.jpg" alt="DEPA" height= "180" width="400"></img>
+											<div class="pull-right">
+											<h4 class="panel-title txt-dark">Margaritas - Campaña 6</h4>
+													<h4 class="panel-title txt-dark">Por AGGE</h4>
+													<h7>Matías Romero 11 COl. del Valle <br> C.P. 10000 CDMX </h7></div>
+
+														<div class="pull-right">
+															<table style="clear: both" class="table table-bordered table-striped" id="user">
+														<tbody>
+														<tr>
+															<h6 class="panel-title txt-dark">Cantidad Conseguida $2,176,834,18</h6>
+															<td style="width:35%">Instrumento</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">Deuda Senior</a></td>
+															</tr>
+														<tr>
+															<td>Financiamiento en Brig.mx</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$2,300,000,00</td>
+														</tr>
+														<tr>
+															<td>Inversión por persona</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$5,000,00</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+													<div class="pull-right">
+														<div class="progress progress-lg">
+													<div class="progress-bar progress-bar-success active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 68.15%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+													</div>
+														<table style="clear: both" class="table table-bordered table-striped" id="user">
+													<tbody>
+														<tr>
+															<td style="width:35%">Tasa anual estimada</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">%14.50</a></td>
+														</tr>
+														<tr>
+															<td>Plazo estimado</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>19 meses</td>
+														</tr>
+													</tbody>
+														<tr>
+															<td>Pisibilidad de Prepago</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>Al tercer mes</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+
+									<div class="panel panel-default border-panel card-view">
+										<div class="panel-heading">
+											<div class="pull-left">
+												<h4 class="panel-title txt-dark">Campañas Pasadas</h4>
+												<h4 class="panel-title txt-dark">Estas oportunidades han concluido su período de financiamiento</h4>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+										<div  class="panel-wrapper collapse in">
+											<div  class="panel-body">
+												<div class="button-list mt-25">
+													<button class="btn btn-primary btn-anim"><i class="fa fa-sign-out"></i><span class="btn-text">Terminadas</span></button>
+													<button class="btn btn-primary btn-anim"><i class="fa fa-sign-out"></i><span class="btn-text">Inversión obtenida</span></button>
+													<button class="btn btn-primary btn-anim"><i class="fa fa-sign-out"></i><span class="btn-text">Generando Reuniones</span></button>
+													<button class="btn btn-primary btn-anim"><i class="fa fa-sign-out"></i><span class="btn-text">Inversiones no conseguidas</span></button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+						<div class="row">
+						<div class="col-lg-12">
+							<div class="panel panel-default border-panel card-view">
+								<div class="panel-heading">
+									<div class="pull-left">
+										<img src="images/5.jpg" alt="DEPA" height= "180" width="400"></img>
+											<div class="pull-right">
+											<h4 class="panel-title txt-dark">Lerdo 120 - Campaña 1</h4>
+													<h4 class="panel-title txt-dark">Por Zauda Arq.</h4>
+													<h7>Matías Romero 11 COl. del Valle <br> C.P. 10000 CDMX </h7></div>
+
+														<div class="pull-right">
+															<table style="clear: both" class="table table-bordered table-striped" id="user">
+														<tbody>
+														<tr>
+															<h6 class="panel-title txt-dark">Cantidad Conseguida $1,000,000,00</h6>
+															<td style="width:35%">Instrumento</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">Deuda Senior</a></td>
+															</tr>
+														<tr>
+															<td>Financiamiento en Brig.mx</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$1,000,000,00</td>
+														</tr>
+														<tr>
+															<td>Inversión por persona</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$5,000,00</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+													<div class="pull-right">
+														<div class="progress progress-lg">
+													<div class="progress-bar progress-bar-success active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 68.15%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+													</div>
+														<table style="clear: both" class="table table-bordered table-striped" id="user">
+													<tbody>
+														<tr>
+															<td style="width:35%">Tasa anual estimada</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">%13.00</a></td>
+														</tr>
+														<tr>
+															<td>Plazo estimado</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>24 meses</td>
+														</tr>
+														<tr>
+															<td>Posibilidad de prepago</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>Al sexto mes</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+						</div>
+
+						<div class="row">
+						<div class="col-lg-12">
+							<div class="panel panel-default border-panel card-view">
+								<div class="panel-heading">
+									<div class="pull-left">
+										<img src="images/6.jpg" alt="DEPA" height= "180" width="400"></img>
+											<div class="pull-right">
+											<h4 class="panel-title txt-dark">Contadero 672</h4>
+													<h4 class="panel-title txt-dark">Por Zauda Arq.</h4>
+														<h7>Matías Romero 11 COl. del Valle <br> C.P. 10000 CDMX </h7></div>
+
+
+														<div class="pull-right">
+															<table style="clear: both" class="table table-bordered table-striped" id="user">
+														<tbody>
+														<tr>
+															<h6 class="panel-title txt-dark">Cantidad Conseguida $5,000</h6>
+															<td style="width:35%">Instrumento</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">Deuda Junior</a></td>
+															</tr>
+														<tr>
+															<td>Financiamiento en Brig.mx</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$500,000,00</td>
+														</tr>
+														<tr>
+															<td>Inversión por persona</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$20,000,00</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+													<div class="pull-right">
+														<div class="progress progress-lg">
+													<div class="progress-bar progress-bar-success active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 68.15%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+													</div>
+														<table style="clear: both" class="table table-bordered table-striped" id="user">
+													<tbody>
+														<tr>
+															<td style="width:35%">Tasa anual estimada</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">$10.60</a></td>
+														</tr>
+														<tr>
+															<td>Plazo estimado</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>18 meses</td></tr>
+															<td>Posibilidad de prepago</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>Al mes 12</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+						</div>
+
+						<div class="row">
+						<div class="col-lg-12">
+							<div class="panel panel-default border-panel card-view">
+								<div class="panel-heading">
+									<div class="pull-left">
+										<img src="images/7.jpg" alt="DEPA" height= "180" width="400"></img>
+											<div class="pull-right">
+											<h4 class="panel-title txt-dark">Querétaro <br> Bellavista - Campaña 1</h4>
+													<h4 class="panel-title txt-dark">Por Zauda Arq.</h4>
+														<h7>Matías Romero 11 COl. del Valle <br> C.P. 10000 CDMX </h7></div>
+														<div class="pull-right">
+															<table style="clear: both" class="table table-bordered table-striped" id="user">
+														<tbody>
+														<tr>
+															<h6 class="panel-title txt-dark">Cantidad Conseguida $2,000,000,00</h6>
+															<td style="width:35%">Instrumento</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">Deuda Senior</a></td>
+															</tr>
+														<tr>
+															<td>Financiamiento en Brig.mx</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$3,000,000,00</td>
+														</tr>
+														<tr>
+															<td>Inversión por persona</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>$75,000,00</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+
+													<div class="pull-right">
+														<div class="progress progress-lg">
+													<div class="progress-bar progress-bar-success active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 68.15%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+													</div>
+														<table style="clear: both" class="table table-bordered table-striped" id="user">
+													<tbody>
+														<tr>
+															<td style="width:35%">Tasa anual estimada</td>
+															<td style="width:65%"><a href="#" id="inline-username" data-type="text" data-pk="1" data-title="Enter username">$11.75</a></td>
+														</tr>
+														<tr>
+															<td>Plazo estimado</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>24 meses</td>
+														</tr>
+														<tr>
+															<td>Posibilidad de Prepago</td>
+															<td><a href="#" id="inline-firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>Al mes 5</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 
 			<!-- Footer -->
 			<footer class="footer pl-30 pr-30">
@@ -638,7 +1021,62 @@ if(!isset($_COOKIE['user'])) {
     </div>
     <!-- /#wrapper -->
 
+	<!-- JavaScript -->
 
+    <!-- jQuery -->
+    <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Data table JavaScript -->
+	<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+
+	<!-- Slimscroll JavaScript -->
+	<script src="assets/dist/js/jquery.slimscroll.js"></script>
+
+	<!-- Progressbar Animation JavaScript -->
+	<script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+	<script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
+
+	<!-- Fancy Dropdown JS -->
+	<script src="assets/dist/js/dropdown-bootstrap-extended.js"></script>
+
+	<!-- Sparkline JavaScript -->
+	<script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+
+	<!-- Owl JavaScript -->
+	<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+
+	<!-- Switchery JavaScript -->
+	<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
+
+	<!-- Vector Maps JavaScript -->
+    <script src="vendors/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+	<script src="vendors/vectormap/jquery-jvectormap-us-aea-en.js"></script>
+    <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="assets/dist/js/vectormap-data.js"></script>
+
+	<!-- Toast JavaScript -->
+	<script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+
+	<!-- Piety JavaScript -->
+	<script src="vendors/bower_components/peity/jquery.peity.min.js"></script>
+	<script src="assets/dist/js/peity-data.js"></script>
+
+	<!-- Chartist JavaScript -->
+	<script src="vendors/bower_components/chartist/dist/chartist.min.js"></script>
+
+	<!-- Morris Charts JavaScript -->
+    <script src="vendors/bower_components/raphael/raphael.min.js"></script>
+    <script src="vendors/bower_components/morris.js/morris.min.js"></script>
+    <script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+
+	<!-- ChartJS JavaScript -->
+	<script src="vendors/chart.js/Chart.min.js"></script>
+
+	<!-- Init JavaScript -->
+	<script src="assets/dist/js/init.js"></script>
+	<script src="assets/dist/js/dashboard-data.js"></script>
 </body>
-
 </html>

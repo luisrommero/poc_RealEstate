@@ -1104,12 +1104,13 @@ if(!isset($_COOKIE['user'])) {
     <!-- jQuery -->
     <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
     <!-- Init JavaScript -->
     <script src="assets/dist/js/init.js"></script>
     <script src="assets/dist/js/dashboard-data.js"></script>
+    
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
 
   <!-- Data table JavaScript -->
   <script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
