@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 	"use strict";
-	
+
 	$("#range_2").ionRangeSlider({
 	  type: "double",
 	  min: 1000000,
@@ -38,10 +38,10 @@ $(document).ready(function() {
 	});
 	$("#range_4").ionRangeSlider({
 	  type: "double",
-	  min: 0,
-	  max: 100,
-	  from: 30,
-	  to: 70,
+	  min:  75000,
+	  max:  500000,
+	  from: 250000,
+	  to:   75000,
 	  from_fixed: true
 	});
 	$("#range_5").ionRangeSlider({

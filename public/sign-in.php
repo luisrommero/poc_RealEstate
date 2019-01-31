@@ -1,5 +1,10 @@
 <!DOCTYPE html>
+<?php
+if(isset($_COOKIE['user'])) {
+  header("Location: ../"); // uncomment when cookies created
 
+}
+?>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8"/>
@@ -94,10 +99,10 @@
             <header><h1>Sign In</h1></header>
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
-                    <form role="form" id="form-create-account" method="post" action="CookiesManager.php" accept-charset="UTF-8">
+                    <form role="form" id="form-create-account" method="post" action="../CookieManager.php" accept-charset="UTF-8">
                         <div class="form-group">
                             <label for="form-create-account-email">Email:</label>
-                            <input type="email" class="form-control" id="form-create-account-email" required>
+                            <input type="email" name="email" class="form-control" id="form-create-account-email" required>
                         </div><!-- /.form-group -->
                         <div class="form-group">
                             <label for="form-create-account-password">Password:</label>
