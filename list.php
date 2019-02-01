@@ -321,7 +321,11 @@ if(!isset($_COOKIE['user'])) {
             <li>
               <a href="sumary.php">
                 <div class="pull-left"><span>Resumen</span></div>
-                <div class="pull-right"><span class="label label-success">New</span></div>
+                <div class="pull-right">
+                  <a href="project.php?id=1">
+                    <span class="label label-success">New</span>
+                  </a>
+                </div>
                 <div class="clearfix"></div>
               </a>
             </li>
@@ -638,63 +642,72 @@ if(!isset($_COOKIE['user'])) {
               <div class="clearfix"></div>
             </div>
             <div class="panel-wrapper collapse in">
-              <div  class="panel-body row pa-0">
+              <div class="panel-body row pa-0">
                 <table class="table table-hover mb-0">
-                </div class = "elemento1">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>First Name</th>
-                      <th>Last Name</th>
-                      <th>Task</th>
-                      <th>Progress</th>
-                      <th>Deadline</th>
-                      <th>Sales</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>Lunar probe project</td>
-                      <td><div class="progress progress-xs mb-0 ">
-                      <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
-                      </div></td>
-                    </div>
-                      <td>May 15, 2015</td>
-                      <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
-                      <td><span class="label label-success">Ver más</span> </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>Dream successful plan</td>
-                       <td><div class="progress progress-xs mb-0 ">
-                       <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
-                       </div></td>
-                     </div>
-                      <td>July 1, 2015</td>
-                      <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
-                      <td><span class="label label-success">Ver más</span> </td>
-
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Steave</td>
-                      <td>Jobs</td>
-                      <td>Office automatization</td>
-                      <td><div class="progress progress-xs mb-0 ">
-                       <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
-                       </div></td>
-                     </div>
-                      <td>Apr 12, 2015</td>
-                      <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
-                      <td><span class="label label-success">Ver más</span> </td>
-                     </tr>
-                  </tbody>
+                  <div class="elemento1">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Task</th>
+                        <th>Progress</th>
+                        <th>Deadline</th>
+                        <th>Sales</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>Lunar probe project</td>
+                        <td>
+                          <div class="progress progress-xs mb-0 ">
+                            <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
+                          </div>
+                        </td>
+                        <td>May 15, 2015</td>
+                        <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
+                        <td><a href="project.php?id=1">
+                            <span class="label label-success">New</span>
+                          </a></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>Dream successful plan</td>
+                        <td>
+                          <div class="progress progress-xs mb-0 ">
+                            <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
+                          </div>
+                        </td>
+                        <td>July 1, 2015</td>
+                        <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
+                        <td><a href="project.php?id=1">
+                            <span class="label label-success">New</span>
+                          </a></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Steave</td>
+                        <td>Jobs</td>
+                        <td>Office automatization</td>
+                        <td>
+                          <div class="progress progress-xs mb-0 ">
+                            <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
+                          </div>
+                        </td>
+                        <td>Apr 12, 2015</td>
+                        <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
+                        <td><a href="project.php?id=1">
+                            <span class="label label-success">New</span>
+                          </a></td>
+                      </tr>
+                    </tbody>
+                  </div>
                 </table>
               </div>
             </div>
@@ -702,29 +715,28 @@ if(!isset($_COOKIE['user'])) {
           <!-- ==========content goes here========== -->
         </div>
       </div>
-        <!-- /Row -->
+      <!-- /Row -->
 
-      </div>
-      <!-- Footer -->
-      <footer class="footer pl-30 pr-30">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <p>2019 &copy; eos Software. All rights reserved</p>
-            </div>
-            <div class="col-sm-6 text-right">
-              <p>Follow Us</p>
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-google-plus"></i></a>
-            </div>
+    <!-- Footer -->
+    <footer class="footer pl-30 pr-30">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p>2019 &copy; eos Software. All rights reserved</p>
+          </div>
+          <div class="col-sm-6 text-right">
+            <p>Follow Us</p>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
           </div>
         </div>
-      </footer>
-      <!-- /Footer -->
+      </div>
+    </footer>
+    <!-- /Footer -->
 
-    </div>
-    <!-- /Main Content -->
+  </div>
+  <!-- /Main Content -->
 
   </div>
   <!-- /#wrapper -->
