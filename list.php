@@ -640,11 +640,17 @@ if(!isset($_COOKIE['user'])) {
             <div class="panel-wrapper collapse in">
               <div  class="panel-body row pa-0">
                 <table class="table table-hover mb-0">
+                </div class = "elemento1">
                   <thead>
                     <tr>
                       <th>#</th>
                       <th>First Name</th>
                       <th>Last Name</th>
+                      <th>Task</th>
+                      <th>Progress</th>
+                      <th>Deadline</th>
+                      <th>Sales</th>
+                      <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -652,17 +658,42 @@ if(!isset($_COOKIE['user'])) {
                       <td>1</td>
                       <td>Mark</td>
                       <td>Otto</td>
+                      <td>Lunar probe project</td>
+                      <td><div class="progress progress-xs mb-0 ">
+                      <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
+                      </div></td>
+                    </div>
+                      <td>May 15, 2015</td>
+                      <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
+                      <td><span class="label label-success">Ver más</span> </td>
                     </tr>
                     <tr>
                       <td>2</td>
                       <td>Jacob</td>
                       <td>Thornton</td>
+                      <td>Dream successful plan</td>
+                       <td><div class="progress progress-xs mb-0 ">
+                       <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
+                       </div></td>
+                     </div>
+                      <td>July 1, 2015</td>
+                      <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
+                      <td><span class="label label-success">Ver más</span> </td>
+
                     </tr>
                     <tr>
                       <td>3</td>
                       <td>Steave</td>
                       <td>Jobs</td>
-                    </tr>
+                      <td>Office automatization</td>
+                      <td><div class="progress progress-xs mb-0 ">
+                       <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
+                       </div></td>
+                     </div>
+                      <td>Apr 12, 2015</td>
+                      <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
+                      <td><span class="label label-success">Ver más</span> </td>
+                     </tr>
                   </tbody>
                 </table>
               </div>
@@ -670,10 +701,10 @@ if(!isset($_COOKIE['user'])) {
           </div>
           <!-- ==========content goes here========== -->
         </div>
+      </div>
         <!-- /Row -->
 
       </div>
-
       <!-- Footer -->
       <footer class="footer pl-30 pr-30">
         <div class="container">
