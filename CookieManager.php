@@ -15,6 +15,6 @@ if ($user == 'admin@eos.com') {
   header("Location: home.php");
 
 } else {
-  header("Location: public/sign-in.html#error");
+  header("Location: public/sign-in.php#error");
 
 }

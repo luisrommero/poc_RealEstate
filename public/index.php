@@ -40,7 +40,7 @@ if(isset($_COOKIE['user'])) {
                     <div class="actions">
 
                         <a href="create-account.html" class="promoted"><strong>Register</strong></a>
-                        <a href="sign-in.html">Sign In</a>
+                        <a href="sign-in.php">Sign In</a>
                     </div>
                     <div class="language-bar">
                         <a href="#" class="active"><img src="assets/img/flags/gb.png" alt=""></a>

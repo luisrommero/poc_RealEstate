@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <?php
 if(!isset($_COOKIE['user'])) {
-    // header("Location: public/"); // uncomment when cookies created
+    header("Location: public/"); // uncomment when cookies created
 
-    include('database/con.php'); // move when cookies created
-    $con = connectionBD();       // move when cookies created
-    $id_list = $_GET["id"];
 
-    // List Table
-    $name_list = "[name_list]";
-    $name_owner = "[name_owner]";
-    $inv_min = "[inv_min]";
-    $percentage = "[percentage]";
-
-    // Project Table
-    $p_goal = "[p_goal]";
-    $p_type = "[p_type]";
-    $p_address = "[p_address]";
-    $p_desc = "[p_desc]";
-
-    // Images table
-    $path = ["public/assets/img/slide-01.jpg", "public/assets/img/slide-02.jpg","public/assets/img/slide-03.jpg"];
-    $footer_img = ["[footer_img_1]", "[footer_img_2]", "[footer_img_3]"];
 
 } else {
-  include('database/con.php');
-  $con = connectionBD();
+  include('database/con.php'); // move when cookies created
+  $con = connectionBD();       // move when cookies created
+  $id_list = $_GET["id"];
+
+  // List Table
+  $name_list = "[name_list]";
+  $name_owner = "[name_owner]";
+  $inv_min = "[inv_min]";
+  $percentage = "[percentage]";
+
+  // Project Table
+  $p_goal = "[p_goal]";
+  $p_type = "[p_type]";
+  $p_address = "[p_address]";
+  $p_desc = "[p_desc]";
+
+  // Images table
+  $path = ["public/assets/img/slide-01.jpg", "public/assets/img/slide-02.jpg","public/assets/img/slide-03.jpg"];
+  $footer_img = ["[footer_img_1]", "[footer_img_2]", "[footer_img_3]"];
 
 }
 ?>
@@ -1107,7 +1106,7 @@ if(!isset($_COOKIE['user'])) {
     <!-- Init JavaScript -->
     <script src="assets/dist/js/init.js"></script>
     <script src="assets/dist/js/dashboard-data.js"></script>
-    
+
     <!-- Bootstrap Core JavaScript -->
     <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 

@@ -1,3 +1,9 @@
+<?php
+if(isset($_COOKIE['user'])) {
+  header("Location: ../"); // uncomment when cookies created
+
+}
+?>
 <!DOCTYPE html>
 
 <html lang="en-US">
@@ -77,7 +83,8 @@
              </div> -->
          </header><!-- /.navbar -->
      </div><!-- /.container -->
- </div><!-- /.navigation -->
+ </div>
+    <!-- /.navigation -->
     <!-- end Navigation -->
     <!-- end Navigation -->
     <!-- Page Content -->
