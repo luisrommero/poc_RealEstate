@@ -39,7 +39,7 @@ if(isset($_COOKIE['user'])) {
                 <div class="user-area">
                     <div class="actions">
 
-                        <a href="create-account.html" class="promoted"><strong>Register</strong></a>
+                        <a href="create-account.php" class="promoted"><strong>Register</strong></a>
                         <a href="sign-in.php">Sign In</a>
                     </div>
                     <div class="language-bar">

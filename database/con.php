@@ -3,7 +3,7 @@
 function connectionBD() {
   $servername = "localhost";
   $username = "root";
-  $password = "woodstock'94";
+  $password = "Firepixel2";
   $database = "eos_poc_real_estate";
 
   // Create connection
