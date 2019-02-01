@@ -608,6 +608,7 @@ if(!isset($_COOKIE['user'])) {
 				<!-- Row -->
 				<div class="row">
           <!-- ==========content goes here========== -->
+          <p>calendar goes here</p>
 
           <!-- ==========content goes here========== -->
         </div>
