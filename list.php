@@ -319,15 +319,7 @@ if(!isset($_COOKIE['user'])) {
               <a class="active-page" href="home.php">Pagos Recibidos</a>
             </li>
             <li>
-              <a href="sumary.php">
-                <div class="pull-left"><span>Resumen</span></div>
-                <div class="pull-right">
-                  <a href="project.php?id=1">
-                    <span class="label label-success">New</span>
-                  </a>
-                </div>
-                <div class="clearfix"></div>
-              </a>
+              <a href="sumary.php"><div class="pull-left"><span>Resumen</span></div><div class="pull-right"><span class="label label-success">New</span></div><div class="clearfix"></div></a>
             </li>
             <li>
               <a href="docs.php">Documentos</a>
