@@ -717,10 +717,10 @@ if(!isset($_COOKIE['user'])) {
 	<script src="assets/dist/js/dashboard-data.js"></script>
 
   <!-- Calender JavaScripts -->
-  <script src="../../vendors/bower_components/moment/min/moment.min.js"></script>
-  <script src="../../vendors/jquery-ui.min.js"></script>
-  <script src="../../vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
-  <script src="../dist/js/fullcalendar-data.js"></script>
+  <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+  <script src="vendors/jquery-ui.min.js"></script>
+  <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+  <script src="assets/dist/js/fullcalendar-data.js"></script>
 
 </body>
 

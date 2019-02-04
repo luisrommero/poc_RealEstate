@@ -1,7 +1,7 @@
 /*FullCalendar Init*/
 $(document).ready(function() {
 	'use strict';
-	
+
     var drag =  function() {
         $('.calendar-event').each(function() {
 
@@ -19,14 +19,14 @@ $(document).ready(function() {
         });
     });
     };
-    
+
     var removeEvent =  function() {
 		$(document).on('click','.remove-calendar-event',function(e) {
 			$(this).closest('.calendar-event').fadeOut();
         return false;
     });
     };
-    
+
     $(".add-event").keypress(function (e) {
         if ((e.which == 13)&&(!$(this).val().length == 0)) {
             $('<div class="btn btn-success calendar-event">' + $(this).val() + '<a href="javascript:void(0);" class="remove-calendar-event"><i class="ti-close"></i></a></div>').insertBefore(".add-event");
@@ -37,18 +37,18 @@ $(document).ready(function() {
         drag();
         removeEvent();
     });
-    
-    
+
+
     drag();
     removeEvent();
-    
+
     var date = new Date();
     var day = date.getDate();
     var month = date.getMonth();
     var year = date.getFullYear();
-    
+
     $('#calendar').fullCalendar({
-       
+
             header: {
                 left: 'prev,next today',
                 center: 'title',
@@ -57,7 +57,7 @@ $(document).ready(function() {
             editable: true,
             droppable: true, // this allows things to be dropped onto the calendar
             eventLimit: true, // allow "more" link when too many events
-        	
+
         eventMouseover: function (data, event, view) {
 			var tooltip = '<div class="tooltiptopicevent tooltip tooltip-inner" style="width:auto;height:auto;position:absolute;z-index:10001;">10:00 AM ' + data.title + '</div>';
 			$("body").append(tooltip);
@@ -138,16 +138,16 @@ $(document).ready(function() {
 					start: '2017-03-22'
                 },
 				{
-                    title: 'Travel',
-					start: '2017-03-10'
-                },
-                {
-                    start: '2017-03-06',
-					end: '2017-03-08',
+          title: 'Travel',
+					start: '2019-02-02',
+        },
+        {
+          start: '2019-02-02',
+					end: '2019-02-02',
 					overlap: false,
 					rendering: 'background',
 					color: 'rgba(234, 108, 65, 0.3)'
-                },
+        },
 				{
                     start: '2017-03-19',
 					end: '2017-03-19',
@@ -226,9 +226,9 @@ $(document).ready(function() {
                 }
             ]
 		});
-    
+
 	 $('#calendar_small').fullCalendar({
-       
+
             header: {
                 left: 'title',
                 right: 'prev,next',
@@ -236,8 +236,8 @@ $(document).ready(function() {
 			height: 'auto',
             editable: false,
             droppable: false, // this allows things to be dropped onto the calendar
-            eventLimit: true, 
-			
+            eventLimit: true,
+
         eventMouseover: function (data, event, view) {
 			var tooltip = '<div class="tooltiptopicevent tooltip tooltip-inner" style="width:auto;height:auto;position:absolute;z-index:10001;">10:00 AM ' + data.title + '</div>';
 			$("body").append(tooltip);
@@ -358,5 +358,5 @@ $(document).ready(function() {
                 }
             ]
 		});
-    
+
 });
