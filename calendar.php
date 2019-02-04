@@ -29,7 +29,7 @@ if(!isset($_COOKIE['user'])) {
 	<link href="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css">
 
 	<!-- Morris Charts CSS -->
-    <link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css"/>
+  <link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css"/>
 
 	<!-- Chartist CSS -->
 	<link href="vendors/bower_components/chartist/dist/chartist.min.css" rel="stylesheet" type="text/css"/>
@@ -40,6 +40,10 @@ if(!isset($_COOKIE['user'])) {
 
 	<!-- Custom CSS -->
 	<link href="assets/dist/css/style.css" rel="stylesheet" type="text/css">
+
+  <!-- Calendar CSS -->
+  <link href="vendors/bower_components/fullcalendar/dist/fullcalendar.css" rel="stylesheet" type="text/css"/>
+
 </head>
 
 <body>
@@ -605,14 +609,28 @@ if(!isset($_COOKIE['user'])) {
         <!-- Main Content -->
 		<div class="page-wrapper">
             <div class="container pt-30">
-				<!-- Row -->
-				<div class="row">
-          <!-- ==========content goes here========== -->
-          <p>calendar goes here</p>
-
-          <!-- ==========content goes here========== -->
-        </div>
-				<!-- /Row -->
+              <!-- Row -->
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="panel panel-default card-view">
+                    <div class="panel-wrapper collapse in">
+                      <div class="panel-body pt-0">
+                        <div class="add-event-wrap">
+                          <div class="calendar-event btn btn-orange-dark">My Event One <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
+                          <div class="calendar-event btn btn-orange">My Event Two <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
+                          <div class="calendar-event btn btn-orange-light-1">My Event Three <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
+                          <div class="calendar-event btn btn-orange-light-2">My Event Four <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
+                          <input type="text" placeholder="Add Event and hit enter" class="form-control add-event mt-30">
+                        </div>
+                        <div class="calendar-wrap mt-40">
+                          <div id="calendar"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <!-- /Row -->
 
 			</div>
 
@@ -671,9 +689,9 @@ if(!isset($_COOKIE['user'])) {
 	<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
 
 	<!-- Vector Maps JavaScript -->
-    <script src="vendors/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+  <script src="vendors/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
 	<script src="vendors/vectormap/jquery-jvectormap-us-aea-en.js"></script>
-    <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
 	<script src="assets/dist/js/vectormap-data.js"></script>
 
 	<!-- Toast JavaScript -->
@@ -697,6 +715,13 @@ if(!isset($_COOKIE['user'])) {
 	<!-- Init JavaScript -->
 	<script src="assets/dist/js/init.js"></script>
 	<script src="assets/dist/js/dashboard-data.js"></script>
+
+  <!-- Calender JavaScripts -->
+  <script src="../../vendors/bower_components/moment/min/moment.min.js"></script>
+  <script src="../../vendors/jquery-ui.min.js"></script>
+  <script src="../../vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+  <script src="../dist/js/fullcalendar-data.js"></script>
+
 </body>
 
 </html>
