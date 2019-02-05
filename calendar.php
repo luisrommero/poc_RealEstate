@@ -14,7 +14,7 @@ if(!isset($_COOKIE['user'])) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Admintres I Fast build Admin dashboard for any platform</title>
+  <title>Calendario</title>
   <meta name="description" content="Admintres is a Dashboard & Admin Site Responsive Template by hencework." />
   <meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Admintres Admin, Admintresadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
   <meta name="author" content="hencework" />
@@ -637,139 +637,113 @@ if(!isset($_COOKIE['user'])) {
     <!-- Main Content -->
         <div class="page-wrapper">
         <div class="container">
-          
-          <!-- Title -->
-          <div class="row heading-bg">
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-              <h5 class="txt-dark">calendar</h5>
-            </div>
-            <!-- Breadcrumb -->
-            <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-              <ol class="breadcrumb">
-              <li><a href="index.html">Dashboard</a></li>
-              <li><a href="#"><span>apps</span></a></li>
-              <li class="active"><span>calendar</span></li>
-              </ol>
-            </div>
-            <!-- /Breadcrumb -->
-          </div>
-          <!-- /Title -->
-          <!-- Row -->
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="panel panel-default card-view">
-                <div class="panel-wrapper collapse in">
-                  <div class="panel-body pt-0">
-                    <div class="add-event-wrap">
-                      <div class="calendar-event btn btn-orange-dark">My Event One <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
-                      <div class="calendar-event btn btn-orange">My Event Two <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
-                      <div class="calendar-event btn btn-orange-light-1">My Event Three <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
-                      <div class="calendar-event btn btn-orange-light-2">My Event Four <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
-                      <input type="text" placeholder="Add Event and hit enter" class="form-control add-event mt-30">
-                    </div>
-                    <div class="calendar-wrap mt-40">
-                      <div id="calendar"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>  
-            </div>
-          </div>
+        <!-- Title -->
+        <div class="row heading-bg">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+        <h5 class="txt-dark">calendar</h5>
         </div>
-          <!-- ==========content goes here========== -->
-          
-          <!-- ==========content goes here========== -->
-        	
-
-      <!-- /Row -->
-
-    <!-- Footer -->
+        <!-- Breadcrumb -->
+        <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+        <ol class="breadcrumb">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="#"><span>apps</span></a></li>
+        <li class="active"><span>calendar</span></li>
+        </ol>
+        </div>
+        <!-- /Breadcrumb -->
+        </div>
+         <!-- /Title -->
+         <!-- Row -->
+         <div class="row">
+         <div class="col-lg-12">
+         <div class="panel panel-default card-view">
+         <div class="panel-wrapper collapse in">
+         <div class="panel-body pt-0">
+         <div class="add-event-wrap">
+         <div class="calendar-event btn btn-orange-dark">My Event One <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
+         <div class="calendar-event btn btn-orange">My Event Two <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
+         <div class="calendar-event btn btn-orange-light-1">My Event Three <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
+         <div class="calendar-event btn btn-orange-light-2">My Event Four <a href="javascript:void(0);" class="remove-calendar-event"><i class="fa fa-times fa-fw"></i></a></div>
+         <input type="text" placeholder="Add Event and hit enter" class="form-control add-event mt-30">
+         </div>
+         <div class="calendar-wrap mt-40">
+         <div id="calendar"></div>
+         </div>
+         </div>
+         </div>
+         </div>  
+         </div>
+         </div>
+        </div>
+       <!-- ==========content goes here========== --> 
+       <!-- ==========content goes here========== -->
+       <!-- /Row -->
+       <!-- Footer -->
     <footer class="footer pl-30 pr-30">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <p>2019 &copy; eos Software. All rights reserved</p>
-          </div>
-          <div class="col-sm-6 text-right">
-            <p>Follow Us</p>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-          </div>
-        </div>
+      <div class="row">
+      <div class="col-sm-6">
+      <p>2019 &copy; eos Software. All rights reserved</p>
+      </div>
+      <div class="col-sm-6 text-right">
+      <p>Follow Us</p>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      </div>
+      </div>
       </div>
     </footer>
     <!-- /Footer -->
-
   </div>
   <!-- /Main Content -->
-
   </div>
   <!-- /#wrapper -->
-
   <!-- JavaScript -->
-
   <!-- jQuery -->
   <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
-
   <!-- Bootstrap Core JavaScript -->
   <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
   <!-- Data table JavaScript -->
   <script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
-
   <!-- Slimscroll JavaScript -->
   <script src="assets/dist/js/jquery.slimscroll.js"></script>
-
   <!-- Progressbar Animation JavaScript -->
   <script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
   <script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
-
   <!-- Fancy Dropdown JS -->
   <script src="assets/dist/js/dropdown-bootstrap-extended.js"></script>
-
   <!-- Sparkline JavaScript -->
   <script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
-
   <!-- Owl JavaScript -->
   <script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-
   <!-- Switchery JavaScript -->
   <script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
-
   <!-- Vector Maps JavaScript -->
   <script src="vendors/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
   <script src="vendors/vectormap/jquery-jvectormap-us-aea-en.js"></script>
   <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
   <script src="assets/dist/js/vectormap-data.js"></script>
-
   <!-- Toast JavaScript -->
   <script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
-
   <!-- Piety JavaScript -->
   <script src="vendors/bower_components/peity/jquery.peity.min.js"></script>
   <script src="assets/dist/js/peity-data.js"></script>
-
   <!-- Chartist JavaScript -->
   <script src="vendors/bower_components/chartist/dist/chartist.min.js"></script>
-
   <!-- Morris Charts JavaScript -->
   <script src="vendors/bower_components/raphael/raphael.min.js"></script>
   <script src="vendors/bower_components/morris.js/morris.min.js"></script>
   <script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
-
   <!-- ChartJS JavaScript -->
   <script src="vendors/chart.js/Chart.min.js"></script>
-
   <!-- Init JavaScript -->
   <script src="assets/dist/js/init.js"></script>
   <script src="assets/dist/js/dashboard-data.js"></script>
-
   <!-- Calender JavaScripts -->
-    <script src="vendors/bower_components/moment/min/moment.min.js"></script>
-    <script src="vendors/jquery-ui.min.js"></script>
-    <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
-    <script src="assets/dist/js/fullcalendar-data.js"></script>
+  <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+  <script src="vendors/jquery-ui.min.js"></script>
+  <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+  <script src="assets/dist/js/fullcalendar-data.js"></script>
 </body>
-
 </html>
