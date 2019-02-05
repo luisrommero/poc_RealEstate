@@ -148,11 +148,11 @@ if(!isset($_COOKIE['user'])) {
 													<span>wooden chair</span>
 												</a>
 												<a href="#">
-													<img src=".assets/img/chair2.jpg" alt="chair">
+													<img src="assets/img/chair2.jpg" alt="chair">
 													<span>square chair</span>
 												</a>
                         <a href="#">
-													<img src=".assets/img/chair2.jpg" alt="chair">
+													<img src="assets/img/chair2.jpg" alt="chair">
 													<span>square chair</span>
 												</a>
 											</div>
@@ -441,7 +441,7 @@ if(!isset($_COOKIE['user'])) {
 																</li>
 																<li class="friend">
 																	<div class="friend-msg-wrap">
-																		<img class="user-img img-circle block pull-left"  src=".assets/img/user.png" alt="user"/>
+																		<img class="user-img img-circle block pull-left"  src="assets/img/user.png" alt="user"/>
 																		<div class="msg pull-left">
 																			<p>Not too bad.</p>
 																			<div class="msg-per-detail  text-right">
@@ -660,11 +660,11 @@ if(!isset($_COOKIE['user'])) {
 
 	<!-- JavaScript -->
 
-    <!-- jQuery -->
-    <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- jQuery -->
+  <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<!-- Data table JavaScript -->
 	<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
@@ -680,7 +680,7 @@ if(!isset($_COOKIE['user'])) {
 	<script src="assets/dist/js/dropdown-bootstrap-extended.js"></script>
 
 	<!-- Sparkline JavaScript -->
-	<script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+	<!-- <script src="vendors/bower_components/jquery.sparkline/dist/jquery.sparkline.min.js"></script> -->
 
 	<!-- Owl JavaScript -->
 	<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
@@ -705,9 +705,9 @@ if(!isset($_COOKIE['user'])) {
 	<script src="vendors/bower_components/chartist/dist/chartist.min.js"></script>
 
 	<!-- Morris Charts JavaScript -->
-    <script src="vendors/bower_components/raphael/raphael.min.js"></script>
-    <script src="vendors/bower_components/morris.js/morris.min.js"></script>
-    <script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+  <script src="vendors/bower_components/raphael/raphael.min.js"></script>
+  <script src="vendors/bower_components/morris.js/morris.min.js"></script>
+  <script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
 
 	<!-- ChartJS JavaScript -->
 	<script src="vendors/chart.js/Chart.min.js"></script>

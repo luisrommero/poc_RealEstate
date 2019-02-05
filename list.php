@@ -7,6 +7,13 @@ if(!isset($_COOKIE['user'])) {
   include('database/con.php');
   $con = connectionBD();
 
+  // sql script
+  // $list_sql = "SELECT * FROM list";
+  $list_sql = "SELECT list.id_list, list.name_list, list.name_owner, list.inv_min, list.percentage, project.id_project, project.p_address, project.p_type, project.p_desc, project.p_goal FROM list INNER JOIN project ON list.id_list = project.id_list;";
+
+  // ResultSet
+  $result_set = mysqli_query($con, $list_sql);
+
 }
 ?>
 <html lang="en">
@@ -148,11 +155,11 @@ if(!isset($_COOKIE['user'])) {
                           <span>wooden chair</span>
                         </a>
                         <a href="#">
-                          <img src=".assets/img/chair2.jpg" alt="chair">
+                          <img src="assets/img/chair2.jpg" alt="chair">
                           <span>square chair</span>
                         </a>
                         <a href="#">
-                          <img src=".assets/img/chair2.jpg" alt="chair">
+                          <img src="assets/img/chair2.jpg" alt="chair">
                           <span>square chair</span>
                         </a>
                       </div>
@@ -457,7 +464,7 @@ if(!isset($_COOKIE['user'])) {
                               </li>
                               <li class="friend">
                                 <div class="friend-msg-wrap">
-                                  <img class="user-img img-circle block pull-left" src=".assets/img/user.png" alt="user" />
+                                  <img class="user-img img-circle block pull-left" src="assets/img/user.png" alt="user" />
                                   <div class="msg pull-left">
                                     <p>Not too bad.</p>
                                     <div class="msg-per-detail  text-right">
@@ -623,89 +630,68 @@ if(!isset($_COOKIE['user'])) {
     <!-- Main Content -->
     <div class="page-wrapper">
       <div class="container pt-30">
+        <?php   while ($row = mysqli_fetch_assoc($result_set)) {?>
         <!-- Row -->
         <div class="row">
           <!-- ==========content goes here========== -->
-          <div class="panel panel-default card-view">
-            <div class="panel-heading">
-              <div class="pull-left">
-                <h6 class="panel-title txt-dark">Panel with table</h6>
-              </div>
-              <div class="clearfix"></div>
-            </div>
-            <div class="panel-wrapper collapse in">
-              <div class="panel-body row pa-0">
-                <table class="table table-hover mb-0">
-                  <div class="elemento1">
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Task</th>
-                        <th>Progress</th>
-                        <th>Deadline</th>
-                        <th>Sales</th>
-                        <th>Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>Lunar probe project</td>
-                        <td>
-                          <div class="progress progress-xs mb-0 ">
-                            <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
+
+          <div class="col-sm-12">
+            <div class="panel panel-default card-view">
+              <div class="panel-wrapper collapse in">
+                <div class="panel-body pt-0">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="item-big">
+                        <!-- START carousel-->
+                        <div id="carousel-example-captions-1" data-ride="carousel" class="carousel slide">
+                          <ol class="carousel-indicators">
+                             <li data-target="#carousel-example-captions-1" data-slide-to="0" class="active"></li>
+                             <li data-target="#carousel-example-captions-1" data-slide-to="1"></li>
+                          </ol>
+                          <div role="listbox" class="carousel-inner">
+                             <div class="item active">
+                               <img src="assets/img/gallery/mock1.jpg" alt="First slide image">
+                             </div>
+                             <div class="item">
+                               <img src="assets/img/gallery/mock4.jpg" alt="Second slide image">
+                             </div>
                           </div>
-                        </td>
-                        <td>May 15, 2015</td>
-                        <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
-                        <td><a href="project.php?id=1">
-                            <span class="label label-success">New</span>
-                          </a></td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>Dream successful plan</td>
-                        <td>
-                          <div class="progress progress-xs mb-0 ">
-                            <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
-                          </div>
-                        </td>
-                        <td>July 1, 2015</td>
-                        <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
-                        <td><a href="project.php?id=1">
-                            <span class="label label-success">New</span>
-                          </a></td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Steave</td>
-                        <td>Jobs</td>
-                        <td>Office automatization</td>
-                        <td>
-                          <div class="progress progress-xs mb-0 ">
-                            <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
-                          </div>
-                        </td>
-                        <td>Apr 12, 2015</td>
-                        <td><span class="text-info text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
-                        <td><a href="project.php?id=1">
-                            <span class="label label-success">New</span>
-                          </a></td>
-                      </tr>
-                    </tbody>
+                        </div>
+                        <!-- END carousel-->
+                      </div>
+                    </div>
+
+                    <div class="col-md-9">
+                      <div class="product-detail-wrap">
+                        <div class="product-rating inline-block mb-10">
+                          <a href="javascript:void(0);" class="zmdi zmdi-star"></a><a href="javascript:void(0);" class="zmdi zmdi-star"></a><a href="javascript:void(0);" class="zmdi zmdi-star"></a><a href="javascript:void(0);" class="zmdi zmdi-star"></a><a href="javascript:void(0);" class="zmdi zmdi-star-outline"></a>
+                        </div>
+                        <div class="average-review inline-block mb-10">&nbsp;(<span class="review-count">5</span> customer review)</div>
+                        <h4 class="mb-5 weight-500"><?php echo $row['name_list'] ?></h4>
+                        <div class="head-font mb-15">Inv. Mínima: <p class="product-price ">$ 1234</p></div>
+                        <p class="mb-25">
+                          Lorem ipsum dolor sit amet, facer velit at per, possit accusamus vim an. Cu vel possit dolorum. Elit placerat molestiae mea ne.Ex has movet ornatus, ei usu latine scripta molestiae. Sea ex aeterno adversarium, te ferri errem noluisse quo, meis civibus ea est. Sit in quas nostrud.
+                        </p>
+
+                        <input class="vertical-spin" type="text" data-bts-button-down-class="btn btn-default"   data-bts-button-up-class="btn btn-default" value="1" name="vertical-spin">
+
+                        <div class="btn-group mr-10">
+                          <button class="btn btn-dark btn-anim"><i class="fa fa-shopping-cart"></i><span class="btn-text">add to cart</span></button>
+                        </div>
+                        <div class="btn-group wishlist">
+                          <button class="btn btn-default btn-outline btn-anim"><i class="icon-heart"></i><span class="btn-text">add to wishlist</span></button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </table>
+                </div>
               </div>
             </div>
           </div>
+
           <!-- ==========content goes here========== -->
         </div>
+      <?php } ?>
       </div>
       <!-- /Row -->
 
