@@ -48,6 +48,9 @@ if(!isset($_COOKIE['user'])) {
 
   <!-- Custom CSS -->
   <link href="assets/dist/css/style.css" rel="stylesheet" type="text/css">
+
+  <!-- Extra CSS -->
+  <link href="assets/dist/css/extras-list.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -189,10 +192,13 @@ if(!isset($_COOKIE['user'])) {
                         </div>
                         <div class="sl-content">
                           <span class="inline-block capitalize-font  pull-left truncate head-notifications">
-                            New property created</span>
+                            New property created
+                          </span>
                           <span class="inline-block font-11  pull-right notifications-time">2pm</span>
                           <div class="clearfix"></div>
-                          <p class="truncate">Your customer subscribed for the basic plan. The customer will pay $25 per month.</p>
+                          <p class="truncate">
+                            Your customer subscribed for the basic plan. The customer will pay $25 per month.
+                          </p>
                         </div>
                       </a>
                     </div>
@@ -663,24 +669,69 @@ if(!isset($_COOKIE['user'])) {
 
                     <div class="col-md-9">
                       <div class="product-detail-wrap">
-                        <div class="product-rating inline-block mb-10">
-                          <a href="javascript:void(0);" class="zmdi zmdi-star"></a><a href="javascript:void(0);" class="zmdi zmdi-star"></a><a href="javascript:void(0);" class="zmdi zmdi-star"></a><a href="javascript:void(0);" class="zmdi zmdi-star"></a><a href="javascript:void(0);" class="zmdi zmdi-star-outline"></a>
+                        <div class="">
+                          <!-- progress bar -->
+                          <div class="progress mt-40">
+  													<div class="progress-bar progress-bar-info active progress-bar-striped"
+                                 aria-valuenow="85"
+                                 aria-valuemin="0"
+                                 aria-valuemax="100"
+                                 style="width: <?php echo $row['percentage'] ?>%"
+                                 role="progressbar">
+                            </div>
+  												</div>
+                          <!-- progress bar -->
                         </div>
-                        <div class="average-review inline-block mb-10">&nbsp;(<span class="review-count">5</span> customer review)</div>
-                        <h4 class="mb-5 weight-500"><?php echo $row['name_list'] ?></h4>
-                        <div class="head-font mb-15">Inv. Mínima: <p class="product-price ">$ 1234</p></div>
+                        <div class="average-review inline-block mb-10">
+                          &nbsp;(<span class="review-count"><?php echo $row['percentage'] ?>%</span> de progreso)
+                        </div>
+                        <h4 class="mb-5 weight-500">
+                          <?php echo $row['name_list'] ?>
+                        </h4>
+                        <div class="head-font mb-15">
+                          Inv. Mínima: <p class="product-price ">$ <?php echo $row['inv_min'] ?></p>
+                        </div>
                         <p class="mb-25">
-                          Lorem ipsum dolor sit amet, facer velit at per, possit accusamus vim an. Cu vel possit dolorum. Elit placerat molestiae mea ne.Ex has movet ornatus, ei usu latine scripta molestiae. Sea ex aeterno adversarium, te ferri errem noluisse quo, meis civibus ea est. Sit in quas nostrud.
+                          <?php echo $row['p_desc'] ?>
                         </p>
 
-                        <input class="vertical-spin" type="text" data-bts-button-down-class="btn btn-default"   data-bts-button-up-class="btn btn-default" value="1" name="vertical-spin">
-
-                        <div class="btn-group mr-10">
-                          <button class="btn btn-dark btn-anim"><i class="fa fa-shopping-cart"></i><span class="btn-text">add to cart</span></button>
+                        <!-- slider -->
+                        <!-- <input class="vertical-spin"
+                               type="text"
+                               data-bts-button-down-class="btn btn-default"
+                               data-bts-button-up-class="btn btn-default"
+                               value="<?php echo $row['inv_min'] ?>"
+                               name="vertical-spin"> -->
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="slidecontainer">
+                              <input  type="range"
+                              min="<?php echo $row['inv_min'] ?>"
+                              max="<?php echo $row['p_goal'] ?>"
+                              value="<?php echo $row['inv_min'] ?>"
+                              data-id="<?php echo $row['id_list'] ?>"
+                              class="slider"
+                              id="myRange">
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="btn-group mr-10">
+                              <a href="project.php?id=<?php echo $row['id_list'] ?>&amount=<?php echo $row['inv_min'] ?>"
+                                class="btn btn-dark btn-anim"
+                                id="myLink">
+                                <i class="fa fa-money"></i>
+                                <span class="btn-text">&iexcl;Invertir $<span id="demo"></span>!</span>
+                              </a>
+                            </div>
+                            <div class="btn-group wishlist">
+                              <a href="project.php?id=<?php echo $row['id_list'] ?>" class="btn btn-default btn-outline btn-anim">
+                                <i class="fa fa-eye"></i>
+                                <span class="btn-text">Ver M&aacute;s</span>
+                              </a>
+                            </div>
+                          </div>
                         </div>
-                        <div class="btn-group wishlist">
-                          <button class="btn btn-default btn-outline btn-anim"><i class="icon-heart"></i><span class="btn-text">add to wishlist</span></button>
-                        </div>
+                        <!-- slider -->
                       </div>
                     </div>
                   </div>
@@ -776,6 +827,9 @@ if(!isset($_COOKIE['user'])) {
   <!-- Init JavaScript -->
   <script src="assets/dist/js/init.js"></script>
   <script src="assets/dist/js/dashboard-data.js"></script>
+
+  <!-- js functions for list -->
+  <script type="text/javascript" src="assets/dist/js/extras-list.js"></script>
 </body>
 
 </html>
