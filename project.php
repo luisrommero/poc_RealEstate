@@ -6,9 +6,10 @@ if(!isset($_COOKIE['user'])) {
 
 
 } else {
-  include('database/con.php'); // move when cookies created
+  include('database/con.php');      // move when cookies created
   $con = connectionBD();       // move when cookies created
   $id_list = $_GET["id"];
+  $amount = $_GET["amount"];
 
   // List Table
   $name_list = "[name_list]";
@@ -25,6 +26,46 @@ if(!isset($_COOKIE['user'])) {
   // Images table
   $path = ["public/assets/img/slide-01.jpg", "public/assets/img/slide-02.jpg","public/assets/img/slide-03.jpg"];
   $footer_img = ["[footer_img_1]", "[footer_img_2]", "[footer_img_3]"];
+
+  // SQL Scripts
+  $list_sql = "SELECT * FROM list WHERE id_list = " . $id_list . ";";
+  $project_sql = "SELECT * FROM project WHERE id_list = " . $id_list . ";";
+  $images_sql = "SELECT * FROM p_img WHERE id_list = " . $id_list . ";";
+
+  // SQLi ResultSet
+  $result_set_list    = mysqli_query($con, $list_sql);
+  $result_set_project = mysqli_query($con, $project_sql);
+  $result_set_img     = mysqli_query($con, $images_sql);
+
+  // list variables initialization
+  while ($row = mysqli_fetch_assoc($result_set_list)) {
+    // List Table
+    $name_list = $row["name_list"];
+    $name_owner = $row["name_owner"];
+    $inv_min = $row["inv_min"];
+    $percentage = $row["percentage"];
+  }
+
+  // project variables initialization
+  while ($row = mysqli_fetch_assoc($result_set_project)) {
+    // Project Table
+    $p_goal = $row["p_goal"];
+    $p_type = $row["p_type"];
+    $p_address = $row["p_address"];
+    $p_desc = $row["p_desc"];
+  }
+
+  // images array initialization
+  while ($row = mysqli_fetch_assoc($result_set_img)) {
+    // Images table
+    $path = ["public/assets/img/slide-01.jpg",
+             "public/assets/img/slide-02.jpg",
+             "public/assets/img/slide-03.jpg"];
+
+    $footer_img = ["[footer_img_1]",
+                   "[footer_img_2]",
+                   "[footer_img_3]"];
+  }
 
 }
 ?>
@@ -926,7 +967,7 @@ if(!isset($_COOKIE['user'])) {
                   <p class="text-muted">Total Recaudado.</p>
                   <br>
                   <div class="progress progress-lg">
-                    <div class="progress-bar progress-bar-info active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+                    <div class="progress-bar progress-bar-info active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $percentage ?>%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
                   </div>
                   <br>
                   <p>
@@ -957,7 +998,7 @@ if(!isset($_COOKIE['user'])) {
                             <div class="form-group">
                               <div class="input-group">
                                 <div class="input-group-addon"><i class="icon-wallet"></i></div>
-                                <input type="text" class="form-control required"  name="Username" id="exampleInputuname" placeholder="Username">
+                                <input type="text" class="form-control required" value="<?php echo $amount ?>" name="Username" id="exampleInputuname" placeholder="Username">
                               </div>
                             </div>
                           </div>

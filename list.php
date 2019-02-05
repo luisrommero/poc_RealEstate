@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 if(!isset($_COOKIE['user'])) {
-    // header("Location: public/"); // uncomment when cookies created
+    header("Location: public/"); // uncomment when cookies created
 
 } else {
   include('database/con.php');
@@ -17,7 +17,6 @@ if(!isset($_COOKIE['user'])) {
 }
 ?>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
