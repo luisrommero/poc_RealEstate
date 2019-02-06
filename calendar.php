@@ -301,42 +301,90 @@ if(!isset($_COOKIE['user'])) {
 			</nav>
 			<!-- /Top Menu Items -->
 
-			<!-- Left Sidebar Menu -->
-			<div class="fixed-sidebar-left">
-				<ul class="nav navbar-nav side-nav nicescroll-bar">
-					<li class="navigation-header">
-						<span>Main</span>
-						<hr/>
-					</li>
-					<li>
-						<a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="fa fa-user mr-20"></i><span class="right-nav-text">My portfolio</span></div><div class="pull-right"><i class="ti-angle-down"></i></div><div class="clearfix"></div></a>
-						<ul id="dashboard_dr" class="collapse collapse-level-1">
-							<li>
-								<a class="active-page" href="home.php">Pagos Recibidos</a>
-							</li>
-							<li>
-								<a href="sumary.php"><div class="pull-left"><span>Resumen</span></div><div class="pull-right"><span class="label label-success">New</span></div><div class="clearfix"></div></a>
-							</li>
+      <!-- Left Sidebar Menu -->
+      <div class="fixed-sidebar-left">
+        <ul class="nav navbar-nav side-nav nicescroll-bar">
+          <li class="navigation-header">
+            <span>Main</span>
+            <hr />
+          </li>
+          <li>
+            <a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr">
+              <div class="pull-left"><i class="fa fa-user mr-20"></i><span class="right-nav-text">My portfolio</span></div>
+              <div class="pull-right"><i class="ti-angle-down"></i></div>
+              <div class="clearfix"></div>
+            </a>
+            <ul id="dashboard_dr" class="collapse collapse-level-1">
               <li>
-								<a href="docs.php">Documentos</a>
-							</li>
-						</ul>
-					</li>
+                <a class="active-page" href="home.php">Pagos Recibidos</a>
+              </li>
+              <li>
+                <a href="sumary.php"><div class="pull-left"><span>Resumen</span></div><div class="pull-right"><span class="label label-success">New</span></div><div class="clearfix"></div></a>
+              </li>
+              <li>
+                <a href="docs.php">Documentos</a>
+              </li>
+            </ul>
+          </li>
+          <?php if($_COOKIE['user'] == "investor") { ?>
+          <!-- properties -->
           <li>
-						<a href="list.php"><div class="pull-left"><i class="fa fa-university mr-20"></i><span class="right-nav-text">Proyectos</span></div><div class="clearfix"></div></a>
-					</li>
+            <a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr">
+              <div class="pull-left"><i class="fa fa-university mr-20"></i><span class="right-nav-text">Proyectos</span></div>
+              <div class="pull-right"><i class="ti-angle-down"></i></div>
+              <div class="clearfix"></div>
+            </a>
+            <ul id="dashboard_dr" class="collapse collapse-level-1">
+              <li>
+                <a class="active-page" href="upload-properties.php">Nuevo Proyecto</a>
+              </li>
+              <li>
+                <a href="my_projects.php">
+                  <div class="pull-left">
+                    <span>Mis proyectos</span>
+                  </div>
+                  <div class="pull-right">
+                    <span class="label label-success">1 Notificaci&oacute;n</span>
+                  </div>
+                  <div class="clearfix"></div>
+                </a>
+              </li>
+              <li>
+                <a href="list.php">Otros Proyectos</a>
+              </li>
+            </ul>
+          </li>
+          <!-- properties -->
+
+        <?php } else {?>
           <li>
-						<a href="calendar.php"><div class="pull-left"><i class="fa fa-calendar mr-20"></i><span class="right-nav-text">Calendario de pagos</span></div><div class="clearfix"></div></a>
-					</li>
-					<li>
-						<a href="statistics.php"><div class="pull-left"><i class="fa fa-bar-chart-o mr-20"></i><span class="right-nav-text">Estadísticas</span></div><div class="clearfix"></div></a>
-					</li>
+            <a href="list.php">
+              <div class="pull-left"><i class="fa fa-university mr-20"></i><span class="right-nav-text">Proyectos</span></div>
+              <div class="clearfix"></div>
+            </a>
+          </li>
+        <?php } ?>
           <li>
-						<a href="news.php"><div class="pull-left"><i class="ti-book mr-20"></i><span class="right-nav-text">Noticias</span></div><div class="clearfix"></div></a>
-					</li>
-				</ul>
-			</div>
-			<!-- /Left Sidebar Menu -->
+            <a href="calendar.php">
+              <div class="pull-left"><i class="fa fa-calendar mr-20"></i><span class="right-nav-text">Calendario de pagos</span></div>
+              <div class="clearfix"></div>
+            </a>
+          </li>
+          <li>
+            <a href="statistics.php">
+              <div class="pull-left"><i class="fa fa-bar-chart-o mr-20"></i><span class="right-nav-text">Estadísticas</span></div>
+              <div class="clearfix"></div>
+            </a>
+          </li>
+          <li>
+            <a href="news.php">
+              <div class="pull-left"><i class="ti-book mr-20"></i><span class="right-nav-text">Noticias</span></div>
+              <div class="clearfix"></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /Left Sidebar Menu -->
 
 			<!-- Right Sidebar Menu -->
 			<div class="fixed-sidebar-right">

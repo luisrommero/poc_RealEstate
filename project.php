@@ -389,23 +389,51 @@ if(!isset($_COOKIE['user'])) {
               <a class="active-page" href="home.php">Pagos Recibidos</a>
             </li>
             <li>
-              <a href="sumary.php">
-                <div class="pull-left"><span>Resumen</span></div>
-                <div class="pull-right"><span class="label label-success">New</span></div>
-                <div class="clearfix"></div>
-              </a>
+              <a href="sumary.php"><div class="pull-left"><span>Resumen</span></div><div class="pull-right"><span class="label label-success">New</span></div><div class="clearfix"></div></a>
             </li>
             <li>
               <a href="docs.php">Documentos</a>
             </li>
           </ul>
         </li>
+        <?php if($_COOKIE['user'] == "investor") { ?>
+        <!-- properties -->
+        <li>
+          <a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr">
+            <div class="pull-left"><i class="fa fa-university mr-20"></i><span class="right-nav-text">Proyectos</span></div>
+            <div class="pull-right"><i class="ti-angle-down"></i></div>
+            <div class="clearfix"></div>
+          </a>
+          <ul id="dashboard_dr" class="collapse collapse-level-1">
+            <li>
+              <a class="active-page" href="upload-properties.php">Nuevo Proyecto</a>
+            </li>
+            <li>
+              <a href="my_projects.php">
+                <div class="pull-left">
+                  <span>Mis proyectos</span>
+                </div>
+                <div class="pull-right">
+                  <span class="label label-success">1 Notificaci&oacute;n</span>
+                </div>
+                <div class="clearfix"></div>
+              </a>
+            </li>
+            <li>
+              <a href="list.php">Otros Proyectos</a>
+            </li>
+          </ul>
+        </li>
+        <!-- properties -->
+
+      <?php } else {?>
         <li>
           <a href="list.php">
             <div class="pull-left"><i class="fa fa-university mr-20"></i><span class="right-nav-text">Proyectos</span></div>
             <div class="clearfix"></div>
           </a>
         </li>
+      <?php } ?>
         <li>
           <a href="calendar.php">
             <div class="pull-left"><i class="fa fa-calendar mr-20"></i><span class="right-nav-text">Calendario de pagos</span></div>
@@ -420,14 +448,13 @@ if(!isset($_COOKIE['user'])) {
         </li>
         <li>
           <a href="news.php">
-            <div class="pull-left"><i class="fa fa-newspaper-o mr-20"></i><span class="right-nav-text">Noticias</span></div>
+            <div class="pull-left"><i class="ti-book mr-20"></i><span class="right-nav-text">Noticias</span></div>
             <div class="clearfix"></div>
           </a>
         </li>
       </ul>
     </div>
     <!-- /Left Sidebar Menu -->
-
     <!-- Right Sidebar Menu -->
     <div class="fixed-sidebar-right">
       <ul class="right-sidebar">

@@ -8,9 +8,9 @@ if ($user == 'admin@eos.com') {
   setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
   header("Location: home.php");
 
-} elseif($user == "rodrigo@investors.com") {
+} elseif($user == "rodrigo@other.com") {
   $cookie_name = "user";
-  $cookie_value = "guest";
+  $cookie_value = "investor";
   setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
   header("Location: home.php");
 
