@@ -22,6 +22,15 @@ if(!isset($_COOKIE['user'])) {
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 
+  <!-- vector map CSS -->
+  <link href="vendors/bower_components/jquery-wizard.js/css/wizard.css" rel="stylesheet" type="text/css"/>
+
+  <!-- jquery-steps css -->
+  <link rel="stylesheet" href="vendors/bower_components/jquery.steps/demo/css/jquery.steps.css">
+
+  <!-- Bootstrap Dropzone CSS -->
+  <link href="vendors/bower_components/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css"/>
+
 	<!-- Data table CSS -->
 	<link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
 
@@ -662,10 +671,404 @@ if(!isset($_COOKIE['user'])) {
 				<!-- Row -->
 				<div class="row">
           <!-- ==========content goes here========== -->
-          <h1 align=center>A File Preview Demo</h1>
-          <div id="status">Drag the files from a folder to a selected area ...</div>
-          <div id="drop">Drop files here.</div>
-          <div id="list"></div>
+
+          <!-- Title -->
+					<div class="row heading-bg">
+						<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+						  <h5 class="txt-dark">Upload Properties</h5>
+						</div>
+						<!-- Breadcrumb -->
+						<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+						  <ol class="breadcrumb">
+							<li><a href="#">Dashboard</a></li>
+							<li><a href="#"><span>form</span></a></li>
+							<li class="active"><span>Properties</span></li>
+						  </ol>
+						</div>
+						<!-- /Breadcrumb -->
+					</div>
+					<!-- /Title -->
+
+
+
+          <!-- form -->
+                <!-- wizard -->
+                <div class="form-group">
+                  <div class="input-group">
+
+                    <!--  -->
+
+
+
+
+                    <!--  -->
+                  </div>
+                </div>
+
+                <!-- Row -->
+      					<div class="row">
+      						<div class="col-sm-12">
+      							<div class="panel panel-default border-panel card-view">
+      								<div class="panel-heading">
+      									<div class="pull-left">
+      										<h6 class="panel-title txt-dark">UPLOAD PROPERTIES</h6>
+      									</div>
+      									<div class="clearfix"></div>
+      								</div>
+      								<div class="panel-wrapper collapse in">
+      									<div class="panel-body">
+      										<form id="example-advanced-form" action="#">
+      											<h3><span class="number"><i class="icon-user-following txt-black"></i></span><span class="head-font capitalize-font">signup</span></h3>
+      											<fieldset>
+      												<div class="row">
+
+                                <!-- upload files -->
+                                <div class="col-md-1-12">
+
+                                  <div class="panel-wrapper collapse in">
+                  									<div class="panel-body">
+                  										<div class="">
+                  											<div action="#" class="dropzone" id="my-awesome-dropzone">
+                  												<div class="fallback">
+                  													<input name="file" type="file" multiple />
+                  												</div>
+                  											</div>
+                  										</div>
+                  									</div>
+                  								</div>
+                                </div>
+                                <!--  -->
+
+      													<div class="col-sm-6">
+      														<div class="form-wrap">
+      															<div class="form-group">
+      																<div class="input-group">
+      																	<div class="input-group-addon"><i class="icon-user"></i></div>
+      																	<input type="text" class="form-control required"  name="Username" id="exampleInputuname" placeholder="Username">
+      																</div>
+      															</div>
+      															<div class="form-group">
+      																<div class="input-group">
+      																	<div class="input-group-addon"><i class="icon-envelope-open"></i></div>
+      																	<input type="email" class="form-control required" id="exampleInputEmail" name="email" placeholder="Enter email">
+      																</div>
+      															</div>
+      															<div class="form-group">
+      																<div class="input-group">
+      																	<div class="input-group-addon"><i class="icon-lock"></i></div>
+      																	<input id="password-2" type="password" class="form-control required" name="password" placeholder="Enter password">
+      																</div>
+      															</div>
+
+      															<div class="form-group mb-0">
+      																<div class="input-group">
+      																	<div class="input-group-addon"><i class="icon-lock"></i></div>
+      																	<input type="password" class="form-control required"  id="confirm-2" name="confirm"  placeholder="confirm password">
+      																</div>
+      															</div>
+      														</div>
+      													</div>
+      												</div>
+      											</fieldset>
+
+      											<h3><span class="number"><i class="icon-bag txt-black"></i></span><span class="head-font capitalize-font">shipping</span></h3>
+      											<fieldset>
+      												<div class="row">
+      													<div class="col-sm-12">
+      														<div class="form-wrap">
+      															<div class="form-group">
+      																<label class="control-label mb-10" for="exampleCountry">country:</label>
+      																<select id="exampleCountry" class="form-control required" name="country">
+      																	<option value="1">India</option>
+      																	<option value="2">Australia</option>
+      																	<option value="3">USA</option>
+      																	<option value="4">Japan</option>
+      																</select>
+      															</div>
+      															<div class="form-group">
+      																<div class="row">
+      																	<div class="col-md-6 col-xs-12">
+      																		<label class="control-label mb-10" for="firstName">first name:</label>
+      																		<input id="firstName" type="text" name="first_name" class="form-control required" value="" />
+      																	</div>
+      																	<div class="span1"></div>
+      																	<div class="col-md-6 col-xs-12">
+      																		<label class="control-label mb-10" for="lastName">last name:</label>
+      																		<input id="lastName" type="text" name="last_name" class="form-control required" value="" />
+      																	</div>
+      																</div>
+      															</div>
+      															<div class="form-group">
+      																<label class="control-label mb-10" for="addressDetail">Address:</label>
+      																<input id="addressDetail"  type="text" name="address" class="form-control required" value="" />
+      															</div>
+      															<div class="form-group">
+      																<label class="control-label mb-10" for="cityName">city:</label>
+      																<select id="cityName" class="form-control required" name="country">
+      																	<option value="">Banglore</option>
+      																	<option value="">Pune</option>
+      																</select>
+      															</div>
+      															<div class="form-group">
+      																<label class="control-label mb-10" for="stateName">state:</label>
+      																<select id="stateName" class="form-control required" name="country">
+      																	<option value="">Karnataka</option>
+      																	<option value="">Maharashtra</option>
+      																</select>
+      															</div>
+      															<div class="form-group">
+      																<label class="control-label mb-10" for="postalCode">zip/postal code:</label>
+      																<input id="postalCode" type="text" name="zip_code"  data-mask="99999-9999" class="form-control required" value="" />
+      															</div>
+      															<div class="form-group">
+      																<label class="control-label mb-10" for="phoneNumber">phone number:</label>
+      																<input type="text" id="phoneNumber"  data-mask="+40 999 999 999" name="phone_number" class="form-control required" value="" />
+      															</div>
+      															<div class="form-group">
+      																<label class="control-label mb-10" for="emailAddress">email address:</label>
+      																<input id="emailAddress" type="text" name="email_address" class="form-control required" value="" />
+      															</div>
+      															<div class="form-group mb-0">
+      																<div class="checkbox checkbox-success">
+      																	<input id="checkbox_1" type="checkbox">
+      																	<label for="checkbox_1">Billing address is same as shipping address.</label>
+      																</div>
+      															</div>
+      														</div>
+      													</div>
+      												</div>
+      											</fieldset>
+
+      											<h3><span class="number"><i class="icon-credit-card txt-black"></i></span><span class="head-font capitalize-font">payment</span></h3>
+      												<fieldset>
+      												<!--CREDIT CART PAYMENT-->
+      												<div class="row">
+      													<div class="col-sm-12">
+      														<div class="form-group">
+      															<label class="control-label mb-10" for="CreditCardType">card type:</label>
+      															<select id="CreditCardType" name="CreditCardType" class="form-control required">
+      																<option value="5">Visa</option>
+      																<option value="6">MasterCard</option>
+      																<option value="7">American Express</option>
+      																<option value="8">Discover</option>
+      															</select>
+      														</div>
+      														<div class="form-group">
+      															<label class="control-label mb-10" for="cardNo">Credit Card Number:</label>
+      															<input type="text" id="cardNo" data-mask="9999-9999-9999-9999" class="form-control required" name="car_number" value="" />
+      														</div>
+      														<div class="form-group">
+      															<label class="control-label mb-10" for="cvv">card cvv:</label>
+      															<input type="text" id="cvv" class="form-control  required" data-mask="999" name="car_code" value="" />
+      														</div>
+      														<div class="form-group">
+      															<label class="control-label mb-10">expiration date:</label>
+      															<div class="row">
+      																<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      																	<select class="form-control required" name="month">
+      																		<option value="">Month</option>
+      																		<option value="1">01</option>
+      																		<option value="2">02</option>
+      																		<option value="3">03</option>
+      																		<option value="4">04</option>
+      																		<option value="5">05</option>
+      																		<option value="6">06</option>
+      																	</select>
+      																</div>
+      																<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      																	<select class="form-control required" name="year">
+      																		<option value="1">Year</option>
+      																		<option value="2">2001</option>
+      																	</select>
+      																</div>
+      															</div>
+      														</div>
+      														<div class="form-group mb-0">
+      															<div class="row">
+      																<div class="col-md-12">
+      																	<ul class="cards">
+      																		<li class="visa hand"><img src="../img/1-s.png" alt="card"/></li>
+      																		<li class="mastercard hand"><img src="../img/2-s.png" alt="card"/></li>
+      																		<li class="amex hand"><img src="../img/3-s.png" alt="card"/></li>
+      																		<li class="amex hand"><img src="../img/4-s.png" alt="card"/></li>
+      																		</ul>
+      																	<div class="clearfix"></div>
+      																</div>
+      															</div>
+      														</div>
+
+      													</div>
+      												</div>
+      												<!--CREDIT CART PAYMENT END-->
+      											</fieldset>
+
+      											<h3><span class="number"><i class="icon-basket-loaded txt-black"></i></span><span class="head-font capitalize-font">review cart</span></h3>
+      											<fieldset>
+      													<table class="table display product-overview" id="datable_1">
+      														<thead>
+      															<tr>
+      																<th>Photo</th>
+      																<th>Product</th>
+      																<th>Quantity</th>
+      																<th>price</th>
+      																<th>Actions</th>
+      															</tr>
+      														</thead>
+      														<tfoot>
+      															<tr>
+      																<th colspan="3">Subtotal:</th>
+      																<th></th>
+      																<th></th>
+      															</tr>
+      														</tfoot>
+      														<tbody>
+      															<tr>
+      																<td>
+      																	<img src="../img/chair.jpg" alt="iMac" width="80">
+      																</td>
+      																<td>Rounded Chair</td>
+      																<td>
+      																<input class="vertical-spin" type="text" data-bts-button-down-class="btn btn-default"   data-bts-button-up-class="btn btn-default" value="20" name="vertical-spin">
+      																</td>
+      																<td>$400</td>
+
+      																<td><a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a></td>
+      															</tr>
+      															<tr>
+      																<td>
+      																	<img src="../img/chair2.jpg" alt="iMac" width="80">
+      																</td>
+      																<td>Rounded Chair</td>
+      																<td>
+      																	<input class="vertical-spin" type="text" data-bts-button-down-class="btn btn-default"   data-bts-button-up-class="btn btn-default" value="10" name="vertical-spin">
+      																</td>
+      																<td>$450</td>
+      																<td><a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a></td>
+      															</tr>
+      															<tr>
+      																<td>
+      																	<img src="../img/chair3.jpg" alt="iMac" width="80">
+      																</td>
+      																<td>Rounded Chair</td>
+      																<td>
+      																<input class="vertical-spin" type="text" data-bts-button-down-class="btn btn-default"   data-bts-button-up-class="btn btn-default" value="15" name="vertical-spin">
+      																</td>
+      																<td>$470</td>
+
+      																<td><a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a></td>
+      															</tr>
+      														</tbody>
+      													</table>
+      											</fieldset>
+      										</form>
+      									</div>
+      								</div>
+      							</div>
+      						</div>
+      					</div>
+      					<!-- /Row -->
+
+                <!-- /wizard -->
+
+
+								<div class="panel-wrapper collapse in">
+									<div class="panel-body">
+										<div class="form-wrap">
+											<div class="row">
+                        <div class="col-md-6">
+                        </div>
+												<div class="col-md-12 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-12" class="form-control">
+												</div>
+												<div class="col-md-6 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-6" class="form-control">
+												</div>
+												<div class="col-md-6 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-6" class="form-control">
+												</div>
+												<div class="col-md-4 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-4" class="form-control">
+												</div>
+												<div class="col-md-4 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-4" class="form-control">
+												</div>
+												<div class="col-md-4 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-4" class="form-control">
+												</div>
+												<div class="col-md-3 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-3" class="form-control">
+												</div>
+												<div class="col-md-3 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-3" class="form-control">
+												</div>
+												<div class="col-md-3 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-3" class="form-control">
+												</div>
+												<div class="col-md-3 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-3" class="form-control">
+												</div>
+												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-2" class="form-control">
+												</div>
+												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-2" class="form-control">
+												</div>
+												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-2" class="form-control">
+												</div>
+												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-2" class="form-control">
+												</div>
+												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-2" class="form-control">
+												</div>
+												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
+													<input type="text" placeholder=".col-sm-2" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
+													<input type="text" placeholder=".col-sm-1" class="form-control">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+					<!-- /Row -->
+          <!-- /form -->
+
+
 
           <!-- ==========content goes here========== -->
         </div>
@@ -706,6 +1109,25 @@ if(!isset($_COOKIE['user'])) {
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Form Wizard JavaScript -->
+		<script src="vendors/bower_components/jquery.steps/build/jquery.steps.min.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+
+		<!-- Form Wizard Data JavaScript -->
+		<script src="assets/dist/js/form-wizard-data.js"></script>
+
+    <!-- Starrr JavaScript -->
+    <script src="assets/dist/js/starrr.js"></script>
+
+    <!-- Bootstrap Touchspin JavaScript -->
+		<script src="vendors/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+
+    <!-- Dropzone JavaScript -->
+    <script src="vendors/bower_components/dropzone/dist/dropzone.js"></script>
+
+    <!-- Dropzone Init JavaScript -->
+    <script src="assets/dist/js/dropzone-data.js"></script>
 
 	<!-- Data table JavaScript -->
 	<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
@@ -756,96 +1178,7 @@ if(!isset($_COOKIE['user'])) {
 	<!-- Init JavaScript -->
 	<script src="assets/dist/js/init.js"></script>
 	<script src="assets/dist/js/dashboard-data.js"></script>
-  <style>
-  #drop {
-  min-height: 150px;
-  width: 250px;
-  border: 1px solid blue;
-  margin: 10px;
-  padding: 10px;
-}
-  </style>
-  <script>
-  if (window.FileReader) {
-  var drop;
-  addEventHandler(window, 'load', function() {
-    var status = document.getElementById('status');
-    drop = document.getElementById('drop');
-    var list = document.getElementById('list');
 
-    function cancel(e) {
-      if (e.preventDefault) {
-        e.preventDefault();
-      }
-      return false;
-    }
-
-    // Tells the browser that we *can* drop on this target
-    addEventHandler(drop, 'dragover', cancel);
-    addEventHandler(drop, 'dragenter', cancel);
-
-    addEventHandler(drop, 'drop', function(e) {
-      e = e || window.event; // get window.event if e argument missing (in IE)
-      if (e.preventDefault) {
-        e.preventDefault();
-      } // stops the browser from redirecting off to the image.
-
-      var dt = e.dataTransfer;
-      var files = dt.files;
-      for (var i = 0; i < files.length; i++) {
-        var file = files[i];
-        var reader = new FileReader();
-
-        //attach event handlers here...
-
-        reader.readAsDataURL(file);
-        addEventHandler(reader, 'loadend', function(e, file) {
-          var bin = this.result;
-          var newFile = document.createElement('div');
-          newFile.innerHTML = 'Loaded : ' + file.name + ' size ' + file.size + ' B';
-          list.appendChild(newFile);
-          var fileNumber = list.getElementsByTagName('div').length;
-          status.innerHTML = fileNumber < files.length ?
-            'Loaded 100% of file ' + fileNumber + ' of ' + files.length + '...' :
-            'Done loading. processed ' + fileNumber + ' files.';
-
-          var img = document.createElement("img");
-          img.file = file;
-          img.src = bin;
-          list.appendChild(img);
-        }.bindToEventHandler(file));
-      }
-      return false;
-    });
-    Function.prototype.bindToEventHandler = function bindToEventHandler() {
-      var handler = this;
-      var boundParameters = Array.prototype.slice.call(arguments);
-      console.log(boundParameters);
-      //create closure
-      return function(e) {
-        e = e || window.event; // get window.event if e argument missing (in IE)
-        boundParameters.unshift(e);
-        handler.apply(this, boundParameters);
-      }
-    };
-  });
-} else {
-  document.getElementById('status').innerHTML = 'Your browser does not support the HTML5 FileReader.';
-}
-
-function addEventHandler(obj, evt, handler) {
-  if (obj.addEventListener) {
-    // W3C method
-    obj.addEventListener(evt, handler, false);
-  } else if (obj.attachEvent) {
-    // IE method.
-    obj.attachEvent('on' + evt, handler);
-  } else {
-    // Old school method.
-    obj['on' + evt] = handler;
-  }
-}
-  </script>
 </body>
 
 </html>
