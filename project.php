@@ -6,31 +6,31 @@ if(!isset($_COOKIE['user'])) {
 
 
 } else {
-  include('database/con.php');      // move when cookies created
-  $con = connectionBD();       // move when cookies created
-  $id_list = $_GET["id"];
-  $amount = $_GET["amount"];
+  include('database/con.php');
+  $con      = connectionBD();
+  $id_list  = $_GET["id"];
+  $amount   = isset($_GET["amount"])?$_GET['amount']:'0';
 
   // List Table
-  $name_list = "[name_list]";
+  $name_list  = "[name_list]";
   $name_owner = "[name_owner]";
-  $inv_min = "[inv_min]";
+  $inv_min    = "[inv_min]";
   $percentage = "[percentage]";
 
   // Project Table
-  $p_goal = "[p_goal]";
-  $p_type = "[p_type]";
-  $p_address = "[p_address]";
-  $p_desc = "[p_desc]";
+  $p_goal     = "[p_goal]";
+  $p_type     = "[p_type]";
+  $p_address  = "[p_address]";
+  $p_desc     = "[p_desc]";
 
   // Images table
-  $path = ["public/assets/img/slide-01.jpg", "public/assets/img/slide-02.jpg","public/assets/img/slide-03.jpg"];
+  $path       = ["public/assets/img/slide-01.jpg", "public/assets/img/slide-02.jpg","public/assets/img/slide-03.jpg"];
   $footer_img = ["[footer_img_1]", "[footer_img_2]", "[footer_img_3]"];
 
   // SQL Scripts
-  $list_sql = "SELECT * FROM list WHERE id_list = " . $id_list . ";";
-  $project_sql = "SELECT * FROM project WHERE id_list = " . $id_list . ";";
-  $images_sql = "SELECT * FROM p_img WHERE id_list = " . $id_list . ";";
+  $list_sql     = "SELECT * FROM list WHERE id_list = " . $id_list . ";";
+  $project_sql  = "SELECT * FROM project WHERE id_list = " . $id_list . ";";
+  $images_sql   = "SELECT * FROM p_img WHERE id_list = " . $id_list . ";";
 
   // SQLi ResultSet
   $result_set_list    = mysqli_query($con, $list_sql);
@@ -40,31 +40,31 @@ if(!isset($_COOKIE['user'])) {
   // list variables initialization
   while ($row = mysqli_fetch_assoc($result_set_list)) {
     // List Table
-    $name_list = $row["name_list"];
+    $name_list  = $row["name_list"];
     $name_owner = $row["name_owner"];
-    $inv_min = $row["inv_min"];
+    $inv_min    = $row["inv_min"];
     $percentage = $row["percentage"];
   }
 
   // project variables initialization
   while ($row = mysqli_fetch_assoc($result_set_project)) {
     // Project Table
-    $p_goal = $row["p_goal"];
-    $p_type = $row["p_type"];
-    $p_address = $row["p_address"];
-    $p_desc = $row["p_desc"];
+    $p_goal     = $row["p_goal"];
+    $p_type     = $row["p_type"];
+    $p_address  = $row["p_address"];
+    $p_desc     = $row["p_desc"];
   }
+
+  // Principal variables
+  $path = "assets/img/uploads/";
+  $img = array();
+  $footer_img = array();
 
   // images array initialization
   while ($row = mysqli_fetch_assoc($result_set_img)) {
     // Images table
-    $path = ["public/assets/img/slide-01.jpg",
-             "public/assets/img/slide-02.jpg",
-             "public/assets/img/slide-03.jpg"];
-
-    $footer_img = ["[footer_img_1]",
-                   "[footer_img_2]",
-                   "[footer_img_3]"];
+    array_push($img, $path . $row['path_img']);
+    array_push($footer_img, $row['footer_img']);
   }
 
 }
@@ -894,7 +894,7 @@ if(!isset($_COOKIE['user'])) {
                        <li data-target="#testimonial_slider" data-slide-to="1"></li>
                        <li data-target="#testimonial_slider" data-slide-to="2"></li>
                        -->
-                      <?php for ($i=0; $i < sizeof($path); $i++) { ?>
+                      <?php for ($i=0; $i < sizeof($img); $i++) { ?>
                       <?php if ($i == 0) { ?>
                       <li data-target="#testimonial_slider" data-slide-to="<?php echo $i ?>" class="active"></li>
 
@@ -905,11 +905,11 @@ if(!isset($_COOKIE['user'])) {
                       <?php } ?>
                     </ol>
                     <div role="listbox" class="carousel-inner">
-                      <?php for ($i=0; $i < sizeof($path); $i++) { ?>
+                      <?php for ($i=0; $i < sizeof($img); $i++) { ?>
                       <?php if ($i == 0) { ?>
                       <div class="item active">
                         <div class="testimonial-wrap text-center">
-                          <img src="<?php echo $path[$i] ?>" width="500px">
+                          <img src="<?php echo $img[$i] ?>" width="500px">
                           <span class="testi-pers-name block mt-15  txt-dark capitalize-font head-font">
                             <?php echo $name_owner ?>
                           </span>
@@ -922,7 +922,7 @@ if(!isset($_COOKIE['user'])) {
                       <?php } else { ?>
                       <div class="item">
                         <div class="testimonial-wrap text-center">
-                          <img src="<?php echo $path[$i] ?>" width="500px">
+                          <img src="<?php echo $img[$i] ?>" width="500px">
 
                           <span class="testi-pers-name block mt-15  txt-dark capitalize-font head-font">
                             <?php echo $name_owner ?>
@@ -964,7 +964,7 @@ if(!isset($_COOKIE['user'])) {
                     </div>
                   </div>
                   <!-- END carousel-->
-                  <p class="text-muted">Total Recaudado.</p>
+                  <p class="text-muted">Total Recaudado: <?php echo $percentage ?>%</p>
                   <br>
                   <div class="progress progress-lg">
                     <div class="progress-bar progress-bar-info active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $percentage ?>%" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
@@ -990,14 +990,15 @@ if(!isset($_COOKIE['user'])) {
                   <form id="example-advanced-form">
                     <h3>
                       <span class="number"><i class="icon-bag txt-black"></i></span>
-                      <span class="head-font capitalize-font">Monto</span></h3>
+                      <span class="head-font capitalize-font">Monto</span>
+                    </h3>
                     <fieldset>
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="form-wrap">
                             <div class="form-group">
                               <div class="input-group">
-                                <div class="input-group-addon"><i class="icon-wallet"></i></div>
+                                <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
                                 <input type="text" class="form-control required" value="<?php echo $amount ?>" name="Username" id="exampleInputuname" placeholder="Username">
                               </div>
                             </div>
