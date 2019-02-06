@@ -634,172 +634,180 @@ if(!isset($_COOKIE['user'])) {
         <!-- Row -->
         <div class="row">
           <!-- ==========content goes here========== -->
-          <div class="col-sm-12 col-xs-12">
-					<div class="panel panel-default border-panel card-view panel-refresh">
-					<div class="refresh-container">
-					<div class="la-anim-1"></div>
-					</div>
-					<div class="panel-heading">
-					<div class="pull-left">
-					<h6 class="panel-title txt-dark">user statistics</h6>
-					</div>
-					<div class="pull-right">
-					<a href="#" class="pull-left inline-block refresh mr-15">
-					<i class="zmdi zmdi-replay"></i>
-					</a>
-					<a href="#" class="pull-left inline-block full-screen mr-15">
-					<i class="zmdi zmdi-fullscreen"></i>
-					</a>
-					<div class="pull-left inline-block dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></a>
-					<ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
-					<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Devices</a></li>
-					<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>General</a></li>
-					<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Referral</a></li>
-					</ul>
-					</div>
-					</div>
-					<div class="clearfix"></div>
-					</div>
 
-					<div class="panel-wrapper collapse in">
-					<div class="panel-body">
-					<div id="ct_chart_2" class="" style="height:326px;"></div>
-					<ul class="flex-stat mt-40">
-					<li>
-					<span class="block">Weekly Users</span>
-					<span class="block txt-dark weight-500 font-18"><span class="counter-anim">3,24,222</span></span>
-					</li>
-					<li>
-					<span class="block">Monthly Users</span>
-					<span class="block txt-dark weight-500 font-18"><span class="counter-anim">1,23,432</span></span>
-					</li>
-					<li>
-					<span class="block">Trend</span>
-					<span class="block">
-					<i class="zmdi zmdi-trending-up txt-success font-24"></i>
-					</span>
-					</li>
-					</ul>
-					</div>
-					</div>
-					</div>
-					</div>
-					<div class="col-sm-12 col-xs-12">
-					<div class="panel panel-default border-panel panel-tabs card-view">
-					<div class="panel-heading">
-					<div class="pull-left auto-width">
-					<h6 class="panel-title txt-dark">Project Sales</h6>
-					</div>
-					<div class="pull-right auto-width mt-0">
-					<div  class="tab-struct custom-tab-1">
-					<ul role="tablist" class="nav nav-tabs" id="myTabs_9">
-					<li class="active pull-left" role="presentation"><a aria-expanded="true"  data-toggle="tab" role="tab" id="home_tab_9" href="#home_9">Last Month</a></li>
-					<li role="presentation" class="pull-left"><a  data-toggle="tab" id="profile_tab_9" role="tab" href="#profile_9" aria-expanded="false">All Time</a></li>
-					</ul>
-					</div>	
-					</div>
-							
-					<div class="clearfix"></div>
-					</div>
-					<div class="panel-wrapper collapse in">
-					<div class="panel-body pa-0 row">
-					<div class="tab-content" id="myTabContent_9">
-					<div  id="home_9" class="tab-pane fade active in" role="tabpanel">
-					<div class="table-wrap">
-					<div class="table-responsive">
-					<table class="table table-hover mt-15 mb-0">
-					<thead>
-					<tr>
-					<th>#</th>
-					<th>Real Estate</th>
-					<th>Popularity</th>
-					<th>Sales</th>
-					</tr>
-					</thead>
-					<tbody>
-					<tr>
-					<td>1</td>
-					<td>Lomas de Chapultepec, CDMX</td>
-					<td><span class="peity-line" data-width="90" data-peity='{ "fill": ["transparent"], "stroke":["#ff6028"]}' data-height="40">0,-3,-2,-4,5,-4,3,-2,5,-1</span> </td>
-					<td><span class="text-danger text-semibold"><i class="fa fa-level-down" aria-hidden="true"></i> 28.76%</span> </td>
-					</tr>
-					<tr>
-					<td>2</td>
-					<td>Santa Fé, CDMX</td>
-					<td><span class="peity-line" data-width="90" data-peity='{ "fill": ["transparent"], "stroke":["#ff6028"]}' data-height="40">0,-1,1,-2,-3,1,-2,-3,1,-2</span> </td>
-					<td><span class="text-danger text-semibold"><i class="fa fa-level-down" aria-hidden="true"></i> 8.55%</span> </td>
-					</tr>
-					<tr>
-					<td>3</td>
-					<td>Polanco, CDMX</td>
-					<td><span class="peity-line" data-width="90" data-peity='{ "fill": ["transparent"], "stroke":["#ff6028"]}' data-height="40">0,3,6,1,2,4,6,3,2,1</span> </td>
-					<td><span class="text-success text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 58.56%</span> </td>
-					</tr>
-					<tr>
-					<td>4</td>
-					<td>La Condesa, CDMX</td>
-					<td><span class="peity-line" data-width="90" data-peity='{ "fill": ["transparent"], "stroke":["#ff6028"]}' data-height="40">0,3,6,4,5,4,7,3,4,2</span> </td>
-					<td><span class="text-success text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
-					</tr>
-					<tr>
-					<td>5</td>
-					<td>Avenida Reforma, CDMX</td>
-					<td><span class="peity-line" data-width="90" data-peity='{ "fill": ["transparent"], "stroke":["#ff6028"]}' data-height="40">0,3,6,4,5,4,7,3,4,2</span> </td>
-					<td><span class="text-success text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
-					</tr>
-					</tbody>
-					</table>
-					</div>
-					</div>
-					</div>
-          <!-- ==========content goes here========== -->
-        			</div>
-				<!-- /Row -->
+          <div class="">
+            <div class="col-sm-12 col-xs-12">
+              <div class="panel panel-default border-panel card-view panel-refresh">
+                <div class="refresh-container">
+                  <div class="la-anim-1"></div>
+                </div>
+                <div class="panel-heading">
+                  <div class="pull-left">
+                    <h6 class="panel-title txt-dark">user statistics</h6>
+                  </div>
+                  <div class="pull-right">
+                    <a href="#" class="pull-left inline-block refresh mr-15">
+                      <i class="zmdi zmdi-replay"></i>
+                    </a>
+                    <a href="#" class="pull-left inline-block full-screen mr-15">
+                      <i class="zmdi zmdi-fullscreen"></i>
+                    </a>
+                    <div class="pull-left inline-block dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></a>
+                      <ul class="dropdown-menu bullet dropdown-menu-right" role="menu">
+                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Devices</a></li>
+                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>General</a></li>
+                        <li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Referral</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
 
-					</div>
-
-			<!-- Footer -->
-			<footer class="footer pl-30 pr-30">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6">
-							<p>2019 &copy; eos Software. All rights reserved</p>
-						</div>
-						<div class="col-sm-6 text-right">
-							<p>Follow Us</p>
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-						</div>
-					</div>
-				</div>
-			</footer>
-			<!-- /Footer -->
-
-		</div>
-        <!-- /Main Content -->
-
-    </div>
-      <!-- /Row -->
-
-    <!-- Footer -->
-    <footer class="footer pl-30 pr-30">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <p>2019 &copy; eos Software. All rights reserved</p>
+                <div class="panel-wrapper collapse in">
+                  <div class="panel-body">
+                    <div id="ct_chart_2" class="" style="height:326px;"></div>
+                    <ul class="flex-stat mt-40">
+                      <li>
+                        <span class="block">Weekly Users</span>
+                        <span class="block txt-dark weight-500 font-18"><span class="counter-anim">3,24,222</span></span>
+                      </li>
+                      <li>
+                        <span class="block">Monthly Users</span>
+                        <span class="block txt-dark weight-500 font-18"><span class="counter-anim">1,23,432</span></span>
+                      </li>
+                      <li>
+                        <span class="block">Trend</span>
+                        <span class="block">
+                          <i class="zmdi zmdi-trending-up txt-success font-24"></i>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-xs-12">
+              <div class="panel panel-default border-panel panel-tabs card-view">
+                <div class="panel-heading">
+                  <div class="pull-left auto-width">
+                    <h6 class="panel-title txt-dark">Project Sales</h6>
+                  </div>
+                  <div class="pull-right auto-width mt-0">
+                    <div class="tab-struct custom-tab-1">
+                      <ul role="tablist" class="nav nav-tabs" id="myTabs_9">
+                        <li class="active pull-left" role="presentation"><a aria-expanded="true" data-toggle="tab" role="tab" id="home_tab_9" href="#home_9">Last Month</a></li>
+                        <li role="presentation" class="pull-left"><a data-toggle="tab" id="profile_tab_9" role="tab" href="#profile_9" aria-expanded="false">All Time</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="panel-wrapper collapse in">
+                  <div class="panel-body pa-0 row">
+                    <div class="tab-content" id="myTabContent_9">
+                      <div id="home_9" class="tab-pane fade active in" role="tabpanel">
+                        <div class="table-wrap">
+                          <div class="table-responsive">
+                            <table class="table table-hover mt-15 mb-0">
+                              <thead>
+                                <tr>
+                                  <th>#</th>
+                                  <th>Real Estate</th>
+                                  <th>Popularity</th>
+                                  <th>Sales</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>1</td>
+                                  <td>Lomas de Chapultepec, CDMX</td>
+                                  <td><span class="peity-line" data-width="90" data-peity='{ "fill": ["transparent"], "stroke":["#ff6028"]}' data-height="40">0,-3,-2,-4,5,-4,3,-2,5,-1</span> </td>
+                                  <td><span class="text-danger text-semibold"><i class="fa fa-level-down" aria-hidden="true"></i> 28.76%</span> </td>
+                                </tr>
+                                <tr>
+                                  <td>2</td>
+                                  <td>Santa Fé, CDMX</td>
+                                  <td><span class="peity-line" data-width="90" data-peity='{ "fill": ["transparent"], "stroke":["#ff6028"]}' data-height="40">0,-1,1,-2,-3,1,-2,-3,1,-2</span> </td>
+                                  <td><span class="text-danger text-semibold"><i class="fa fa-level-down" aria-hidden="true"></i> 8.55%</span> </td>
+                                </tr>
+                                <tr>
+                                  <td>3</td>
+                                  <td>Polanco, CDMX</td>
+                                  <td><span class="peity-line" data-width="90" data-peity='{ "fill": ["transparent"], "stroke":["#ff6028"]}' data-height="40">0,3,6,1,2,4,6,3,2,1</span> </td>
+                                  <td><span class="text-success text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 58.56%</span> </td>
+                                </tr>
+                                <tr>
+                                  <td>4</td>
+                                  <td>La Condesa, CDMX</td>
+                                  <td><span class="peity-line" data-width="90" data-peity='{ "fill": ["transparent"], "stroke":["#ff6028"]}' data-height="40">0,3,6,4,5,4,7,3,4,2</span> </td>
+                                  <td><span class="text-success text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
+                                </tr>
+                                <tr>
+                                  <td>5</td>
+                                  <td>Avenida Reforma, CDMX</td>
+                                  <td><span class="peity-line" data-width="90" data-peity='{ "fill": ["transparent"], "stroke":["#ff6028"]}' data-height="40">0,3,6,4,5,4,7,3,4,2</span> </td>
+                                  <td><span class="text-success text-semibold"><i class="fa fa-level-up" aria-hidden="true"></i> 35.76%</span> </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-6 text-right">
-            <p>Follow Us</p>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
+          <!-- ==========content goes here========== -->
+        </div>
+        <!-- /Row -->
+
+      </div>
+
+      <!-- Footer -->
+
+      <footer class="footer pl-30 pr-30">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>2019 &copy; eos Software. All rights reserved</p>
+            </div>
+            <div class="col-sm-6 text-right">
+              <p>Follow Us</p>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
           </div>
         </div>
+      </footer>
+      <!-- /Footer -->
+
+    </div>
+    <!-- /Main Content -->
+
+  </div>
+  <!-- /Row -->
+
+  <!-- Footer -->
+  <footer class="footer pl-30 pr-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p>2019 &copy; eos Software. All rights reserved</p>
+        </div>
+        <div class="col-sm-6 text-right">
+          <p>Follow Us</p>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
       </div>
-    </footer>
-    <!-- /Footer -->
+    </div>
+  </footer>
+  <!-- /Footer -->
 
   </div>
   <!-- /Main Content -->
