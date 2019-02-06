@@ -1,7 +1,7 @@
 /*FormWizard Init*/
 $(function(){
 	"use strict";
-	
+
 	/* Basic Wizard Init*/
 	if($('#example-basic').length >0)
 		$("#example-basic").steps({
@@ -20,9 +20,9 @@ $(function(){
 			transitionEffect: "fade",
 			titleTemplate: '#title#',
 			labels: {
-				finish: "place order",
-				next: "Next",
-				previous: "Previous",
+				finish: "Publicar",
+				next: "Siguiente",
+				previous: "Anterior",
 			},
 			onStepChanging: function (event, currentIndex, newIndex)
 			{
@@ -53,7 +53,9 @@ $(function(){
 			},
 			onFinished: function (event, currentIndex)
 			{
-				alert("Submitted!");
+				// alert("aqui hacer subit via js");
+				document.propertyForm.action="submit_form.php";
+				document.propertyForm.submit();
 			}
 		}).validate({
 			errorPlacement: function errorPlacement(error, element) { element.before(error); },
@@ -64,7 +66,7 @@ $(function(){
 			}
 		});
 	}
-	
+
 	$('#datable_1').DataTable({
 		 "bFilter": false,
 		 "bLengthChange": false,
@@ -72,7 +74,7 @@ $(function(){
 		 "bInfo": false,
 		  "footerCallback": function ( row, data, start, end, display ) {
 				var api = this.api(), data;
-	 
+
 				// Remove the formatting to get integer data for summation
 				var intVal = function ( i ) {
 					return typeof i === 'string' ?
@@ -80,7 +82,7 @@ $(function(){
 						typeof i === 'number' ?
 							i : 0;
 				};
-	 
+
 				// Total over all pages
 				var total = api
 					.column( 3 )
@@ -88,7 +90,7 @@ $(function(){
 					.reduce( function (a, b) {
 						return intVal(a) + intVal(b);
 					}, 0 );
-	 
+
 				// Total over this page
 				var pageTotal = api
 					.column( 3, { page: 'current'} )
@@ -96,13 +98,12 @@ $(function(){
 					.reduce( function (a, b) {
 						return intVal(a) + intVal(b);
 					}, 0 );
-	 
+
 				// Update footer
 				$( api.column( 3 ).footer() ).html(
 					'$'+pageTotal
 				);
 			}
 	});
-	
+
 });
-		

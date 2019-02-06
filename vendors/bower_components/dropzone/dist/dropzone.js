@@ -525,6 +525,7 @@
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         file = _ref[_i];
         if (file.status === Dropzone.UPLOADING || file.status === Dropzone.QUEUED) {
+            console.log(_results);
           _results.push(file);
         }
       }

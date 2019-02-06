@@ -717,14 +717,13 @@ if(!isset($_COOKIE['user'])) {
       								</div>
       								<div class="panel-wrapper collapse in">
       									<div class="panel-body">
-      										<form id="example-advanced-form" action="#">
+      										<form id="example-advanced-form" name="propertyForm" action="#">
       											<h3><span class="number"><i class="icon-user-following txt-black"></i></span><span class="head-font capitalize-font">signup</span></h3>
       											<fieldset>
       												<div class="row">
 
                                 <!-- upload files -->
                                 <div class="col-md-1-12">
-
                                   <div class="panel-wrapper collapse in">
                   									<div class="panel-body">
                   										<div class="">
@@ -931,7 +930,6 @@ if(!isset($_COOKIE['user'])) {
       																<input class="vertical-spin" type="text" data-bts-button-down-class="btn btn-default"   data-bts-button-up-class="btn btn-default" value="20" name="vertical-spin">
       																</td>
       																<td>$400</td>
-
       																<td><a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a></td>
       															</tr>
       															<tr>
@@ -954,13 +952,13 @@ if(!isset($_COOKIE['user'])) {
       																<input class="vertical-spin" type="text" data-bts-button-down-class="btn btn-default"   data-bts-button-up-class="btn btn-default" value="15" name="vertical-spin">
       																</td>
       																<td>$470</td>
-
       																<td><a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a></td>
       															</tr>
       														</tbody>
       													</table>
       											</fieldset>
       										</form>
+                          <!-- /form -->
       									</div>
       								</div>
       							</div>
@@ -969,104 +967,7 @@ if(!isset($_COOKIE['user'])) {
       					<!-- /Row -->
 
                 <!-- /wizard -->
-
-
-								<div class="panel-wrapper collapse in">
-									<div class="panel-body">
-										<div class="form-wrap">
-											<div class="row">
-                        <div class="col-md-6">
-                        </div>
-												<div class="col-md-12 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-12" class="form-control">
-												</div>
-												<div class="col-md-6 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-6" class="form-control">
-												</div>
-												<div class="col-md-6 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-6" class="form-control">
-												</div>
-												<div class="col-md-4 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-4" class="form-control">
-												</div>
-												<div class="col-md-4 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-4" class="form-control">
-												</div>
-												<div class="col-md-4 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-4" class="form-control">
-												</div>
-												<div class="col-md-3 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-3" class="form-control">
-												</div>
-												<div class="col-md-3 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-3" class="form-control">
-												</div>
-												<div class="col-md-3 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-3" class="form-control">
-												</div>
-												<div class="col-md-3 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-3" class="form-control">
-												</div>
-												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-2" class="form-control">
-												</div>
-												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-2" class="form-control">
-												</div>
-												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-2" class="form-control">
-												</div>
-												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-2" class="form-control">
-												</div>
-												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-2" class="form-control">
-												</div>
-												<div class="col-md-2 col-sm-12 col-xs-12 form-group">
-													<input type="text" placeholder=".col-sm-2" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-												<div class="col-md-1 col-sm-12 col-xs-12 form-group mb-0">
-													<input type="text" placeholder=".col-sm-1" class="form-control">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
 					<!-- /Row -->
-          <!-- /form -->
 
 
 
@@ -1111,7 +1012,7 @@ if(!isset($_COOKIE['user'])) {
     <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Form Wizard JavaScript -->
-		<script src="vendors/bower_components/jquery.steps/build/jquery.steps.min.js"></script>
+		<script src="vendors/bower_components/jquery.steps/build/jquery.steps.js"></script>
 		<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
 
 		<!-- Form Wizard Data JavaScript -->

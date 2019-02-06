@@ -355,7 +355,10 @@ if(!isset($_COOKIE['user'])) {
         <?php } else {?>
           <li>
             <a href="list.php">
-              <div class="pull-left"><i class="fa fa-university mr-20"></i><span class="right-nav-text">Proyectos</span></div>
+              <div class="pull-left">
+                <i class="fa fa-university mr-20"></i>
+                <span class="right-nav-text">Proyectos</span>
+              </div>
               <div class="clearfix"></div>
             </a>
           </li>
@@ -535,7 +538,6 @@ if(!isset($_COOKIE['user'])) {
 										</div>
 										<div class="set-height-wrap">
 											<div class="streamline message-box nicescroll-bar">
-
 												<a href="javascript:void(0)">
 													<div class="sl-item unread-message">
 														<div class="sl-avatar avatar avatar-sm avatar-circle">
@@ -564,11 +566,11 @@ if(!isset($_COOKIE['user'])) {
 														</div>
 													</div>
 												</a>
-
 											</div>
 										</div>
 									</div>
 								</div>
+                
 								<div  id="todo_tab" class="tab-pane fade" role="tabpanel">
 									<div class="todo-box-wrap">
 										<div class="add-todo">

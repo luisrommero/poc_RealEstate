@@ -3,7 +3,7 @@ $(document).ready(function() {
   var slider = document.getElementById("myRange");
   var output = document.getElementById("demo");
   var list_id = null;
-  $('#myRange').mousemove(function(){
+  $('.slider').mousemove(function(){
     list_id = $(this).data('id');
   });
 
