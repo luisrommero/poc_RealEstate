@@ -718,7 +718,7 @@ if(!isset($_COOKIE['user'])) {
       								<div class="panel-wrapper collapse in">
       									<div class="panel-body">
       										<form id="example-advanced-form" method="post" name="propertyForm" enctype="multipart/form-data">
-      											<h3><span class="number"><i class="icon-user-following txt-black"></i></span><span class="head-font capitalize-font">signup</span></h3>
+      											<h3><span class="number"><i class="icon-user-following txt-black"></i></span><span class="head-font capitalize-font">Datos Básicos de Projecto</span></h3>
       											<fieldset>
       												<div class="row">
 
@@ -762,7 +762,7 @@ if(!isset($_COOKIE['user'])) {
       													</div>
       												</div>
       											</fieldset>
-      											<h3><span class="number"><i class="icon-bag txt-black"></i></span><span class="head-font capitalize-font">shipping</span></h3>
+      											<h3><span class="number"><i class="icon-bag txt-black"></i></span><span class="head-font capitalize-font">Tipo y Descripci&oacute;n</span></h3>
       											<fieldset>
       												<div class="row">
       													<div class="col-sm-12">

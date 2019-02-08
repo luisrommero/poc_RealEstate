@@ -16,3 +16,7 @@ function connectionBD() {
   // echo $conn->num_rows;
   return $con;
 }
+
+// SET FOREIGN_KEY_CHECKS = 0; 
+// TRUNCATE table $table_name;
+// SET FOREIGN_KEY_CHECKS = 1;

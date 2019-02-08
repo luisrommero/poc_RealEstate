@@ -99,7 +99,6 @@ if(!isset($_COOKIE['user'])) {
 											<a href="index2.html"><div class="pull-left"><i class="ti-money  mr-20"></i><span class="right-nav-text">Cryptocurrency</span></div><div class="pull-right"><span class="label label-success">Hot</span></div><div class="clearfix"></div></a>
 											<a href="profile.html"><div class="pull-left"><i class="ti-briefcase  mr-20"></i><span class="right-nav-text">Profile</span></div><div class="clearfix"></div></a>
 										</li> -->
-
                     <!-- <li class="col-md-3 col-xs-6 col-menu-list">
 											<a href="javascript:void(0);">
 												<div class="pull-left">
@@ -684,13 +683,17 @@ if(!isset($_COOKIE['user'])) {
                           <ol class="carousel-indicators">
                              <li data-target="#carousel-example-captions-1" data-slide-to="0" class="active"></li>
                              <li data-target="#carousel-example-captions-1" data-slide-to="1"></li>
+                             <li data-target="#carousel-example-captions-1" data-slide-to="2"></li>
                           </ol>
                           <div role="listbox" class="carousel-inner">
                              <div class="item active">
-                               <img src="assets/img/gallery/mock1.jpg" alt="First slide image">
+                               <img src="assets/img/uploads/slide-01-san.jpg" alt="First slide image">
                              </div>
                              <div class="item">
-                               <img src="assets/img/gallery/mock4.jpg" alt="Second slide image">
+                               <img src="assets/img/uploads/slide-02.jpg" alt="Second slide image">
+                             </div>
+                             <div class="item">
+                               <img src="assets/img/uploads/slide-03.jpg" alt="Second slide image">
                              </div>
                           </div>
                         </div>
@@ -700,22 +703,28 @@ if(!isset($_COOKIE['user'])) {
 
                     <div class="col-md-9">
                       <div class="product-detail-wrap">
-                        <div class="">
                           <!-- progress bar -->
-                          <div class="progress mt-40">
-  													<div class="progress-bar progress-bar-info active progress-bar-striped"
-                                 aria-valuenow="85"
-                                 aria-valuemin="0"
-                                 aria-valuemax="100"
-                                 style="width: <?php echo $row['percentage'] ?>%"
-                                 role="progressbar">
+                          <div class="col-md-6">
+                            <div class="progress mt-40">
+                              <div class="progress-bar progress-bar-info active progress-bar-striped"
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="width: <?php echo $row['percentage'] ?>%"
+                              role="progressbar">
+                              </div>
                             </div>
-  												</div>
+                            <div class="average-review inline-block mb-10">
+                              &nbsp;(<span class="review-count"><?php echo $row['percentage'] ?>%</span> de progreso)
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="pt-20">
+      												<canvas id="chart_2" height="210"></canvas>
+      											</div>
+                          </div>
                           <!-- progress bar -->
-                        </div>
-                        <div class="average-review inline-block mb-10">
-                          &nbsp;(<span class="review-count"><?php echo $row['percentage'] ?>%</span> de progreso)
-                        </div>
+
                         <h4 class="mb-5 weight-500">
                           <?php echo $row['name_list'] ?>
                         </h4>
@@ -857,10 +866,26 @@ if(!isset($_COOKIE['user'])) {
 
   <!-- Init JavaScript -->
   <script src="assets/dist/js/init.js"></script>
-  <script src="assets/dist/js/dashboard-data.js"></script>
+  <!-- <script src="assets/dist/js/dashboard-data.js"></script> -->
 
   <!-- js functions for list -->
   <script type="text/javascript" src="assets/dist/js/extras-list.js"></script>
 </body>
 
 </html>
+<!--
+deducir impuestos
+comisión inversionistas
+
+10 mil, taza anual 13%, dura 18 meses, comisión inv 0.1, calcular retorno en 5 pasos:
+
+1.- ganancia de intereses por un año: 10,000 * 0.13 = 1,300
+2.- ganancia de intereses por los 18 meses del proyecto: 1,300 x (18/12) = 1,950
+3.- retención de ISR de 20%: 1,950 x 0.20 = 390
+4.- restar comisión del inversionista 0.1, aplica a capital invertido más intereses: (10,000 + 1950) * 0.001 = 11.95
+5.- al final del plazo se recibirá: 10,000 + 1950 - 390 - 11.95 = 11,548.05
+
+
+
+
+-->

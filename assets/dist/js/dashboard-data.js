@@ -1,6 +1,6 @@
 /*Dashboard Init*/
- 
-"use strict"; 
+
+"use strict";
 
 /*****Ready function start*****/
 $(document).ready(function(){
@@ -14,13 +14,13 @@ $(document).ready(function(){
 		var ctx6 = document.getElementById("chart_2").getContext("2d");
 		var data6 = {
 			 labels: [
-			"organic",
-			"Referral",
-			"Other"
+			"Invertido",
+			"ISR y Comisión",
+			"Ganancia"
 		],
 		datasets: [
 			{
-				data: [200,50,250],
+				data: [10000.0,401.95,1950],
 				backgroundColor: [
 					"#ff6028",
 					"#ff936d",
@@ -33,7 +33,7 @@ $(document).ready(function(){
 				]
 			}]
 		};
-		
+
 		var pieChart  = new Chart(ctx6,{
 			type: 'pie',
 			data: data6,
@@ -59,7 +59,7 @@ $(document).ready(function(){
 			}
 		});
 	}
-	
+
 	if($('#ct_chart_2').length > 0) {
 		// Area Chart
 		var data=[{
@@ -200,9 +200,9 @@ $(document).ready(function(){
 				gridTextFamily:"Roboto",
 				parseTime: false,
 				fillOpacity:0.2
-			});	
+			});
 	}
-	
+
 	if( $('#ct_chart_3').length > 0 ){
 		new Chartist.Pie('#ct_chart_3', {
 		  series: [20, 10, 30, 40]
@@ -214,7 +214,7 @@ $(document).ready(function(){
 		  showLabel: true
 		});
 	}
-	
+
 	if( $('#ct_chart_5').length > 0 ){
 		new Chartist.Bar('#ct_chart_5', {
 		  labels: ['Qt1', 'Qt2', 'Qt3', 'Qt4'],
@@ -237,7 +237,7 @@ $(document).ready(function(){
 		  }
 		});
 	}
-	
+
 	if( $('#ct_chart_7').length > 0 ){
 		new Chartist.Bar('#ct_chart_7', {
 		  labels: ['Q1', 'Q2', 'Q3', 'Q4'],
@@ -274,7 +274,7 @@ $(window).on("load",function(){
 			position: 'bottom-right',
 			loaderBg:'#e8af48',
 			icon: 'warning',
-			hideAfter: 3500, 
+			hideAfter: 3500,
 			stack: 6
 		});
 	}, 3000);
@@ -282,7 +282,7 @@ $(window).on("load",function(){
 /*****Load function* end*****/
 
 /*****Sparkline function start*****/
-var sparklineLogin = function() { 
+var sparklineLogin = function() {
 	if( $('#sparkline_1').length > 0 ){
 		$("#sparkline_1").sparkline([2,4,4,6,8,5,6,4,8,6,6], {
 			type: 'bar',
@@ -293,7 +293,7 @@ var sparklineLogin = function() {
 			barColor: '#ed8739',
 			highlightSpotColor: '#ed8739'
 		});
-	}	
+	}
 }
 /*****Sparkline function end*****/
 
@@ -303,8 +303,8 @@ $(window).on("resize", function () {
 	/*Sparkline Resize*/
 	clearTimeout(sparkResize);
 	sparkResize = setTimeout(sparklineLogin, 200);
-	
-}).resize(); 
+
+}).resize();
 /*****Resize function end*****/
 
 /*****Function Call start*****/

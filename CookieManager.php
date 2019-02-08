@@ -18,3 +18,5 @@ if ($user == 'admin@eos.com') {
   header("Location: public/sign-in.php#error");
 
 }
+// estadisticas de inversión home.php
+//

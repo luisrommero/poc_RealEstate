@@ -3,7 +3,7 @@ use eos_poc_real_estate;
 
 create table list (
 id_list INT PRIMARY KEY AUTO_INCREMENT,
-name_list VARCHAR (10),
+name_list VARCHAR (25),
 name_owner VARCHAR (25),
 inv_min FLOAT,
 percentage FLOAT);
@@ -11,7 +11,7 @@ percentage FLOAT);
 create table project (
 id_project INT PRIMARY KEY AUTO_INCREMENT,
 id_list INT (11),
-p_address VARCHAR (15),
+p_address VARCHAR (25),
 p_type ENUM("res","com","ind"),
 p_desc TEXT,
 p_goal FLOAT,
@@ -28,5 +28,5 @@ create table p_img (
 id_img INT PRIMARY KEY AUTO_INCREMENT,
 id_list int (11),
 path_img VARCHAR (75),
-footer_img VARCHAR (15),
+footer_img VARCHAR (25),
 FOREIGN KEY (id_list) REFERENCES list(id_list));

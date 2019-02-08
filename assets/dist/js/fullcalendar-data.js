@@ -104,7 +104,7 @@ $(document).ready(function() {
 					start: '2017-02-22'
                 },
 				{
-                    title: 'Travel',
+                    title: 'Pago RealEstate',
 					start: '2017-02-10'
                 },
                 {
@@ -138,7 +138,7 @@ $(document).ready(function() {
 					start: '2017-03-22'
                 },
 				{
-          title: 'Travel',
+          title: 'Pago RealEstate',
 					start: '2019-02-02',
         },
         {
@@ -172,7 +172,7 @@ $(document).ready(function() {
 					start: '2017-04-22'
                 },
 				{
-                    title: 'Travel',
+                    title: 'Pago RealEstate',
 					start: '2017-04-10'
                 },
                 {
@@ -207,7 +207,7 @@ $(document).ready(function() {
 					start: '2017-05-22'
                 },
 				{
-                    title: 'Travel',
+                    title: 'Pago RealEstate',
 					start: '2017-05-10'
                 },
                 {
