@@ -860,7 +860,7 @@ if(!isset($_COOKIE['user'])) {
       					<!-- /Row -->
 
                 <!-- /wizard -->
-					<!-- /Row -->
+					      <!-- /Row -->
 
 
 
@@ -993,15 +993,46 @@ HESTIA*
 TIPO USUARIO - NAVEGACION
              -
 ROOT
-BROKER
-ADMIN
-INVERSOR
+  google analytics
+
+anónimo
+
+BROKER *
+ADMIN *
+INVERSOR *
+Desarrollador *
+(*) significa puede subir inmuebles
 
 PPT O SLIDE DE:
+
 1.- ANALISIS DE MERCADO
 2.- VENTAJAS DE PLATAFORMA
 3.- MARKETING
 
+============clasificador de inmuebles============
+inmuebles dividir
+tiempo
+  analisis
+  terreno
+
+construcción
+  obra negra
+  preventa
+  terminado
+  entregado
+  en renta/venta
+
+tipo de inmuebles
+  Rural
+  Urbano
+
+Monto
+
+tipo de uso
+  Habitacional
+  Industrial
+  ============clasificador de inmuebles============
+  *** KPI: tir retornos ***
 -->
 
 </html>

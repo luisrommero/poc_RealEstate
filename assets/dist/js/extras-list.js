@@ -21,7 +21,7 @@ $(document).ready(function() {
   }
 
 
-  $('.slider').mousemove(function(){
+  $('.slider').mouseup(function(){
     $('#chart_2').empty();
     inversion = null;
     comision = null;
