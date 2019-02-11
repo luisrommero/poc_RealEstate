@@ -17,6 +17,7 @@ if(!isset($_COOKIE['user'])) {
 }
 ?>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -99,6 +100,7 @@ if(!isset($_COOKIE['user'])) {
 											<a href="index2.html"><div class="pull-left"><i class="ti-money  mr-20"></i><span class="right-nav-text">Cryptocurrency</span></div><div class="pull-right"><span class="label label-success">Hot</span></div><div class="clearfix"></div></a>
 											<a href="profile.html"><div class="pull-left"><i class="ti-briefcase  mr-20"></i><span class="right-nav-text">Profile</span></div><div class="clearfix"></div></a>
 										</li> -->
+
                     <!-- <li class="col-md-3 col-xs-6 col-menu-list">
 											<a href="javascript:void(0);">
 												<div class="pull-left">
@@ -274,7 +276,8 @@ if(!isset($_COOKIE['user'])) {
               <a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="assets/img/user1.png" alt="user_auth" class="user-auth-img img-circle" /><span class="user-online-status"></span></a>
               <ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
                 <li>
-                  <a href="profile.html"><i class="zmdi zmdi-account"></i><span><?php echo $_COOKIE['user'] ?></span></a>
+                  <a href="profile.html"><i class="zmdi zmdi-account"></i><span>
+                      <?php echo $_COOKIE['user'] ?></span></a>
                 </li>
                 <li>
                   <a href="#"><i class="zmdi zmdi-card"></i><span>my balance</span></a>
@@ -330,7 +333,11 @@ if(!isset($_COOKIE['user'])) {
               <a class="active-page" href="home.php">Pagos Recibidos</a>
             </li>
             <li>
-              <a href="sumary.php"><div class="pull-left"><span>Resumen</span></div><div class="pull-right"><span class="label label-success">New</span></div><div class="clearfix"></div></a>
+              <a href="sumary.php">
+                <div class="pull-left"><span>Resumen</span></div>
+                <div class="pull-right"><span class="label label-success">New</span></div>
+                <div class="clearfix"></div>
+              </a>
             </li>
             <li>
               <a href="docs.php">Documentos</a>
@@ -367,14 +374,14 @@ if(!isset($_COOKIE['user'])) {
         </li>
         <!-- properties -->
 
-      <?php } else {?>
+        <?php } else {?>
         <li>
           <a href="list.php">
             <div class="pull-left"><i class="fa fa-university mr-20"></i><span class="right-nav-text">Proyectos</span></div>
             <div class="clearfix"></div>
           </a>
         </li>
-      <?php } ?>
+        <?php } ?>
         <li>
           <a href="calendar.php">
             <div class="pull-left"><i class="fa fa-calendar mr-20"></i><span class="right-nav-text">Calendario de pagos</span></div>
@@ -681,20 +688,20 @@ if(!isset($_COOKIE['user'])) {
                         <!-- START carousel-->
                         <div id="carousel-example-captions-1" data-ride="carousel" class="carousel slide">
                           <ol class="carousel-indicators">
-                             <li data-target="#carousel-example-captions-1" data-slide-to="0" class="active"></li>
-                             <li data-target="#carousel-example-captions-1" data-slide-to="1"></li>
-                             <li data-target="#carousel-example-captions-1" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-captions-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-captions-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-captions-1" data-slide-to="2"></li>
                           </ol>
                           <div role="listbox" class="carousel-inner">
-                             <div class="item active">
-                               <img src="assets/img/uploads/slide-01-san.jpg" alt="First slide image">
-                             </div>
-                             <div class="item">
-                               <img src="assets/img/uploads/slide-02.jpg" alt="Second slide image">
-                             </div>
-                             <div class="item">
-                               <img src="assets/img/uploads/slide-03.jpg" alt="Second slide image">
-                             </div>
+                            <div class="item active">
+                              <img src="assets/img/uploads/slide-01-san.jpg" alt="First slide image">
+                            </div>
+                            <div class="item">
+                              <img src="assets/img/uploads/slide-02.jpg" alt="Second slide image">
+                            </div>
+                            <div class="item">
+                              <img src="assets/img/uploads/slide-03.jpg" alt="Second slide image">
+                            </div>
                           </div>
                         </div>
                         <!-- END carousel-->
@@ -703,33 +710,31 @@ if(!isset($_COOKIE['user'])) {
 
                     <div class="col-md-9">
                       <div class="product-detail-wrap">
-                          <!-- progress bar -->
-                          <div class="col-md-6">
-                            <div class="progress mt-40">
-                              <div class="progress-bar progress-bar-info active progress-bar-striped"
-                              aria-valuenow="85"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                              style="width: <?php echo $row['percentage'] ?>%"
-                              role="progressbar">
-                              </div>
-                            </div>
-                            <div class="average-review inline-block mb-10">
-                              &nbsp;(<span class="review-count"><?php echo $row['percentage'] ?>%</span> de progreso)
+                        <!-- progress bar -->
+                        <div class="col-md-6">
+                          <div class="progress mt-40">
+                            <div class="progress-bar progress-bar-info active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['percentage'] ?>%" role="progressbar">
                             </div>
                           </div>
-                          <div class="col-md-6">
-                            <div class="pt-20">
-      												<canvas id="chart_2" height="210"></canvas>
-      											</div>
+                          <div class="average-review inline-block mb-10">
+                            &nbsp;(<span class="review-count">
+                              <?php echo $row['percentage'] ?>%</span> de progreso)
                           </div>
-                          <!-- progress bar -->
+                        </div>
+                        <div class="col-md-6">
+                          <div class="pt-20">
+                            <canvas id="chart_2" height="210"></canvas>
+                          </div>
+                        </div>
+                        <!-- progress bar -->
 
                         <h4 class="mb-5 weight-500">
                           <?php echo $row['name_list'] ?>
                         </h4>
                         <div class="head-font mb-15">
-                          Inv. Mínima: <p class="product-price ">$ <?php echo $row['inv_min'] ?></p>
+                          Inv. Mínima: <p class="product-price ">$
+                            <?php echo $row['inv_min'] ?>
+                          </p>
                         </div>
                         <p class="mb-25">
                           <?php echo $row['p_desc'] ?>
@@ -743,22 +748,36 @@ if(!isset($_COOKIE['user'])) {
                                value="<?php echo $row['inv_min'] ?>"
                                name="vertical-spin"> -->
                         <div class="row">
-                          <div class="col-md-4">
+                          <div class="col-md-6">
+                            <br >
+                            <br >
                             <div class="slidecontainer">
-                              <input  type="range"
+                              <input type="range"
                               min="<?php echo $row['inv_min'] ?>"
                               max="<?php echo $row['p_goal'] ?>"
                               value="<?php echo $row['inv_min'] ?>"
                               data-id="<?php echo $row['id_list'] ?>"
-                              class="slider"
-                              id="myRange">
+                              class="slider" id="myRange">
+
                             </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group mt-30 mb-30">
+    													<select class="form-control mounth">
+    														<option value="6">6 Meses</option>
+    														<option value="12">12 Meses</option>
+    														<option value="18">18 Meses</option>
+                                <option value="24">24 Meses</option>
+                                <option value="36">36 Meses</option>
+    													</select>
+    												</div>
+                          </div>
+                          <div class="col-md-12">
+                            <p>&nbsp;</p>
                           </div>
                           <div class="col-md-4">
                             <div class="btn-group mr-10">
-                              <a href="project.php?id=<?php echo $row['id_list'] ?>&amount=<?php echo $row['inv_min'] ?>"
-                                class="btn btn-dark btn-anim"
-                                id="myLink">
+                              <a href="project.php?id=<?php echo $row['id_list'] ?>&amount=<?php echo $row['inv_min'] ?>" class="btn btn-dark btn-anim" id="myLink">
                                 <i class="fa fa-money"></i>
                                 <span class="btn-text">&iexcl;Invertir $<span id="demo"></span>!</span>
                               </a>
@@ -782,30 +801,30 @@ if(!isset($_COOKIE['user'])) {
 
           <!-- ==========content goes here========== -->
         </div>
-      <?php } ?>
+        <?php } ?>
       </div>
       <!-- /Row -->
 
-    <!-- Footer -->
-    <footer class="footer pl-30 pr-30">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <p>2019 &copy; eos Software. All rights reserved</p>
-          </div>
-          <div class="col-sm-6 text-right">
-            <p>Follow Us</p>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
+      <!-- Footer -->
+      <footer class="footer pl-30 pr-30">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <p>2019 &copy; eos Software. All rights reserved</p>
+            </div>
+            <div class="col-sm-6 text-right">
+              <p>Follow Us</p>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- /Footer -->
+      </footer>
+      <!-- /Footer -->
 
-  </div>
-  <!-- /Main Content -->
+    </div>
+    <!-- /Main Content -->
 
   </div>
   <!-- /#wrapper -->
