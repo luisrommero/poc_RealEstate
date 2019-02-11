@@ -3,7 +3,7 @@
 function connectionBD() {
   $servername = "localhost";
   $username = "root";
-  $password = "woodstock'94";
+  $password = "Firepixel2";
   $database = "eos_poc_real_estate";
 
   // Create connection
@@ -17,6 +17,6 @@ function connectionBD() {
   return $con;
 }
 
-// SET FOREIGN_KEY_CHECKS = 0; 
+// SET FOREIGN_KEY_CHECKS = 0;
 // TRUNCATE table $table_name;
 // SET FOREIGN_KEY_CHECKS = 1;
