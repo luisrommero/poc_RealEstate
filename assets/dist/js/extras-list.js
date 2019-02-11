@@ -22,6 +22,10 @@ $(document).ready(function() {
 
 
   $('.slider').mousemove(function(){
+    $('#chart_2').empty();
+    inversion = null;
+    comision = null;
+    total = null;
     mounth = $('.mounth').val();
     list_id = $(this).data('id');
     inversion = slider.value;
@@ -44,6 +48,9 @@ $(document).ready(function() {
     console.log("Meses: " + mounth);
 
     if( $('#chart_2').length > 0 ){
+      $('#chart_div').empty();
+      $('#chart_div').html('<canvas id="chart_2" height="210"></canvas>');
+
   		var ctx6 = document.getElementById("chart_2").getContext("2d");
   		var data6 = {
   			 labels: [
@@ -60,9 +67,9 @@ $(document).ready(function() {
   					"#ffaf93",
   				],
   				hoverBackgroundColor: [
-  					"#ff6028",
-  					"#ff936d",
-  					"#ffaf93",
+  					"#ff6029",
+  					"#ff937d",
+  					"#ffaf94",
   				]
   			}]
   		};
@@ -93,6 +100,10 @@ $(document).ready(function() {
   	}
   });
   $('.mounth').click(function(){
+    inversion = null;
+    comision = null;
+    total = null;
+    $('#chart_2').empty();
     mounth = $('.mounth').val();
     list_id = $(this).data('id');
     inversion = slider.value;
@@ -115,7 +126,9 @@ $(document).ready(function() {
     console.log("Meses: " + mounth);
 
     if( $('#chart_2').length > 0 ){
-  		var ctx6 = document.getElementById("chart_2").getContext("2d");
+      $('#chart_div').empty();
+      $('#chart_div').html('<canvas id="chart_2" height="210"></canvas>');
+      var ctx6 = document.getElementById("chart_2").getContext("2d");
   		var data6 = {
   			 labels: [
   			"Invertido",

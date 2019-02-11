@@ -722,7 +722,7 @@ if(!isset($_COOKIE['user'])) {
                           </div>
                         </div>
                         <div class="col-md-6">
-                          <div class="pt-20">
+                          <div class="pt-20" id="chart_div">
                             <canvas id="chart_2" height="210"></canvas>
                           </div>
                         </div>

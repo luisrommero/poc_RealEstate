@@ -6,6 +6,7 @@ id_list INT PRIMARY KEY AUTO_INCREMENT,
 name_list VARCHAR (25),
 name_owner VARCHAR (25),
 inv_min FLOAT,
+inv_max FLOAT,
 percentage FLOAT);
 
 create table project (

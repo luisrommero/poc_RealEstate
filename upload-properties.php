@@ -803,7 +803,14 @@ if(!isset($_COOKIE['user'])) {
       												<!--CREDIT CART PAYMENT-->
       												<div class="row">
       													<div class="col-sm-12">
-
+                                  <p></p>
+                                  <div class="">
+                                    <div action="#" class="dropzone" id="my-awesome-dropzone">
+                                      <div class="fallback">
+                                        <input name="file" type="file" multiple />
+                                      </div>
+                                    </div>
+                                  </div>
       													</div>
       												</div>
       												<!--CREDIT CART PAYMENT END-->
@@ -971,7 +978,30 @@ if(!isset($_COOKIE['user'])) {
   <script src="vendors/bower_components/morris.js/morris.min.js"></script>
   <script src="assets/dist/js/morris-data.js"></script>
 
-
 </body>
+
+<!--
+
+REAL STATE*
+REAL BLOCK*
+HESTIA*
+
+.mx*
+.com*
+.com.mx*
+
+TIPO USUARIO - NAVEGACION
+             -
+ROOT
+BROKER
+ADMIN
+INVERSOR
+
+PPT O SLIDE DE:
+1.- ANALISIS DE MERCADO
+2.- VENTAJAS DE PLATAFORMA
+3.- MARKETING
+
+-->
 
 </html>
