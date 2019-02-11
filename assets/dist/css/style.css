@@ -1107,8 +1107,8 @@ button.fc-agendaWeek-button, .fc-prev-button, .fc-next-button, .fc-today-button 
   .btn.btn-primary, .fixed-sidebar-left .side-nav > li > a.btn-primary.documentation-btn, .wizard > .actions a.btn-primary, .dt-buttons .btn-primary.dt-button, .tablesaw-sortable th.tablesaw-sortable-head button.btn-primary, .sweet-alert button.btn-primary, .owl-theme .owl-nav .btn-primary[class*="owl-"], button.btn-primary.fc-agendaDay-button.fc-state-default.fc-corner-right,
   button.btn-primary.fc-month-button.fc-state-default.fc-corner-left,
   button.btn-primary.fc-agendaWeek-button, .btn-primary.fc-prev-button, .btn-primary.fc-next-button, .btn-primary.fc-today-button {
-    background: #0092ee;
-    border: solid 1px #0092ee; }
+    background: #0fc493;
+    border: solid 1px #10ad82; }
     .btn.btn-primary:hover, .fixed-sidebar-left .side-nav > li > a.btn-primary.documentation-btn:hover, .wizard > .actions a.btn-primary:hover, .dt-buttons .btn-primary.dt-button:hover, .tablesaw-sortable th.tablesaw-sortable-head button.btn-primary:hover, .sweet-alert button.btn-primary:hover, .owl-theme .owl-nav .btn-primary[class*="owl-"]:hover, button.btn-primary.fc-agendaDay-button.fc-state-default.fc-corner-right:hover,
     button.btn-primary.fc-month-button.fc-state-default.fc-corner-left:hover,
     button.btn-primary.fc-agendaWeek-button:hover, .btn-primary.fc-prev-button:hover, .btn-primary.fc-next-button:hover, .btn-primary.fc-today-button:hover, .btn.btn-primary:active, .fixed-sidebar-left .side-nav > li > a.btn-primary.documentation-btn:active, .wizard > .actions a.btn-primary:active, .dt-buttons .btn-primary.dt-button:active, .tablesaw-sortable th.tablesaw-sortable-head button.btn-primary:active, .sweet-alert button.btn-primary:active, .owl-theme .owl-nav .btn-primary[class*="owl-"]:active, button.btn-primary.fc-agendaDay-button.fc-state-default.fc-corner-right:active,
@@ -1116,8 +1116,8 @@ button.fc-agendaWeek-button, .fc-prev-button, .fc-next-button, .fc-today-button 
     button.btn-primary.fc-agendaWeek-button:active, .btn-primary.fc-prev-button:active, .btn-primary.fc-next-button:active, .btn-primary.fc-today-button:active, .btn.btn-primary:focus, .fixed-sidebar-left .side-nav > li > a.btn-primary.documentation-btn:focus, .wizard > .actions a.btn-primary:focus, .dt-buttons .btn-primary.dt-button:focus, .tablesaw-sortable th.tablesaw-sortable-head button.btn-primary:focus, .sweet-alert button.btn-primary:focus, .owl-theme .owl-nav .btn-primary[class*="owl-"]:focus, button.btn-primary.fc-agendaDay-button.fc-state-default.fc-corner-right:focus,
     button.btn-primary.fc-month-button.fc-state-default.fc-corner-left:focus,
     button.btn-primary.fc-agendaWeek-button:focus, .btn-primary.fc-prev-button:focus, .btn-primary.fc-next-button:focus, .btn-primary.fc-today-button:focus {
-      background: rgba(0, 146, 238, 0.85);
-      border: solid 1px rgba(0, 146, 238, 0.1); }
+      background: rgba(15, 196, 147, 0.75);
+      border: solid 1px rgba(15, 196, 147, 0.90); }
   .btn.btn-success, .fixed-sidebar-left .side-nav > li > a.btn-success.documentation-btn, .wizard > .actions a.btn-success, .dt-buttons .btn-success.dt-button, .tablesaw-sortable th.tablesaw-sortable-head button.btn-success, .sweet-alert button.btn-success, .owl-theme .owl-nav .btn-success[class*="owl-"], button.btn-success.fc-agendaDay-button.fc-state-default.fc-corner-right,
   button.btn-success.fc-month-button.fc-state-default.fc-corner-left,
   button.btn-success.fc-agendaWeek-button, .btn-success.fc-prev-button, .btn-success.fc-next-button, .btn-success.fc-today-button {

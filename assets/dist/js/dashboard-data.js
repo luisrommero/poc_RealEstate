@@ -269,8 +269,8 @@ $(document).ready(function(){
 $(window).on("load",function(){
 	window.setTimeout(function(){
 		$.toast({
-			heading: 'Welcome to Admintres',
-			text: 'Use the predefined ones, or specify a custom position object.',
+			heading: 'Welcome to REalEstate',
+			text: 'Investment in real estate.',
 			position: 'bottom-right',
 			loaderBg:'#e8af48',
 			icon: 'warning',
