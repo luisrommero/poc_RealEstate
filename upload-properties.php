@@ -742,24 +742,33 @@ if(!isset($_COOKIE['user'])) {
       														<div class="form-wrap">
       															<div class="form-group">
       																<div class="input-group">
-      																	<div class="input-group-addon"><i class="ponericono"></i></div>
+      																	<div class="input-group-addon"><i class="fa fa-codepen"></i></div>
       																	<input type="text" class="form-control required"  name="name_List"  placeholder="Nombre del proyecto">
       																</div>
       															</div>
       															<div class="form-group">
       																<div class="input-group">
-      																	<div class="input-group-addon"><i class="ponericono"></i></div>
-      																	<input type="text" class="form-control required" name="inv_min" placeholder="Inversión minima">
+      																	<div class="input-group-addon"><i class="fa fa-dollar"></i></div>
+      																	<input type="text" class="form-control required" name="inv_min" placeholder="Inversión minima" id="inv_min">
       																</div>
       															</div>
       															<div class="form-group">
       																<div class="input-group">
-      																	<div class="input-group-addon"><i class="ponericono"></i></div>
-      																	<input type="text" class="form-control required" name="p_goal" placeholder="Meta">
+      																	<div class="input-group-addon"><i class="fa fa-dollar"></i></div>
+      																	<input type="text" class="form-control required" name="inv_max" placeholder="Inversión maxima" id="inv_max">
+      																</div>
+      															</div>
+      															<div class="form-group">
+      																<div class="input-group">
+      																	<div class="input-group-addon"><i class="fa fa-fa"></i></div>
+      																	<input type="text" class="form-control required" name="p_goal" placeholder="Meta" id="p_goal">
       																</div>
       															</div>
       														</div>
       													</div>
+                                <div class="col-lg-6">
+                      						<div id="morris_bar_chart" class="morris-chart"></div>
+                      					</div>
       												</div>
       											</fieldset>
       											<h3><span class="number"><i class="icon-bag txt-black"></i></span><span class="head-font capitalize-font">Tipo y Descripci&oacute;n</span></h3>
@@ -956,6 +965,12 @@ if(!isset($_COOKIE['user'])) {
 	<!-- Init JavaScript -->
 	<script src="assets/dist/js/init.js"></script>
 	<script src="assets/dist/js/dashboard-data.js"></script>
+
+  <!-- Morris Charts JavaScript -->
+  <script src="vendors/bower_components/raphael/raphael.min.js"></script>
+  <script src="vendors/bower_components/morris.js/morris.min.js"></script>
+  <script src="assets/dist/js/morris-data.js"></script>
+
 
 </body>
 
