@@ -49,7 +49,7 @@ $(document).ready(function() {
 
     if( $('#chart_2').length > 0 ){
       $('#chart_div').empty();
-      $('#chart_div').html('<canvas id="chart_2" height="210"></canvas>');
+      $('#chart_div').html('<canvas id="chart_2" height="150"></canvas>');
 
   		var ctx6 = document.getElementById("chart_2").getContext("2d");
   		var data6 = {
@@ -127,7 +127,7 @@ $(document).ready(function() {
 
     if( $('#chart_2').length > 0 ){
       $('#chart_div').empty();
-      $('#chart_div').html('<canvas id="chart_2" height="210"></canvas>');
+      $('#chart_div').html('<canvas id="chart_2" height="150"></canvas>');
       var ctx6 = document.getElementById("chart_2").getContext("2d");
   		var data6 = {
   			 labels: [

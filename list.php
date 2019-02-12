@@ -645,10 +645,9 @@ if(!isset($_COOKIE['user'])) {
               <div class="panel-wrapper collapse in">
                 <div class="panel-body pt-0">
                   <div class="row">
-                    <div class="col-md-3">
-                      <div class="item-big">
+
                         <!-- START carousel-->
-                        <div id="carousel-example-captions-1" data-ride="carousel" class="carousel slide">
+                        <!-- <div id="carousel-example-captions-1" data-ride="carousel" class="carousel slide">
                           <ol class="carousel-indicators">
                             <li data-target="#carousel-example-captions-1" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-captions-1" data-slide-to="1"></li>
@@ -665,16 +664,23 @@ if(!isset($_COOKIE['user'])) {
                               <img src="assets/img/uploads/slide-03.jpg" alt="Second slide image">
                             </div>
                           </div>
-                        </div>
+                        </div> -->
+                        <img src="assets/img/uploads/property-5.jpg" alt="" class="col-md-3 project-photo" width="100%">
                         <!-- END carousel-->
-                      </div>
-                    </div>
+
 
                     <div class="col-md-9">
                       <div class="product-detail-wrap">
                         <!-- progress bar -->
+                        <div class="col-md-12">
+                          <h4 class="mb-5 weight-500">
+                            <?php echo $row['name_list'] ?>
+                          </h4>
+
+                        </div>
+
                         <div class="col-md-6">
-                          <div class="progress mt-40">
+                          <div class="progress mt-15">
                             <div class="progress-bar progress-bar-info active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['percentage'] ?>%" role="progressbar">
                             </div>
                           </div>
@@ -685,14 +691,12 @@ if(!isset($_COOKIE['user'])) {
                         </div>
                         <div class="col-md-6">
                           <div class="pt-20" id="chart_div">
-                            <canvas id="chart_2" height="210"></canvas>
+                            <canvas id="chart_2" height="150"></canvas>
                           </div>
                         </div>
                         <!-- progress bar -->
 
-                        <h4 class="mb-5 weight-500">
-                          <?php echo $row['name_list'] ?>
-                        </h4>
+
                         <div class="head-font mb-15">
                           Inv. Mínima: <p class="product-price ">$
                             <?php echo $row['inv_min'] ?>
