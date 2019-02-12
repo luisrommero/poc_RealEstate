@@ -99,7 +99,7 @@ $(document).ready(function() {
   		});
   	}
   });
-  $('.mounth').click(function(){
+  $('.mounth').change(function(){
     inversion = null;
     comision = null;
     total = null;
