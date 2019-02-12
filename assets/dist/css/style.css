@@ -1107,8 +1107,8 @@ button.fc-agendaWeek-button, .fc-prev-button, .fc-next-button, .fc-today-button 
   .btn.btn-primary, .fixed-sidebar-left .side-nav > li > a.btn-primary.documentation-btn, .wizard > .actions a.btn-primary, .dt-buttons .btn-primary.dt-button, .tablesaw-sortable th.tablesaw-sortable-head button.btn-primary, .sweet-alert button.btn-primary, .owl-theme .owl-nav .btn-primary[class*="owl-"], button.btn-primary.fc-agendaDay-button.fc-state-default.fc-corner-right,
   button.btn-primary.fc-month-button.fc-state-default.fc-corner-left,
   button.btn-primary.fc-agendaWeek-button, .btn-primary.fc-prev-button, .btn-primary.fc-next-button, .btn-primary.fc-today-button {
-    background: #0fc493;
-    border: solid 1px #10ad82; }
+    background: #0eaf83;
+    border: solid 1px #0eaf83; }
     .btn.btn-primary:hover, .fixed-sidebar-left .side-nav > li > a.btn-primary.documentation-btn:hover, .wizard > .actions a.btn-primary:hover, .dt-buttons .btn-primary.dt-button:hover, .tablesaw-sortable th.tablesaw-sortable-head button.btn-primary:hover, .sweet-alert button.btn-primary:hover, .owl-theme .owl-nav .btn-primary[class*="owl-"]:hover, button.btn-primary.fc-agendaDay-button.fc-state-default.fc-corner-right:hover,
     button.btn-primary.fc-month-button.fc-state-default.fc-corner-left:hover,
     button.btn-primary.fc-agendaWeek-button:hover, .btn-primary.fc-prev-button:hover, .btn-primary.fc-next-button:hover, .btn-primary.fc-today-button:hover, .btn.btn-primary:active, .fixed-sidebar-left .side-nav > li > a.btn-primary.documentation-btn:active, .wizard > .actions a.btn-primary:active, .dt-buttons .btn-primary.dt-button:active, .tablesaw-sortable th.tablesaw-sortable-head button.btn-primary:active, .sweet-alert button.btn-primary:active, .owl-theme .owl-nav .btn-primary[class*="owl-"]:active, button.btn-primary.fc-agendaDay-button.fc-state-default.fc-corner-right:active,
@@ -6575,7 +6575,7 @@ a.compose-mail {
   background: #ffbf36; }
 
 .progress-bar-orange {
-  background: #0fc493; }
+  background: #ffbf36; }
 
 .progress-vertical {
   min-height: 250px;

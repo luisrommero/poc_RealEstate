@@ -269,10 +269,10 @@ $(document).ready(function(){
 $(window).on("load",function(){
 	window.setTimeout(function(){
 		$.toast({
-			heading: 'Welcome to REalEstate',
+			heading: 'Welcome to RealEstate',
 			text: 'Investment in real estate.',
 			position: 'bottom-right',
-			loaderBg:'#e8af48',
+			loaderBg:'#edba5d',
 			icon: 'warning',
 			hideAfter: 3500,
 			stack: 6
