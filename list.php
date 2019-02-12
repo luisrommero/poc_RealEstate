@@ -665,46 +665,87 @@ if(!isset($_COOKIE['user'])) {
                             </div>
                           </div>
                         </div> -->
-                        <img src="assets/img/uploads/property-5.jpg" alt="" class="col-md-3 project-photo" width="100%">
+                        <img src="assets/img/uploads/property-5.jpg" alt="" class="col-md-5 project-photo" width="100%">
                         <!-- END carousel-->
-
-
-                    <div class="col-md-9">
+                    <div class="col-md-7">
                       <div class="product-detail-wrap">
                         <!-- progress bar -->
-                        <div class="col-md-12">
+                        <div class="col-md-5">
                           <h4 class="mb-5 weight-500">
                             <?php echo $row['name_list'] ?>
                           </h4>
+                          <p class="mb-25">
+                            <?php echo $row['p_desc'] ?>
+                          </p>
 
-                        </div>
-
-                        <div class="col-md-6">
                           <div class="progress mt-15">
                             <div class="progress-bar progress-bar-info active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['percentage'] ?>%" role="progressbar">
                             </div>
                           </div>
+
                           <div class="average-review inline-block mb-10">
-                            &nbsp;(<span class="review-count">
-                              <?php echo $row['percentage'] ?>%</span> de progreso)
+                            <span class="review-count">
+                              </span> Inversion <?php echo $row['percentage'] ?>%
                           </div>
+
+                          <div class="head-font mb-15">
+                            Inv. Mínima: <p class="pull-right product-price ">$
+                              <?php echo $row['inv_min'] ?>
+                            </p>
+                          </div>
+                          <div class="head-font mb-15">
+                            Inv. Mínima: <p class="pull-right product-price ">$
+                              <?php echo $row['inv_min'] ?>
+                            </p>
+                          </div>
+                          <div class="head-font mb-15">
+                            Inv. Mínima: <p class="pull-right product-price ">$
+                              <?php echo $row['inv_min'] ?>
+                            </p>
+                          </div>
+
+
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-7">
+
                           <div class="pt-20" id="chart_div">
                             <canvas id="chart_2" height="150"></canvas>
                           </div>
+
+                            <input type="range"
+                            min="<?php echo $row['inv_min'] ?>"
+                            max="<?php echo $row['p_goal'] ?>"
+                            value="<?php echo $row['inv_min'] ?>"
+                            data-id="<?php echo $row['id_list'] ?>"
+                            class="slider mt-15" id="myRange">
+
+                          <div class="form-group mt-30 mb-30">
+                            <select class="form-control mounth">
+                              <option value="6">6 Meses</option>
+                              <option value="12">12 Meses</option>
+                              <option value="18">18 Meses</option>
+                              <option value="24">24 Meses</option>
+                              <option value="36">36 Meses</option>
+                            </select>
+                          </div>
+
+                          <div class="btn-group pull-right pl-20">
+                            <a href="project.php?id=<?php echo $row['id_list'] ?>&amount=<?php echo $row['inv_min'] ?>" class="btn btn-dark btn-anim" id="myLink">
+                              <i class="fa fa-money"></i>
+                              <span class="btn-text">&iexcl;Invertir $<span id="demo"></span>!</span>
+                            </a>
+                          </div>
+
+                          <div class="btn-group wishlist pull-right">
+                            <a href="project.php?id=<?php echo $row['id_list'] ?>" class="btn btn-default btn-outline btn-anim">
+                              <i class="fa fa-eye"></i>
+                              <span class="btn-text">Ver M&aacute;s</span>
+                            </a>
+                          </div>
+
                         </div>
+
                         <!-- progress bar -->
-
-
-                        <div class="head-font mb-15">
-                          Inv. Mínima: <p class="product-price ">$
-                            <?php echo $row['inv_min'] ?>
-                          </p>
-                        </div>
-                        <p class="mb-25">
-                          <?php echo $row['p_desc'] ?>
-                        </p>
 
                         <!-- slider -->
                         <!-- <input class="vertical-spin"
@@ -713,49 +754,7 @@ if(!isset($_COOKIE['user'])) {
                                data-bts-button-up-class="btn btn-default"
                                value="<?php echo $row['inv_min'] ?>"
                                name="vertical-spin"> -->
-                        <div class="row">
-                          <div class="col-md-6">
-                            <br >
-                            <br >
-                            <div class="slidecontainer">
-                              <input type="range"
-                              min="<?php echo $row['inv_min'] ?>"
-                              max="<?php echo $row['p_goal'] ?>"
-                              value="<?php echo $row['inv_min'] ?>"
-                              data-id="<?php echo $row['id_list'] ?>"
-                              class="slider" id="myRange">
 
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="form-group mt-30 mb-30">
-    													<select class="form-control mounth">
-    														<option value="6">6 Meses</option>
-    														<option value="12">12 Meses</option>
-    														<option value="18">18 Meses</option>
-                                <option value="24">24 Meses</option>
-                                <option value="36">36 Meses</option>
-    													</select>
-    												</div>
-                          </div>
-                          <div class="col-md-12">
-                            <p>&nbsp;</p>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="btn-group mr-10">
-                              <a href="project.php?id=<?php echo $row['id_list'] ?>&amount=<?php echo $row['inv_min'] ?>" class="btn btn-dark btn-anim" id="myLink">
-                                <i class="fa fa-money"></i>
-                                <span class="btn-text">&iexcl;Invertir $<span id="demo"></span>!</span>
-                              </a>
-                            </div>
-                            <div class="btn-group wishlist">
-                              <a href="project.php?id=<?php echo $row['id_list'] ?>" class="btn btn-default btn-outline btn-anim">
-                                <i class="fa fa-eye"></i>
-                                <span class="btn-text">Ver M&aacute;s</span>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
                         <!-- slider -->
                       </div>
                     </div>
