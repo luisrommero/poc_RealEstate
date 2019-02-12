@@ -61,7 +61,7 @@ $(function(){
 			errorPlacement: function errorPlacement(error, element) { element.before(error); },
 			rules: {
 				confirm: {
-					equalTo: "#password-2"
+					//equalTo: "#password-2"
 				}
 			}
 		});

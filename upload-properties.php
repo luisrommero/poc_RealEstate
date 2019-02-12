@@ -748,13 +748,19 @@ if(!isset($_COOKIE['user'])) {
       															</div>
       															<div class="form-group">
       																<div class="input-group">
-      																	<div class="input-group-addon"><i class="fa fa-dollar"></i></div>
+      																	<div class="input-group-addon">
+                                          <i class="fa fa-dollar fa-angle-down"></i>
+                                          <i class="fa fa-angle-down"></i>
+                                        </div>
       																	<input type="text" class="form-control required" name="inv_min" placeholder="Inversión minima" id="inv_min">
       																</div>
       															</div>
       															<div class="form-group">
       																<div class="input-group">
-      																	<div class="input-group-addon"><i class="fa fa-dollar"></i></div>
+      																	<div class="input-group-addon">
+                                          <i class="fa fa-dollar"></i>
+                                          <i class="fa  fa-angle-up"></i>
+                                        </div>
       																	<input type="text" class="form-control required" name="inv_max" placeholder="Inversión maxima" id="inv_max">
       																</div>
       															</div>

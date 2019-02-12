@@ -16,18 +16,18 @@ p_address VARCHAR (25),
 p_type ENUM("res","com","ind"),
 p_desc TEXT,
 p_goal FLOAT,
-FOREIGN KEY (id_list) REFERENCES list(id_list));
+FOREIGN KEY (id_list) REFERENCES list(id_list) ON DELETE CASCADE);
 
 create table invests (
 id_inv INT PRIMARY KEY AUTO_INCREMENT,
 id_list INT (11),
 name VARCHAR (25),
 amount FLOAT,
-FOREIGN KEY (id_list) REFERENCES list(id_list));
+FOREIGN KEY (id_list) REFERENCES list(id_list) ON DELETE CASCADE);
 
 create table p_img (
 id_img INT PRIMARY KEY AUTO_INCREMENT,
 id_list int (11),
 path_img VARCHAR (75),
 footer_img VARCHAR (25),
-FOREIGN KEY (id_list) REFERENCES list(id_list));
+FOREIGN KEY (id_list) REFERENCES list(id_list) ON DELETE CASCADE);
