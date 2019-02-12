@@ -97,7 +97,6 @@ if(isset($_COOKIE['user'])) {
                             <h3>3398 Lodgeville Road</h3>
                             <figure>Golden Valley, MN 55427</figure>
                         </div>
-                        <hr>
                         <a href="#" class="link-arrow">Read More</a>
                     </div>
                 </div>
@@ -111,7 +110,6 @@ if(isset($_COOKIE['user'])) {
                             <h3>987 Cantebury Drive</h3>
                             <figure>Chicago, IL 60610</figure>
                         </div>
-                        <hr>
                         <a href="#" class="link-arrow">Read More</a>
                     </div>
                 </div>
@@ -175,18 +173,7 @@ if(isset($_COOKIE['user'])) {
             </div><!-- /.container -->
         </section><!-- /#our-services -->
 
-        <aside id="advertising" class="block">
-            <div class="container">
-                <a href="submit.html">
-                    <div class="banner">
-                        <div class="wrapper">
-                            <span class="title">you want to find the best opportunities?</span>
-                            <span class="submit">Find now! <i class="fa fa-plus-square"></i></span>
-                        </div>
-                    </div><!-- /.banner-->
-                </a>
-            </div>
-        </aside><!-- /#adveritsing-->
+
         <section id="new-properties" class="block">
             <div class="container">
                 <header class="section-title">
@@ -482,7 +469,7 @@ if(isset($_COOKIE['user'])) {
                             </div>
                         </figure>
                         <aside class="cite">
-                            <p>"RealState gave me the opportunity to invest without having to have a big capital."</p>
+                            <p>"RealEstate gave me the opportunity to invest without having to have a big capital."</p>
                             <footer>Natalie Jenkins</footer>
                         </aside>
                     </blockquote>
@@ -524,12 +511,12 @@ if(isset($_COOKIE['user'])) {
                           <article>
                               <h3>Contact</h3>
                               <address>
-                                  <strong>Your Company</strong><br>
+                                  <strong>RealEstate</strong><br>
                                   4877 Spruce Drive<br>
                                   West Newton, PA 15089
                               </address>
                               +1 (734) 123-4567<br>
-                              <a href="#">hello@example.com</a>
+                              <a href="#">hello@realestate.com</a>
                           </article>
                         </div><!-- /.col-sm-3 -->
                         <div class="col-md-3 col-sm-3">

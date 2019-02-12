@@ -66,7 +66,7 @@ if(!isset($_COOKIE['user'])) {
         <div class="mobile-only-brand pull-left">
           <div class="nav-header pull-left">
             <div class="logo-wrap">
-              <a href="index.html">
+              <a href="#">
                 <img class="brand-img" src="assets/img/logo.png" alt="brand" />
                 <span class="brand-text"><img src="assets/img/brand.png" alt="brand" /></span>
               </a>
@@ -95,45 +95,7 @@ if(!isset($_COOKIE['user'])) {
               <ul class="dropdown-menu mega-menu pa-0" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                 <li class="product-nicescroll-bar row">
                   <ul class="pa-20">
-                    <!-- <li class="col-md-3 col-xs-6 col-menu-list">
-											<a href="index.html"><div class="pull-left"><i class="ti-dashboard  mr-20"></i><span class="right-nav-text">Educational Center</span></div><div class="clearfix"></div></a>
-											<a href="index2.html"><div class="pull-left"><i class="ti-money  mr-20"></i><span class="right-nav-text">Cryptocurrency</span></div><div class="pull-right"><span class="label label-success">Hot</span></div><div class="clearfix"></div></a>
-											<a href="profile.html"><div class="pull-left"><i class="ti-briefcase  mr-20"></i><span class="right-nav-text">Profile</span></div><div class="clearfix"></div></a>
-										</li> -->
 
-                    <!-- <li class="col-md-3 col-xs-6 col-menu-list">
-											<a href="javascript:void(0);">
-												<div class="pull-left">
-													<i class="ti-shopping-cart  mr-20"></i><span class="right-nav-text">E-Commerce</span>
-												</div>
-												<div class="pull-right"><i class="ti-angle-down"></i></div>
-												<div class="clearfix"></div>
-											</a>
-											<hr class="light-grey-hr ma-0"/>
-											<ul>
-												<li>
-													<a href="e-commerce.html">My Portfolio</a>
-												</li>
-												<li>
-													<a href="product.html">Products</a>
-												</li>
-												<li>
-													<a href="product-detail.html">Product Detail</a>
-												</li>
-												<li>
-													<a href="add-products.html">Add Product</a>
-												</li>
-												<li>
-													<a href="product-orders.html">Orders</a>
-												</li>
-												<li>
-													<a href="product-cart.html">Cart</a>
-												</li>
-												<li>
-													<a href="product-checkout.html">Checkout</a>
-												</li>
-											</ul>
-										</li> -->
                     <li class="col-md-6 col-xs-12 preview-carousel">
                       <a href="javascript:void(0);">
                         <div class="pull-left"><span class="right-nav-text">opportunities to invest</span></div>

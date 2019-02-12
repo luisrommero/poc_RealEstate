@@ -3181,7 +3181,7 @@ ul.list-links li a:hover {
   transition: 0.2s;
   color: #fff;
   position: absolute;
-  bottom: 0;
+  bottom: 25%;
   margin-bottom: 20px;
   width: 100%;
   z-index: 2;
