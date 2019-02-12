@@ -4,10 +4,11 @@ $con = connectionBD();
 
 $name_List = $_POST["name_List"];
 $inv_min = $_POST["inv_min"];
+$inv_max = $_POST["inv_max"];
 $p_goal = $_POST["p_goal"];
 $p_type = $_POST["p_type"];
 $p_desc = $_POST["p_desc"];
-echo $sql_list = "INSERT INTO list SET name_list = '" . $name_List . "', name_owner = 'Jorge Loza', inv_min = " . $inv_min . ", percentage = 0.0";
+echo $sql_list = "INSERT INTO list SET name_list = '" . $name_List . "', name_owner = 'Jorge Loza', inv_min = " . $inv_min . ", percentage = 0.0, inv_max = " . $inv_max . ";";
 echo "<br >";
 echo $con->query($sql_list);
 echo "<br >";
