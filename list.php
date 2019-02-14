@@ -679,7 +679,7 @@ if(!isset($_COOKIE['user'])) {
                           </p>
 
                           <div class="progress mt-15">
-                            <div class="progress-bar progress-bar-info active progress-bar-striped" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['percentage'] ?>%" role="progressbar">
+                            <div class="progress-bar progress-bar-info active progress-bar-striped" aria-valuenow="<?php echo $row['percentage'] ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $row['percentage'] ?>%" role="progressbar">
                             </div>
                           </div>
 
@@ -715,13 +715,13 @@ if(!isset($_COOKIE['user'])) {
 
                             <input type="range"
                             min="<?php echo $row['inv_min'] ?>"
-                            max="<?php echo $row['p_goal'] ?>"
+                            max="<?php echo $row['inv_max'] ?>"
                             value="<?php echo $row['inv_min'] ?>"
                             data-id="<?php echo $row['id_list'] ?>"
-                            class="slider mt-15" id="myRange">
+                            class="slider_<?php echo $row['id_list'] ?> mt-15" id="myRange_<?php echo $row['id_list']  ?>">
 
                           <div class="form-group mt-30 mb-30">
-                            <select class="form-control mounth">
+                            <select class="form-control mounth_<?php echo $row['id_list'] ?>">
                               <option value="6">6 Meses</option>
                               <option value="12">12 Meses</option>
                               <option value="18">18 Meses</option>
