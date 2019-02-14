@@ -14,11 +14,8 @@ if(!isset($_COOKIE['user'])) {
   <meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>RealBLOCK | High Performance Real Estate Investments Company</title>
-<<<<<<< HEAD
-=======
 
 	<meta name="description" content="Admintres is a Dashboard & Admin Site Responsive Template by hencework." />
->>>>>>> 3ec7576ec57818896a7b3093c46b49cc18506bd6
 	<meta name="description" content="RealBLOCK | High Performance Real Estate Investments Company" />
 	<meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Admintres Admin, Admintresadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
 	<meta name="author" content="hencework"/>
