@@ -28,9 +28,6 @@ if(!isset($_COOKIE['user'])) {
   <!-- jquery-steps css -->
   <link rel="stylesheet" href="vendors/bower_components/jquery.steps/demo/css/jquery.steps.css">
 
-  <!-- Bootstrap Dropzone CSS -->
-  <link href="vendors/bower_components/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css"/>
-
 	<!-- Data table CSS -->
 	<link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
 
@@ -700,7 +697,6 @@ if(!isset($_COOKIE['user'])) {
 
 
 
-
                     <!--  -->
                   </div>
                 </div>
@@ -711,7 +707,7 @@ if(!isset($_COOKIE['user'])) {
       							<div class="panel panel-default border-panel card-view">
       								<div class="panel-heading">
       									<div class="pull-left">
-      										<h6 class="panel-title txt-dark">UPLOAD PROPERTIES</h6>
+      										<h6 class="panel-title txt-dark">Subir Propiedad</h6>
       									</div>
       									<div class="clearfix"></div>
       								</div>
@@ -723,23 +719,17 @@ if(!isset($_COOKIE['user'])) {
       												<div class="row">
 
                                 <!-- upload files -->
-                                <div class="col-md-1-12">
-                                  <div class="panel-wrapper collapse in">
-                  									<div class="panel-body">
-                  										<div class="">
-                  											<div action="#" class="dropzone" id="my-awesome-dropzone">
-                  												<div class="fallback">
-                  													<input name="imageFile" type="file" multiple />
-                  												</div>
-                  											</div>
-                  										</div>
-                  									</div>
-                  								</div>
-                                </div>
                                 <!--  -->
 
       													<div class="col-sm-6">
       														<div class="form-wrap">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                          <!-- IMPORTANTEEEEEEEEEEEEEEEEEEEEE -->
+                                          <input type="file" name="imageUpload" value="">
+                                          <!-- IMPORTANTEEEEEEEEEEEEEEEEEEEEE -->
+                                        </div>
+                                    </div>
       															<div class="form-group">
       																<div class="input-group">
       																	<div class="input-group-addon"><i class="fa fa-codepen"></i></div>
@@ -804,23 +794,24 @@ if(!isset($_COOKIE['user'])) {
       												</div>
       											</fieldset>
 
-      											<h3><span class="number"><i class="icon-credit-card txt-black"></i></span><span class="head-font capitalize-font">Documentos</span></h3>
-      												<fieldset>
+      											<!-- <h3>
+                              <span class="number">
+                                <i class="icon-credit-card txt-black"></i>
+                              </span>
+                              <span class="head-font capitalize-font">Documentos</span>
+                            </h3> -->
+      												<!-- <fieldset> -->
       												<!--CREDIT CART PAYMENT-->
-      												<div class="row">
+      												<!-- <div class="row">
       													<div class="col-sm-12">
                                   <p></p>
                                   <div class="">
-                                    <div action="#" class="dropzone" id="my-awesome-dropzone">
-                                      <div class="fallback">
-                                        <input name="file" type="file" multiple />
-                                      </div>
-                                    </div>
+
                                   </div>
       													</div>
-      												</div>
+      												</div> -->
       												<!--CREDIT CART PAYMENT END-->
-      											</fieldset>
+      											<!-- </fieldset> -->
 
       											<h3><span class="number"><i class="icon-basket-loaded txt-black"></i></span><span class="head-font capitalize-font">Aceptar Propiedad</span></h3>
       											<fieldset>
@@ -923,11 +914,7 @@ if(!isset($_COOKIE['user'])) {
     <!-- Bootstrap Touchspin JavaScript -->
 		<script src="vendors/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
 
-    <!-- Dropzone JavaScript -->
-    <script src="vendors/bower_components/dropzone/dist/dropzone.js"></script>
 
-    <!-- Dropzone Init JavaScript -->
-    <script src="assets/dist/js/dropzone-data.js"></script>
 
 	<!-- Data table JavaScript -->
 	<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
