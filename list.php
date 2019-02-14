@@ -882,7 +882,7 @@ if(!isset($_COOKIE['user'])) {
       slider.oninput = function() {
         output.innerHTML = this.value;
         url = "project.php?id=" + list_id + "&amount=" + slider.value;
-        document.getElementById("myLink_1").href = url;
+        document.getElementById("myLink_<?php echo $row['id_list'] ?>").href = url;
 
       }
 
