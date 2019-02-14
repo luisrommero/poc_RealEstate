@@ -74,7 +74,7 @@ if(!isset($_COOKIE['user'])) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Admintres I Fast build Admin dashboard for any platform</title>
+  <title>RealBLOCK | High Performance Real Estate Investments Company</title>
   <meta name="description" content="Admintres is a Dashboard & Admin Site Responsive Template by hencework." />
   <meta name="keywords" content="admin, admin dashboard, admin template, cms, crm, Admintres Admin, Admintresadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application" />
   <meta name="author" content="hencework" />
@@ -1041,6 +1041,22 @@ if(!isset($_COOKIE['user'])) {
                           <div class="form-wrap">
                             <div class="form-group">
                               <label class="control-label mb-10" for="postalCode">zip/postal code:</label>
+                              <input id="postalCode" type="text" name="zip_code"  data-mask="99999-9999" class="form-control required" value="" />
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label mb-10" for="postalCode">Nombre:</label>
+                              <input id="postalCode" type="text" name="zip_code"  data-mask="99999-9999" class="form-control required" value="" />
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label mb-10" for="postalCode">Apellido Paterno:</label>
+                              <input id="postalCode" type="text" name="zip_code"  data-mask="99999-9999" class="form-control required" value="" />
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label mb-10" for="postalCode">Apellido Materno:</label>
+                              <input id="postalCode" type="text" name="zip_code"  data-mask="99999-9999" class="form-control required" value="" />
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label mb-10" for="postalCode">INE:</label>
                               <input id="postalCode" type="text" name="zip_code"  data-mask="99999-9999" class="form-control required" value="" />
                             </div>
                           </div>
