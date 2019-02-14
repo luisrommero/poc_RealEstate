@@ -48,7 +48,7 @@ if(!isset($_COOKIE['user'])) {
 	<link href="assets/dist/css/style.css" rel="stylesheet" type="text/css">
 
   <!-- Bootstrap Dropzone CSS -->
-  <link href="../../vendors/bower_components/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css"/>
+  <link href="vendors/bower_components/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -521,7 +521,7 @@ if(!isset($_COOKIE['user'])) {
 															</div>
 															<div class="input-group-btn attachment">
 																<div class="fileupload btn  btn-default"><i class="zmdi zmdi-attachment-alt"></i>
-																	<input type="file" class="upload">
+																	<input type="file" class="upload" >
 																</div>
 															</div>
 														</div>
@@ -729,9 +729,14 @@ if(!isset($_COOKIE['user'])) {
                                     <div class="form-group">
                                         <div class="input-group">
                                           <!-- IMPORTANTEEEEEEEEEEEEEEEEEEEEE -->
-                                          <div class="fallback">
-                  													<input name="file" type="file" multiple />
-                  												</div>
+                                          <div class="col-md-12">
+                      											<div action="#" class="dropzone" id="my-awesome-dropzone">
+                      												<div class="fallback">
+                      													<input name="file" type="file" multiple />
+                      												</div>
+                      											</form>
+                      										</div>
+                      									</div>
                                           <!-- IMPORTANTEEEEEEEEEEEEEEEEEEEEE -->
                                         </div>
                                     </div>
@@ -977,10 +982,10 @@ if(!isset($_COOKIE['user'])) {
   <script src="assets/dist/js/morris-data.js"></script>
 
   <!-- Dropzone JavaScript -->
-  <script src="../../vendors/bower_components/dropzone/dist/dropzone.js"></script>
+  <script src="vendors/bower_components/dropzone/dist/dropzone.js"></script>
 
   <!-- Dropzone Init JavaScript -->
-  <script src="../dist/js/dropzone-data.js"></script>
+  <script src="assets/dist/js/dropzone-data.js"></script>
 
 
 </body>
