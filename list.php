@@ -11,6 +11,10 @@ if(!isset($_COOKIE['user'])) {
   // $list_sql = "SELECT * FROM list";
   $list_sql = "SELECT list.id_list, list.name_list, list.name_owner, list.inv_min, list.inv_max, list.percentage, project.id_project, project.p_address, project.p_type, project.p_desc, project.p_goal FROM list INNER JOIN project ON list.id_list = project.id_list;";
 
+  // its a bad cheat
+  $list_sql_cheat = "SELECT id_list FROM list;";
+  $result_set_cheat = mysqli_query($con, $list_sql_cheat);
+
   // ResultSet
   $result_set = mysqli_query($con, $list_sql);
 
@@ -684,8 +688,7 @@ if(!isset($_COOKIE['user'])) {
                           </div>
 
                           <div class="average-review inline-block mb-10">
-                            <span class="review-count">Inversion <?php echo $row['percenta
-                            ge'] ?>%
+                            <span class="review-count">Inversion <?php echo $row['percentage'] ?>%
                               </span>
                           </div>
 
@@ -715,14 +718,14 @@ if(!isset($_COOKIE['user'])) {
                         <div class="col-md-7">
 
                           <div class="pt-20" id="chart_div">
-                            <canvas id="chart_2" height="150"></canvas>
+                            <canvas id="chart_2_<?php echo $row['id_list']  ?>" height="150"></canvas>
                           </div>
 
                             <input type="range"
                             min="<?php echo $row['inv_min'] ?>"
                             max="<?php echo $row['inv_max'] ?>"
                             value="<?php echo $row['inv_min'] ?>"
-                            data-id="<?php echo $row['id_list'] ?>"
+                            data-id_<?php echo $row['id_list']  ?>="<?php echo $row['id_list'] ?>"
                             class="slider_<?php echo $row['id_list'] ?> mt-15" id="myRange_<?php echo $row['id_list']  ?>">
 
                           <div class="form-group mt-30 mb-30">
@@ -736,9 +739,9 @@ if(!isset($_COOKIE['user'])) {
                           </div>
 
                           <div class="btn-group pull-right pl-20">
-                            <a href="project.php?id=<?php echo $row['id_list'] ?>&amount=<?php echo $row['inv_min'] ?>" class="btn btn-dark btn-anim" id="myLink">
+                            <a href="project.php?id=<?php echo $row['id_list'] ?>&amount=<?php echo $row['inv_min'] ?>" class="btn btn-dark btn-anim" id="myLink_<?php echo $row['id_list']  ?>">
                               <i class="fa fa-money"></i>
-                              <span class="btn-text">&iexcl;Invertir $<span id="demo"></span>!</span>
+                              <span class="btn-text">&iexcl;Invertir $<span id="demo_<?php echo $row['id_list']  ?>"></span>!</span>
                             </a>
                           </div>
 
@@ -860,6 +863,188 @@ if(!isset($_COOKIE['user'])) {
 
   <!-- js functions for list -->
   <script type="text/javascript" src="assets/dist/js/extras-list.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+      <?php   while ($row = mysqli_fetch_assoc($result_set_cheat)) {?>
+      var slider = document.getElementById("myRange_<?php echo $row['id_list'] ?>");
+      var output = document.getElementById("demo_<?php echo $row['id_list'] ?>");
+      var inversion = 10000.0;
+      var isr;
+      var comision;
+      var ganancia;
+      var suma;
+      var total;
+      var mounth;
+      var list_id = null;
+
+      var url;
+      output.innerHTML = slider.value;
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+        url = "project.php?id=" + list_id + "&amount=" + slider.value;
+        document.getElementById("myLink_1").href = url;
+
+      }
+
+
+      $('.slider_<?php echo $row['id_list'] ?>').mouseup(function(){
+        $('#chart_2_<?php echo $row['id_list'] ?>').empty();
+        inversion = null;
+        comision = null;
+        total = null;
+        mounth = $('.mounth_<?php echo $row['id_list'] ?>').val();
+        list_id = $(this).data('id_<?php echo $row['id_list'] ?>');
+        inversion = slider.value;
+        // primer paso
+        ganancia = inversion * 0.13;
+        // segundo paso
+        ganancia = ganancia * (mounth/12);
+        // tercer
+        isr = (ganancia * 0.20);
+        // cuarto paso
+        suma = +inversion + +ganancia;
+        comision = +isr + (suma * 0.001);
+        // quinto paso
+        total = suma - comision;
+
+        console.log("Ganancia: " + ganancia);
+        console.log("ISR: " + isr);
+        console.log("comision: " + comision);
+        console.log("Inversion: " + inversion);
+        console.log("Meses: " + mounth);
+
+        if( $('#chart_2_<?php echo $row['id_list'] ?>').length > 0 ){
+          $('#chart_div_<?php echo $row['id_list'] ?>').empty();
+          $('#chart_div_<?php echo $row['id_list'] ?>').html('<canvas id="chart_2_<?php echo $row['id_list'] ?>" height="150"></canvas>');
+
+          var ctx6 = document.getElementById("chart_2_<?php echo $row['id_list'] ?>").getContext("2d");
+          var data6 = {
+            labels: [
+              "Invertido",
+              "ISR y Comisión",
+              "Ganancia"
+            ],
+            datasets: [
+              {
+                data: [inversion , comision, total],
+                backgroundColor: [
+                  "#ff6028",
+                  "#ff936d",
+                  "#ffaf93",
+                ],
+                hoverBackgroundColor: [
+                  "#ff6029",
+                  "#ff937d",
+                  "#ffaf94",
+                ]
+              }]
+            };
+            var pieChart  = new Chart(ctx6,{
+              type: 'pie',
+              data: data6,
+              options: {
+                animation: {
+                  duration:	3000
+                },
+                responsive: true,
+                maintainAspectRatio:false,
+                legend: {
+                  display:false
+                },
+                tooltip: {
+                  backgroundColor:'rgba(33,33,33,1)',
+                  cornerRadius:0,
+                  footerFontFamily:"'Roboto'"
+                },
+                elements: {
+                  arc: {
+                    borderWidth: 0
+                  }
+                }
+              }
+            });
+          }
+        });
+        $('.mounth_<?php echo $row['id_list'] ?>').change(function(){
+          inversion = null;
+          comision = null;
+          total = null;
+          $('#chart_2_<?php echo $row['id_list'] ?>').empty();
+          mounth = $('.mounth_<?php echo $row['id_list'] ?>').val();
+          list_id = $(this).data('id_<?php echo $row['id_list'] ?>');
+          inversion = slider.value;
+          // primer paso
+          ganancia = inversion * 0.13;
+          // segundo paso
+          ganancia = ganancia * (mounth/12);
+          // tercer
+          isr = (ganancia * 0.20);
+          // cuarto paso
+          suma = +inversion + +ganancia;
+          comision = +isr + (suma * 0.001);
+          // quinto paso
+          total = suma - comision;
+
+          console.log("Ganancia: " + ganancia);
+          console.log("ISR: " + isr);
+          console.log("comision: " + comision);
+          console.log("Inversion: " + inversion);
+          console.log("Meses: " + mounth);
+
+          if( $('#chart_2_<?php echo $row['id_list'] ?>').length > 0 ){
+            $('#chart_div_<?php echo $row['id_list'] ?>').empty();
+            $('#chart_div_<?php echo $row['id_list'] ?>').html('<canvas id="chart_2_1" height="150"></canvas>');
+            var ctx6 = document.getElementById("chart_2_<?php echo $row['id_list'] ?>").getContext("2d");
+            var data6 = {
+              labels: [
+                "Invertido",
+                "ISR y Comisión",
+                "Ganancia"
+              ],
+              datasets: [
+                {
+                  data: [inversion , comision, total],
+                  backgroundColor: [
+                    "#ff6028",
+                    "#ff936d",
+                    "#ffaf93",
+                  ],
+                  hoverBackgroundColor: [
+                    "#ff6028",
+                    "#ff936d",
+                    "#ffaf93",
+                  ]
+                }]
+              };
+              var pieChart  = new Chart(ctx6,{
+                type: 'pie',
+                data: data6,
+                options: {
+                  animation: {
+                    duration:	3000
+                  },
+                  responsive: true,
+                  maintainAspectRatio:false,
+                  legend: {
+                    display:false
+                  },
+                  tooltip: {
+                    backgroundColor:'rgba(33,33,33,1)',
+                    cornerRadius:0,
+                    footerFontFamily:"'Roboto'"
+                  },
+                  elements: {
+                    arc: {
+                      borderWidth: 0
+                    }
+                  }
+                }
+              });
+            }
+          });
+          <?php } ?>
+  });
+  </script>
 </body>
 
 </html>
