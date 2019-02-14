@@ -730,7 +730,7 @@ if(!isset($_COOKIE['user'])) {
                           <div class="pt-20" id="chart_div">
                             <canvas id="chart_2_<?php echo $row['id_list']  ?>" height="150"></canvas>
                           </div>
-
+                          <input type="hidden" name="" id="hid_<?php echo $row['id_list'] ?>" value="<?php echo $row['id_list'] ?>">
                             <input type="range"
                             min="<?php echo $row['inv_min'] ?>"
                             max="<?php echo $row['inv_max'] ?>"
@@ -885,13 +885,13 @@ if(!isset($_COOKIE['user'])) {
       var suma;
       var total;
       var mounth;
-      var list_id = null;
+      var list_id_<?php echo $row['id_list'] ?> = <?php echo $row['id_list'] ?>;
 
       var url;
       output.innerHTML = slider.value;
       slider.oninput = function() {
         output.innerHTML = this.value;
-        url = "project.php?id=" + list_id + "&amount=" + slider.value;
+        url = "project.php?id=" + list_id_<?php echo $row['id_list'] ?> + "&amount=" + slider.value;
         document.getElementById("myLink_<?php echo $row['id_list'] ?>").href = url;
 
       }
@@ -903,7 +903,8 @@ if(!isset($_COOKIE['user'])) {
         comision = null;
         total = null;
         mounth = $('.mounth_<?php echo $row['id_list'] ?>').val();
-        list_id = $(this).data('id_<?php echo $row['id_list'] ?>');
+        //list_id_<?php echo $row['id_list'] ?> = $(this).data('id_<?php echo $row['id_list'] ?>');
+        list_id_<?php echo $row['id_list'] ?> = document.getElementById('hid_<?php echo $row['id_list'] ?>').value;
         inversion = slider.value;
         // primer paso
         ganancia = inversion * 0.13;
@@ -981,7 +982,9 @@ if(!isset($_COOKIE['user'])) {
           total = null;
           $('#chart_2_<?php echo $row['id_list'] ?>').empty();
           mounth = $('.mounth_<?php echo $row['id_list'] ?>').val();
-          list_id = $(this).data('id_<?php echo $row['id_list'] ?>');
+          // list_id_<?php echo $row['id_list'] ?> = $(this).data('id_<?php echo $row['id_list'] ?>');
+          list_id_<?php echo $row['id_list'] ?> = document.getElementById('hid_<?php echo $row['id_list'] ?>').value;
+
           inversion = slider.value;
           // primer paso
           ganancia = inversion * 0.13;
@@ -1003,7 +1006,7 @@ if(!isset($_COOKIE['user'])) {
 
           if( $('#chart_2_<?php echo $row['id_list'] ?>').length > 0 ){
             $('#chart_div_<?php echo $row['id_list'] ?>').empty();
-            $('#chart_div_<?php echo $row['id_list'] ?>').html('<canvas id="chart_2_1" height="150"></canvas>');
+            $('#chart_div_<?php echo $row['id_list'] ?>').html('<canvas id="chart_2_<?php echo $row['id_list'] ?>" height="150"></canvas>');
             var ctx6 = document.getElementById("chart_2_<?php echo $row['id_list'] ?>").getContext("2d");
             var data6 = {
               labels: [

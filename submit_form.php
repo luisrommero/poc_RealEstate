@@ -20,7 +20,17 @@ while ($row = mysqli_fetch_assoc($result_set_max)) {
 }
 echo $sql_list = "INSERT INTO project SET id_list = " . $max . ", p_address = 'Jorge Loza', p_type = '" . $p_type . "', p_desc = '".$p_desc."', p_goal = " . $p_goal;
 echo "<br >";
+
+// img
+
+
+
+// img
+
+echo $sql_img_1 = "INSERT INTO p_img SET id_list = " . $max . ", path_img = 'property-3.jpg';";
+echo "<br >";
 $con->query($sql_list);
+$con->query($sql_img_1);
 header("Location: list.php");
 // ejemplos de escrituras
 // predio, todos los archivos legales
