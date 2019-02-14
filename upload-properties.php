@@ -734,7 +734,6 @@ if(!isset($_COOKIE['user'])) {
                       												<div class="fallback">
                       													<input name="file" type="file" multiple />
                       												</div>
-                      											</form>
                       										</div>
                       									</div>
                                           <!-- IMPORTANTEEEEEEEEEEEEEEEEEEEEE -->
