@@ -698,18 +698,28 @@ if(!isset($_COOKIE['user'])) {
                           </div>
 
                           <div class="head-font mb-15">
-                            Inv. Mínima: <p class="pull-right product-price ">$
-                              <?php echo $row['inv_min'] ?>
+                            Inv. Mínima: <p class="pull-right product-price ">
+                              <?php
+                              setlocale(LC_MONETARY, 'en_US');
+                              echo money_format('%(#10n', $row['inv_min']) . "\n";
+                              ?>
                             </p>
                           </div>
                           <div class="head-font mb-15">
-                            Inv. Maxima: <p class="pull-right product-price ">$
-                              <?php echo $row['inv_max'] ?>
+                            Inv. Maxima: <p class="pull-right product-price ">
+                              <?php
+                              setlocale(LC_MONETARY, 'en_US');
+                              echo money_format('%(#10n', $row['inv_max']) . "\n";
+                              ?>
                             </p>
                           </div>
-                          <div class="head-font mb-15">
-                            Meta: <p class="pull-right product-price ">$
-                              <?php echo $row['p_goal'] ?>
+                          <div class="head-font mb-15" type="number">
+                            Meta: <p class="pull-right product-price ">USD
+                              <?php
+                              setlocale(LC_MONETARY, 'en_US');
+                              echo money_format('%(#10n', $row['p_goal']) . "\n";
+                              ?>
+
                             </p>
                           </div>
 
