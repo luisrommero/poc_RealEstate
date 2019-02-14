@@ -726,7 +726,9 @@ if(!isset($_COOKIE['user'])) {
                                     <div class="form-group">
                                         <div class="input-group">
                                           <!-- IMPORTANTEEEEEEEEEEEEEEEEEEEEE -->
-                                          <input type="file" name="imageUpload" value="">
+                                          <div class="fallback">
+                  													<input name="file" type="file" multiple />
+                  												</div>
                                           <!-- IMPORTANTEEEEEEEEEEEEEEEEEEEEE -->
                                         </div>
                                     </div>
@@ -970,6 +972,13 @@ if(!isset($_COOKIE['user'])) {
   <script src="vendors/bower_components/raphael/raphael.min.js"></script>
   <script src="vendors/bower_components/morris.js/morris.min.js"></script>
   <script src="assets/dist/js/morris-data.js"></script>
+
+  <!-- Dropzone JavaScript -->
+  <script src="../../vendors/bower_components/dropzone/dist/dropzone.js"></script>
+
+  <!-- Dropzone Init JavaScript -->
+  <script src="../dist/js/dropzone-data.js"></script>
+
 
 </body>
 

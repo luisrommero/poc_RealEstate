@@ -1029,6 +1029,12 @@ if(!isset($_COOKIE['user'])) {
                                 <input type="text" class="form-control required" value="<?php echo $amount ?>" name="Username" id="exampleInputuname" placeholder="Username">
                               </div>
                             </div>
+                            <div class="form-group">
+                              <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
+                                <input type="text" class="form-control required" value="<?php echo $amount ?>" name="Username" id="exampleInputuname" placeholder="RFC">
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1127,9 +1133,39 @@ if(!isset($_COOKIE['user'])) {
                       <!--CREDIT CART PAYMENT END-->
                     </fieldset>
 
-                    <h3><span class="number"><i class="icon-basket-loaded txt-black"></i></span><span class="head-font capitalize-font">review cart</span></h3>
+                    <h3><span class="number"><i class="icon-basket-loaded txt-black"></i></span><span class="head-font capitalize-font">Revisar y Confirmar</span></h3>
                     <fieldset>
-                        <input type="submit" name="" value="Aceptar">
+                      <table class="table display product-overview" id="datable_1">
+                        <thead>
+                          <tr>
+                            <th>Tipo</th>
+                            <th>Inv min</th>
+                            <th>Meta</th>
+                            <th>Lugar</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tfoot>
+                          <tr>
+                            <th colspan="3">Subtotal:</th>
+                            <th></th>
+                            <th></th>
+                          </tr>
+                        </tfoot>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <img src="../img/chair.jpg" alt="Residencial" width="80">
+                            </td>
+                            <td><input class="vertical-spin" type="text" data-bts-button-down-class="btn btn-default"   data-bts-button-up-class="btn btn-default" value="500,000" name="vertical-spin"></td>
+                            <td>
+                            <input class="vertical-spin" type="text" data-bts-button-down-class="btn btn-default"   data-bts-button-up-class="btn btn-default" value="2,000,000" name="vertical-spin">
+                            </td>
+                            <td>Dirección</td>
+                            <td><a href="javascript:void(0)" class="text-inverse" title="Delete" data-toggle="tooltip"><i class="fa fa-trash"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </fieldset>
                   </form>
                 </div>
