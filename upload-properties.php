@@ -46,6 +46,9 @@ if(!isset($_COOKIE['user'])) {
 
 	<!-- Custom CSS -->
 	<link href="assets/dist/css/style.css" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap Dropzone CSS -->
+  <link href="../../vendors/bower_components/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
