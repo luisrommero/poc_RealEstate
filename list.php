@@ -9,7 +9,7 @@ if(!isset($_COOKIE['user'])) {
 
   // sql script
   // $list_sql = "SELECT * FROM list";
-  $list_sql = "SELECT list.id_list, list.name_list, list.name_owner, list.inv_min, list.percentage, project.id_project, project.p_address, project.p_type, project.p_desc, project.p_goal FROM list INNER JOIN project ON list.id_list = project.id_list;";
+  $list_sql = "SELECT list.id_list, list.name_list, list.name_owner, list.inv_min, list.inv_max, list.percentage, project.id_project, project.p_address, project.p_type, project.p_desc, project.p_goal FROM list INNER JOIN project ON list.id_list = project.id_list;";
 
   // ResultSet
   $result_set = mysqli_query($con, $list_sql);
@@ -694,13 +694,13 @@ if(!isset($_COOKIE['user'])) {
                             </p>
                           </div>
                           <div class="head-font mb-15">
-                            Inv. Mínima: <p class="pull-right product-price ">$
-                              <?php echo $row['inv_min'] ?>
+                            Inv. Maxima: <p class="pull-right product-price ">$
+                              <?php echo $row['inv_max'] ?>
                             </p>
                           </div>
                           <div class="head-font mb-15">
-                            Inv. Mínima: <p class="pull-right product-price ">$
-                              <?php echo $row['inv_min'] ?>
+                            Meta: <p class="pull-right product-price ">$
+                              <?php echo $row['p_goal'] ?>
                             </p>
                           </div>
 
