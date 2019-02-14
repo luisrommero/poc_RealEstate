@@ -673,7 +673,7 @@ if(!isset($_COOKIE['user'])) {
                       </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
+                      <a href="project.php?id=1&amount=43000" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
                   </div>
@@ -723,7 +723,7 @@ if(!isset($_COOKIE['user'])) {
                       </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
+                      <a href="project.php?id=1&amount=23000" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
                   </div>
@@ -773,7 +773,7 @@ if(!isset($_COOKIE['user'])) {
                       </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
+                      <a href="project.php?id=1&amount=12000" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
                   </div>
@@ -822,7 +822,7 @@ if(!isset($_COOKIE['user'])) {
                       </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
+                      <a href="project.php?id=1&amount=7000" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
                   </div>
@@ -872,7 +872,7 @@ if(!isset($_COOKIE['user'])) {
                       </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
+                      <a href="project.php?id=1&amount=67000" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
                   </div>
@@ -923,7 +923,7 @@ if(!isset($_COOKIE['user'])) {
                       </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
+                      <a href="project.php?id=1&amount=23000" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
                   </div>
