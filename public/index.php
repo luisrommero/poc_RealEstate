@@ -93,7 +93,7 @@ if(isset($_COOKIE['user'])) {
                 <div class="container">
                     <div class="overlay">
                         <div class="info">
-                            <div class="tag price">$ 11,000</div>
+                            <div class="tag price">$ 11,000 TIR*: 25%</div>
                             <h3>3398 Lodgeville Road</h3>
                             <figure>Golden Valley, MN 55427</figure>
                         </div>
@@ -106,9 +106,10 @@ if(isset($_COOKIE['user'])) {
                 <div class="container">
                     <div class="overlay">
                         <div class="info">
-                            <div class="tag price">$ 16,000</div>
+                            <div class="tag price">$ 16,000 TIR*: 25%</div>
                             <h3>987 Cantebury Drive</h3>
                             <figure>Chicago, IL 60610</figure>
+                            <figure></figure>
                         </div>
                         <a href="#" class="link-arrow">Read More</a>
                     </div>
@@ -125,7 +126,7 @@ if(isset($_COOKIE['user'])) {
         <section id="banner">
             <div class="block has-dark-background background-color-default-darker center text-banner">
                 <div class="container">
-                    <h1 class="no-bottom-margin no-border">Investment in Real Estate <a href="#" class="text-underline">Experts Investment</a>!</h1>
+                    <h1 class="no-bottom-margin no-border">Real Estate Tokenized OwnerShip</h1>
                 </div>
             </div>
         </section><!-- /#banner -->
@@ -138,41 +139,6 @@ if(isset($_COOKIE['user'])) {
           </div>
         </section> -->
         <!--  -->
-        <section id="our-services" class="block">
-            <div class="container">
-                <header class="section-title"><h2>Crowdfunding Inmobiliario</h2></header>
-                <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                        <div class="feature-box equal-height">
-                            <figure class="icon"><i class="fa fa-folder"></i></figure>
-                            <aside class="description">
-                                <header><h3>Real Estate investors</h3></header>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            </aside>
-                        </div><!-- /.feature-box -->
-                    </div><!-- /.col-md-4 -->
-                    <div class="col-md-4 col-sm-4">
-                        <div class="feature-box equal-height">
-                            <figure class="icon"><i class="fa fa-users"></i></figure>
-                            <aside class="description">
-                                <header><h3>High Performance</h3></header>
-                                <p>Aliquam gravida magna et fringilla convallis. Pellentesque habitant morbi </p>
-                            </aside>
-                        </div><!-- /.feature-box -->
-                    </div><!-- /.col-md-4 -->
-                    <div class="col-md-4 col-sm-4">
-                        <div class="feature-box equal-height">
-                            <figure class="icon"><i class="fa fa-money"></i></figure>
-                            <aside class="description">
-                                <header><h3>Minimum investment</h3></header>
-                                <p>Phasellus non viverra tortor, id auctor leo. Suspendisse id nibh placerat</p>
-                            </aside>
-                        </div><!-- /.feature-box -->
-                    </div><!-- /.col-md-4 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /#our-services -->
-
 
         <section id="new-properties" class="block">
             <div class="container">
@@ -189,7 +155,7 @@ if(isset($_COOKIE['user'])) {
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
-                                        <div class="tag price">$ 11,000</div>
+                                        <div class="tag price">From: $3,500 TIR: 18%</div>
                                         <h3>3398 Lodgeville Road</h3>
                                         <figure>Golden Valley, MN 55427</figure>
                                     </div>
@@ -223,7 +189,7 @@ if(isset($_COOKIE['user'])) {
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
-                                        <div class="tag price">$ 38,000</div>
+                                        <div class="tag price">From: $3,500 TIR: 18%</div>
                                         <h3>2186 Rinehart Road</h3>
                                         <figure>Doral, FL 33178 </figure>
                                     </div>
@@ -257,7 +223,7 @@ if(isset($_COOKIE['user'])) {
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
-                                        <div class="tag price">$ 325,000</div>
+                                        <div class="tag price">From: $3,500 TIR: 18%</div>
                                         <h3>3705 Brighton Circle Road</h3>
                                         <figure>Glenwood, MN 56334</figure>
                                     </div>
@@ -291,7 +257,7 @@ if(isset($_COOKIE['user'])) {
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
-                                        <div class="tag price">$ 16,000</div>
+                                        <div class="tag price">From: $3,500 TIR: 18%</div>
                                         <h3>362 Lynn Ogden Lane</h3>
                                         <figure>Galveston, TX 77550</figure>
                                     </div>
@@ -327,7 +293,7 @@ if(isset($_COOKIE['user'])) {
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
-                                        <div class="tag price">$ 18,000</div>
+                                        <div class="tag price">From: $3,500 TIR: 18%</div>
                                         <h3>2506 B Street</h3>
                                         <figure>New Brighton, MN 55112</figure>
                                     </div>
@@ -361,7 +327,7 @@ if(isset($_COOKIE['user'])) {
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
-                                        <div class="tag price">$ 136,000</div>
+                                        <div class="tag price">From: $3,500 TIR: 18%</div>
                                         <h3>3990 Late Avenue</h3>
                                         <figure>Kingfisher, OK 73750</figure>
                                     </div>
@@ -395,7 +361,7 @@ if(isset($_COOKIE['user'])) {
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
-                                        <div class="tag price">$ 12,680</div>
+                                        <div class="tag price">From: $3,500 TIR: 18%</div>
                                         <h3>297 Marie Street</h3>
                                         <figure>Towson, MD 21204 </figure>
                                     </div>
@@ -429,7 +395,7 @@ if(isset($_COOKIE['user'])) {
                                 </div>
                                 <div class="overlay">
                                     <div class="info">
-                                        <div class="tag price">$ 12,800</div>
+                                        <div class="tag price">From: $3,500 TIR: 18%</div>
                                         <h3>64 Timberbrook Lane</h3>
                                         <figure>Denver, CO 80202</figure>
                                     </div>
@@ -499,6 +465,44 @@ if(isset($_COOKIE['user'])) {
                 </div>
             </div>
         </section><!-- /#partners -->
+
+
+        <section id="our-services" class="block">
+            <div class="container">
+                <header class="section-title"><h2>Crowdfunding Inmobiliario</h2></header>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="feature-box equal-height">
+                            <figure class="icon"><i class="fa fa-folder"></i></figure>
+                            <aside class="description">
+                                <header><h3>Real Estate investors</h3></header>
+                                <p>A loan is a type of passive investment that is used by private equity firms, REITs and real estate investment platforms.</p>
+                            </aside>
+                        </div><!-- /.feature-box -->
+                    </div><!-- /.col-md-4 -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="feature-box equal-height">
+                            <figure class="icon"><i class="fa fa-users"></i></figure>
+                            <aside class="description">
+                                <header><h3>High Performance</h3></header>
+                                <p>High Performance Real Estate Investments Company is a Real Block company, established in 2013 with headquarters in México. </p>
+                            </aside>
+                        </div><!-- /.feature-box -->
+                    </div><!-- /.col-md-4 -->
+                    <div class="col-md-4 col-sm-4">
+                        <div class="feature-box equal-height">
+                            <figure class="icon"><i class="fa fa-money"></i></figure>
+                            <aside class="description">
+                                <header><h3>Minimum investment</h3></header>
+                                <p>Minimum investment is the least amount of money an investor must invest to take part in a specific investment.</p>
+                            </aside>
+                        </div><!-- /.feature-box -->
+                    </div><!-- /.col-md-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /#our-services -->
+
+
     </div>
     <!-- end Page Content -->
     <!-- Page Footer -->

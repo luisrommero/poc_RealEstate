@@ -685,7 +685,8 @@ if(!isset($_COOKIE['user'])) {
 
                           <div class="average-review inline-block mb-10">
                             <span class="review-count">
-                              </span> Inversion <?php echo $row['percentage'] ?>%
+                              </span> Inversion <?php echo $row['percenta
+                              ge'] ?>%
                           </div>
 
                           <div class="head-font mb-15">
