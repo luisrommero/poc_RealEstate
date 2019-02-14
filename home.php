@@ -644,7 +644,7 @@ if(!isset($_COOKIE['user'])) {
                   </div>
 
                   <div class="panel-body">
-                    <img src="assets/img/uploads/property-4.jpg" alt="" class="" width="100%">
+                    <img src="assets/img/uploads/property-1.jpg" alt="" class="" width="100%">
                     <div class="progress-anim">
                       <p>Inversión 95%</p>
                       <div class="progress">
@@ -652,26 +652,28 @@ if(!isset($_COOKIE['user'])) {
                         wow animated progress-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
+                    <hr class="light-grey-hr row mt-0 mb-10"/>
+                    <div class="text-center">
+                      <div class="inline-block "><h5>Desde: $4,500   |  TIR: 18%</h5></div>
+                    </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="text-center">
-                      <div class="inline-block mr-45"><h6>Inversion</h6><small>$320,000</small></div>
+                      <div class="inline-block mr-45"><h6>Inversion</h6><small>$430,000</small></div>
                       <div class="inline-block mr-45"><h6>Inversores</h6><small>60</small></div>
                       <div class="inline-block"><h6>Return</h6><small class="text-success">15% <i class="fa fa-level-up"></i></small></div>
                     </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
-                    <div class="label-chatrs">
-                      <div class="">
-                        <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">Bounce Rate</span><span class="block txt-grey">356 visits</span></span>
-                        <div class="pull-right"><span class="font-18">44.46%</span></div>
+                      <div class="text-center">
+                        <div class="inline-block mr-5"><h6 class="ml-30">Bounce Rate</h6></div>
+                        <div class="inline-block mr-5"><span class="font-18 ml-25">4356 visits</span></div>
+                        <div class="inline-block"><span class="font-18 ml-25">44.46%</span></div>
                         <div class="clearfix"></div>
                       </div>
-                    </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Ver Más...</a>
+                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
-
                   </div>
 
                 </div>
@@ -692,34 +694,36 @@ if(!isset($_COOKIE['user'])) {
                   </div>
 
                   <div class="panel-body">
-                    <img src="assets/img/uploads/property-5.jpg" alt="" class="" width="100%">
+                    <img src="assets/img/uploads/property-2.jpg" alt="" class="" width="100%">
                     <div class="progress-anim">
-                      <p>Inversión 78%</p>
+                      <p>Inversión 95%</p>
                       <div class="progress">
                         <div class="progress-bar progress-bar-orange
-                        wow animated progress-animated" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                        wow animated progress-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
+                    </div>
+                    <hr class="light-grey-hr row mt-0 mb-10"/>
+                    <div class="text-center">
+                      <div class="inline-block "><h5>Desde: $3,500   |  TIR: 18%</h5></div>
                     </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="text-center">
-                      <div class="inline-block mr-45"><h6>Inversion</h6><small>$120,000</small></div>
-                      <div class="inline-block mr-45"><h6>Inversores</h6><small>46</small></div>
+                      <div class="inline-block mr-45"><h6>Inversion</h6><small>$320,000</small></div>
+                      <div class="inline-block mr-45"><h6>Inversores</h6><small>60</small></div>
                       <div class="inline-block"><h6>Return</h6><small class="text-success">15% <i class="fa fa-level-up"></i></small></div>
                     </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
-                    <div class="label-chatrs">
-                      <div class="">
-                        <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">Bounce Rate</span><span class="block txt-grey">356 visits</span></span>
-                        <div class="pull-right"><span class="font-18">44.46%</span></div>
+                      <div class="text-center">
+                        <div class="inline-block mr-5"><h6 class="ml-30">Bounce Rate</h6></div>
+                        <div class="inline-block mr-5"><span class="font-18 ml-25">960 visits</span></div>
+                        <div class="inline-block"><span class="font-18 ml-25">44.46%</span></div>
                         <div class="clearfix"></div>
                       </div>
-                    </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-roco-02?e=9652543/67021746" class="btn btn-primary btn-lg btn-block" role="button">Ver Más...</a>
+                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
-
                   </div>
 
                 </div>
@@ -740,34 +744,36 @@ if(!isset($_COOKIE['user'])) {
                   </div>
 
                   <div class="panel-body">
-                    <img src="assets/img/uploads/property-6.jpg" alt="" class="" width="100%">
+                    <img src="assets/img/uploads/property-3.jpg" alt="" class="" width="100%">
                     <div class="progress-anim">
-                      <p>Inversión 24%</p>
+                      <p>Inversión 95%</p>
                       <div class="progress">
                         <div class="progress-bar progress-bar-orange
-                        wow animated progress-animated" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        wow animated progress-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
+                    </div>
+                    <hr class="light-grey-hr row mt-0 mb-10"/>
+                    <div class="text-center">
+                      <div class="inline-block "><h5>Desde: $3,500   |  TIR: 18%</h5></div>
                     </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="text-center">
-                      <div class="inline-block mr-45"><h6>Inversion</h6><small>$20,000</small></div>
+                      <div class="inline-block mr-45"><h6>Inversion</h6><small>$320,000</small></div>
                       <div class="inline-block mr-45"><h6>Inversores</h6><small>60</small></div>
                       <div class="inline-block"><h6>Return</h6><small class="text-success">15% <i class="fa fa-level-up"></i></small></div>
                     </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
-                    <div class="label-chatrs">
-                      <div class="">
-                        <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">Bounce Rate</span><span class="block txt-grey">356 visits</span></span>
-                        <div class="pull-right"><span class="font-18">44.46%</span></div>
+                      <div class="text-center">
+                        <div class="inline-block mr-5"><h6 class="ml-30">Bounce Rate</h6></div>
+                        <div class="inline-block mr-5"><span class="font-18 ml-25">560 visits</span></div>
+                        <div class="inline-block"><span class="font-18 ml-25">44.46%</span></div>
                         <div class="clearfix"></div>
                       </div>
-                    </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-otero-01?e=9652543/67015820" class="btn btn-primary btn-lg btn-block" role="button">Ver Más...</a>
+                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
-
                   </div>
 
                 </div>
@@ -787,34 +793,36 @@ if(!isset($_COOKIE['user'])) {
                   </div>
 
                   <div class="panel-body">
-                    <img src="assets/img/uploads/property-1.jpg" alt="" class="" width="100%">
+                    <img src="assets/img/uploads/property-4.jpg" alt="" class="" width="100%">
                     <div class="progress-anim">
-                      <p>Inversión 73%</p>
+                      <p>Inversión 95%</p>
                       <div class="progress">
                         <div class="progress-bar progress-bar-orange
-                        wow animated progress-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        wow animated progress-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
+                    </div>
+                    <hr class="light-grey-hr row mt-0 mb-10"/>
+                    <div class="text-center">
+                      <div class="inline-block "><h5>Desde: $3,500   |  TIR: 18%</h5></div>
                     </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="text-center">
-                      <div class="inline-block mr-45"><h6>Inversion</h6><small>$140,000</small></div>
-                      <div class="inline-block mr-45"><h6>Inversores</h6><small>29</small></div>
-                      <div class="inline-block"><h6>Return</h6><small class="text-success">10% <i class="fa fa-level-up"></i></small></div>
+                      <div class="inline-block mr-45"><h6>Inversion</h6><small>$320,000</small></div>
+                      <div class="inline-block mr-45"><h6>Inversores</h6><small>60</small></div>
+                      <div class="inline-block"><h6>Return</h6><small class="text-success">15% <i class="fa fa-level-up"></i></small></div>
                     </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
-                    <div class="label-chatrs">
-                      <div class="">
-                        <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">Bounce Rate</span><span class="block txt-grey">356 visits</span></span>
-                        <div class="pull-right"><span class="font-18">44.46%</span></div>
+                      <div class="text-center">
+                        <div class="inline-block mr-5"><h6 class="ml-30">Bounce Rate</h6></div>
+                        <div class="inline-block mr-5"><span class="font-18 ml-25">4356 visits</span></div>
+                        <div class="inline-block"><span class="font-18 ml-25">44.46%</span></div>
                         <div class="clearfix"></div>
                       </div>
-                    </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Ver Más...</a>
+                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
-
                   </div>
 
                 </div>
@@ -835,34 +843,36 @@ if(!isset($_COOKIE['user'])) {
                   </div>
 
                   <div class="panel-body">
-                    <img src="assets/img/uploads/property-2.jpg" alt="" class="" width="100%">
+                    <img src="assets/img/uploads/property-5.jpg" alt="" class="" width="100%">
                     <div class="progress-anim">
-                      <p>Inversión 43%</p>
+                      <p>Inversión 95%</p>
                       <div class="progress">
                         <div class="progress-bar progress-bar-orange
-                        wow animated progress-animated" role="progressbar" aria-valuenow="43" aria-valuemin="0" aria-valuemax="100"></div>
+                        wow animated progress-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
+                    </div>
+                    <hr class="light-grey-hr row mt-0 mb-10"/>
+                    <div class="text-center">
+                      <div class="inline-block "><h5>Desde: $3,500   |  TIR: 18%</h5></div>
                     </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="text-center">
-                      <div class="inline-block mr-45"><h6>Inversion</h6><small>$50,000</small></div>
-                      <div class="inline-block mr-45"><h6>Inversores</h6><small>14</small></div>
-                      <div class="inline-block"><h6>Return</h6><small class="text-success">6% <i class="fa fa-level-up"></i></small></div>
+                      <div class="inline-block mr-45"><h6>Inversion</h6><small>$320,000</small></div>
+                      <div class="inline-block mr-45"><h6>Inversores</h6><small>60</small></div>
+                      <div class="inline-block"><h6>Return</h6><small class="text-success">15% <i class="fa fa-level-up"></i></small></div>
                     </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
-                    <div class="label-chatrs">
-                      <div class="">
-                        <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">Bounce Rate</span><span class="block txt-grey">356 visits</span></span>
-                        <div class="pull-right"><span class="font-18">15.20%</span></div>
+                      <div class="text-center">
+                        <div class="inline-block mr-5"><h6 class="ml-30">Bounce Rate</h6></div>
+                        <div class="inline-block mr-5"><span class="font-18 ml-25">2465 visits</span></div>
+                        <div class="inline-block"><span class="font-18 ml-25">44.46%</span></div>
                         <div class="clearfix"></div>
                       </div>
-                    </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Ver Más...</a>
+                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
-
                   </div>
 
                 </div>
@@ -884,13 +894,17 @@ if(!isset($_COOKIE['user'])) {
                   </div>
 
                   <div class="panel-body">
-                    <img src="assets/img/uploads/property-3.jpg" alt="" class="" width="100%">
+                    <img src="assets/img/uploads/property-6.jpg" alt="" class="" width="100%">
                     <div class="progress-anim">
                       <p>Inversión 95%</p>
                       <div class="progress">
                         <div class="progress-bar progress-bar-orange
                         wow animated progress-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
+                    </div>
+                    <hr class="light-grey-hr row mt-0 mb-10"/>
+                    <div class="text-center">
+                      <div class="inline-block "><h5>Desde: $3,500   |  TIR: 18%</h5></div>
                     </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="text-center">
@@ -899,19 +913,17 @@ if(!isset($_COOKIE['user'])) {
                       <div class="inline-block"><h6>Return</h6><small class="text-success">15% <i class="fa fa-level-up"></i></small></div>
                     </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
-                    <div class="label-chatrs">
-                      <div class="">
-                        <span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">Bounce Rate</span><span class="block txt-grey">356 visits</span></span>
-                        <div class="pull-right"><span class="font-18">44.46%</span></div>
+                      <div class="text-center">
+                        <div class="inline-block mr-5"><h6 class="ml-30">Bounce Rate</h6></div>
+                        <div class="inline-block mr-5"><span class="font-18 ml-25">1020 visits</span></div>
+                        <div class="inline-block"><span class="font-18 ml-25">44.46%</span></div>
                         <div class="clearfix"></div>
                       </div>
-                    </div>
                     <hr class="light-grey-hr row mt-10 mb-15"/>
                     <div class="">
-                      <a href="#" class="btn btn-primary btn-lg btn-block" role="button">Ver Más...</a>
+                      <a href="https://issuu.com/mecaweb/docs/memoria-descriptiva-damasco-01?e=9652543/66996729" class="btn btn-primary btn-lg btn-block" role="button">Invest</a>
 
                     </div>
-
                   </div>
 
                 </div>
