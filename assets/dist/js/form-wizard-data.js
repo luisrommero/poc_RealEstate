@@ -54,7 +54,7 @@ $(function(){
 			onFinished: function (event, currentIndex)
 			{
 				// alert("aqui hacer subit via js");
-				document.propertyForm.action="submit_form.php";
+				document.propertyForm.action = "submit_form.php";
 				document.propertyForm.submit();
 			}
 		}).validate({

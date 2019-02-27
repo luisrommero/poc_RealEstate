@@ -1031,8 +1031,8 @@ if(!isset($_COOKIE['user'])) {
                             </div>
                             <div class="form-group">
                               <div class="input-group">
-                                <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
-                                <input type="text" class="form-control required" value="<?php echo $amount ?>" name="Username" id="exampleInputuname" placeholder="RFC">
+                                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                <input type="text" class="form-control required" value="" name="Username" id="" placeholder="RFC">
                               </div>
                             </div>
                           </div>
@@ -1133,7 +1133,7 @@ if(!isset($_COOKIE['user'])) {
                       <!--CREDIT CART PAYMENT END-->
                     </fieldset>
 
-                    <h3><span class="number"><i class="icon-basket-loaded txt-black"></i></span><span class="head-font capitalize-font">Revisar y Confirmar</span></h3>
+                    <h3><span class="number"><i class="icon-basket-loaded txt-black"></i></span><span class="head-font capitalize-font">Confirmar</span></h3>
                     <fieldset>
                       <table class="table display product-overview" id="datable_1">
                         <thead>

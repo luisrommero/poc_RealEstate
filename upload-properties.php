@@ -898,7 +898,6 @@ if(!isset($_COOKIE['user'])) {
 
 		</div>
         <!-- /Main Content -->
-
     </div>
     <!-- /#wrapper -->
 
@@ -923,68 +922,66 @@ if(!isset($_COOKIE['user'])) {
     <!-- Bootstrap Touchspin JavaScript -->
 		<script src="vendors/bower_components/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
 
+  	<!-- Data table JavaScript -->
+  	<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
 
+  	<!-- Slimscroll JavaScript -->
+  	<script src="assets/dist/js/jquery.slimscroll.js"></script>
 
-	<!-- Data table JavaScript -->
-	<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+  	<!-- Progressbar Animation JavaScript -->
+  	<script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+  	<script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
 
-	<!-- Slimscroll JavaScript -->
-	<script src="assets/dist/js/jquery.slimscroll.js"></script>
+  	<!-- Fancy Dropdown JS -->
+  	<script src="assets/dist/js/dropdown-bootstrap-extended.js"></script>
 
-	<!-- Progressbar Animation JavaScript -->
-	<script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
-	<script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
+  	<!-- Sparkline JavaScript -->
+  	<script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
 
-	<!-- Fancy Dropdown JS -->
-	<script src="assets/dist/js/dropdown-bootstrap-extended.js"></script>
+  	<!-- Owl JavaScript -->
+  	<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 
-	<!-- Sparkline JavaScript -->
-	<script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+  	<!-- Switchery JavaScript -->
+  	<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
 
-	<!-- Owl JavaScript -->
-	<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-
-	<!-- Switchery JavaScript -->
-	<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
-
-	<!-- Vector Maps JavaScript -->
+  	<!-- Vector Maps JavaScript -->
     <script src="vendors/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
-	<script src="vendors/vectormap/jquery-jvectormap-us-aea-en.js"></script>
+  	<script src="vendors/vectormap/jquery-jvectormap-us-aea-en.js"></script>
     <script src="vendors/vectormap/jquery-jvectormap-world-mill-en.js"></script>
-	<script src="assets/dist/js/vectormap-data.js"></script>
+  	<script src="assets/dist/js/vectormap-data.js"></script>
 
-	<!-- Toast JavaScript -->
-	<script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+  	<!-- Toast JavaScript -->
+  	<script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
 
-	<!-- Piety JavaScript -->
-	<script src="vendors/bower_components/peity/jquery.peity.min.js"></script>
-	<script src="assets/dist/js/peity-data.js"></script>
+  	<!-- Piety JavaScript -->
+  	<script src="vendors/bower_components/peity/jquery.peity.min.js"></script>
+  	<script src="assets/dist/js/peity-data.js"></script>
 
-	<!-- Chartist JavaScript -->
-	<script src="vendors/bower_components/chartist/dist/chartist.min.js"></script>
+  	<!-- Chartist JavaScript -->
+  	<script src="vendors/bower_components/chartist/dist/chartist.min.js"></script>
 
 	<!-- Morris Charts JavaScript -->
     <script src="vendors/bower_components/raphael/raphael.min.js"></script>
     <script src="vendors/bower_components/morris.js/morris.min.js"></script>
     <script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
 
-	<!-- ChartJS JavaScript -->
-	<script src="vendors/chart.js/Chart.min.js"></script>
+  	<!-- ChartJS JavaScript -->
+  	<script src="vendors/chart.js/Chart.min.js"></script>
 
-	<!-- Init JavaScript -->
-	<script src="assets/dist/js/init.js"></script>
-	<script src="assets/dist/js/dashboard-data.js"></script>
+  	<!-- Init JavaScript -->
+  	<script src="assets/dist/js/init.js"></script>
+  	<script src="assets/dist/js/dashboard-data.js"></script>
 
-  <!-- Morris Charts JavaScript -->
-  <script src="vendors/bower_components/raphael/raphael.min.js"></script>
-  <script src="vendors/bower_components/morris.js/morris.min.js"></script>
-  <script src="assets/dist/js/morris-data.js"></script>
+    <!-- Morris Charts JavaScript -->
+    <script src="vendors/bower_components/raphael/raphael.min.js"></script>
+    <script src="vendors/bower_components/morris.js/morris.min.js"></script>
+    <script src="assets/dist/js/morris-data.js"></script>
 
-  <!-- Dropzone JavaScript -->
-  <script src="vendors/bower_components/dropzone/dist/dropzone.js"></script>
+    <!-- Dropzone JavaScript -->
+    <script src="vendors/bower_components/dropzone/dist/dropzone.js"></script>
 
-  <!-- Dropzone Init JavaScript -->
-  <script src="assets/dist/js/dropzone-data.js"></script>
+    <!-- Dropzone Init JavaScript -->
+    <script src="assets/dist/js/dropzone-data.js"></script>
 
 
 </body>

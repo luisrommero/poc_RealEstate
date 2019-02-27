@@ -15,4 +15,4 @@ $data = array();
   array_push($data, $row_data);
  }
 
- echo json_encode($data);
+ json_encode($data);
