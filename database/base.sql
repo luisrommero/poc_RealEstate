@@ -31,3 +31,11 @@ id_list int (11),
 path_img VARCHAR (75),
 footer_img VARCHAR (25),
 FOREIGN KEY (id_list) REFERENCES list(id_list) ON DELETE CASCADE);
+
+create table re_sets (
+id_set INT PRIMARY KEY AUTO_INCREMENT,
+id_list INT (11),
+set_name VARCHAR (75),
+cuantity INT (11),
+discount FLOAT,
+FOREIGN KEY (id_list) REFERENCES list(id_list) ON DELETE CASCADE);

@@ -347,6 +347,9 @@ if(!isset($_COOKIE['user'])) {
               <a class="active-page" href="upload-properties.php">Nuevo Proyecto</a>
             </li>
             <li>
+              <a href="portfolio.php">Nuevo Portafolio</a>
+            </li>
+            <li>
               <a href="my_projects.php">
                 <div class="pull-left">
                   <span>Mis proyectos</span>
