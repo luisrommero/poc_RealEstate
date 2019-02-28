@@ -47,41 +47,35 @@ if($('#chart_1').length > 0) {
 		EBITDA: 300
 	}];
 	var dataNew=[{
-		period: '2010',
+		period: '2018',
 		Pagadas: 210,
 		Pendientes: 80,
 		EBITDA: 200
 	}, {
-		period: '2011',
+		period: '2019',
 		Pagadas: 210,
 		Pendientes: 150,
 		EBITDA: 230
 	}, {
-		period: '2012',
+		period: '2020',
 		Pagadas: 280,
 		Pendientes: 160,
 		EBITDA: 250
 	}, {
-		period: '2013',
+		period: '2021',
 		Pagadas: 270,
 		Pendientes: 70,
 		EBITDA: 90
 	}, {
-		period: '2014',
+		period: '2022',
 		Pagadas: 280,
 		Pendientes: 50,
 		EBITDA: 90
 	}, {
-		period: '2015',
+		period: '2023',
 		Pagadas: 315,
 		Pendientes: 20,
 		EBITDA: 290
-	},
-	 {
-		period: '2016',
-		Pagadas: 250,
-		Pendientes: 90,
-		EBITDA: 200
 	}];
 	var lineChart = Morris.Area({
 		element: 'chart_1',

@@ -693,7 +693,7 @@ if(!isset($_COOKIE['user'])) {
   														<i class="zmdi zmdi-caret-up pr-10 font-24 txt-success"></i><span class="txt-dark weight-300 data-rep"><span class="counter-anim">89</span>%</span>
   													</span>
 
-  													<span class="block">Capacidad</span>
+  													<span class="block">Ocupación</span>
 
   												</li>
   											</ul>
@@ -837,8 +837,8 @@ if(!isset($_COOKIE['user'])) {
   														<div class="sl-content no-seprator pb-0">
   															<div class="pull-left">
   																<p class="inline-block"><span class="capitalize-font txt-dark mr-5 weight-500">Manuel Benitez Martínez</span></p>
-  																<span class="block txt-grey font-12 capitalize-font">Oct 30, 2019</span>
-  																<span class="block txt-primary font-12 pt-5 capitalize-font">Oct 08, 2019</span>
+  																<span class="block txt-grey font-12 capitalize-font">Feb 28, 2019</span>
+  																<span class="block txt-primary font-12 pt-5 capitalize-font">Mar 08, 2019</span>
   															</div>
   															<div class="pull-right text-right">
   																<p class="inline-block"><span class="txt-success font-16 weight-500">Dirección</span></p>
@@ -856,8 +856,8 @@ if(!isset($_COOKIE['user'])) {
   														<div class="sl-content no-seprator pb-0">
   															<div class="pull-left">
   																<p class="inline-block"><span class="capitalize-font txt-dark mr-5 weight-500">Fernanda Buenavidez Chávez</span></p>
-  																<span class="block txt-grey font-12 capitalize-font">Oct 30, 2019</span>
-  																<span class="block txt-primary font-12 pt-5 capitalize-font">Nov 15, 2019</span>
+  																<span class="block txt-grey font-12 capitalize-font">Feb 28, 2019</span>
+  																<span class="block txt-primary font-12 pt-5 capitalize-font">Mar 15, 2019</span>
   															</div>
   															<div class="pull-right text-right">
   																<p class="inline-block"><span class="txt-grey font-16 weight-500">Dirección</span></p>
@@ -875,8 +875,8 @@ if(!isset($_COOKIE['user'])) {
   														<div class="sl-content no-seprator pb-0">
   															<div class="pull-left">
   																<p class="inline-block"><span class="capitalize-font txt-dark mr-5 weight-500">Octavio Peralta Santoalalla</span></p>
-  																<span class="block txt-grey font-12 capitalize-font">Oct 30, 2019</span>
-  																<span class="block txt-primary font-12 pt-5 capitalize-font">Nov 01, 2019</span>
+  																<span class="block txt-grey font-12 capitalize-font">Feb 28, 2019</span>
+  																<span class="block txt-primary font-12 pt-5 capitalize-font">Mar 18, 2019</span>
   															</div>
   															<div class="pull-right text-right">
   																<p class="inline-block"><span class="txt-success font-16 weight-500">Dirección</span></p>
