@@ -665,10 +665,10 @@ if(!isset($_COOKIE['user'])) {
   								<div class="panel panel-default border-panel card-view">
   									<div class="panel-heading">
   										<div class="pull-left">
-  											<h6 class="panel-title txt-dark">Statics Properties</h6>
+  											<h6 class="panel-title txt-dark">Estadísticas de Propiedades</h6>
   										</div>
   										<div class="pull-right">
-  											<span class="data-text weight-500 pr-5">All Time</span>
+  											<span class="data-text weight-500 pr-5">Comerciales</span>
   											<span class="no-margin-switcher">
   												<input type="checkbox" checked id="morris_switch"  class="js-switch" data-color="#ffcfbe" data-secondary-color="#dedede" data-size="small"/>
   											</span>
@@ -680,12 +680,12 @@ if(!isset($_COOKIE['user'])) {
   											<ul class="flex-stat flex-stat-2 mt-20">
   												<li>
   													<span class="block"><span class="initial">$ </span><span class="txt-dark weight-300 counter-anim data-rep">7,115,008</span></span>
-  													<span class="block">Bitcoin Price</span>
+  													<span class="block">Ingresos</span>
 
   												</li>
   												<li>
-  													<span class="block"><span class="initial">$ </span><span class="txt-dark weight-300 counter-anim data-rep">5,426.21</span></span>
-  													<span class="block">Since Last Month (USD)</span>
+  													<span class="block"><span class="initial">$ </span><span class="txt-dark weight-300 counter-anim data-rep">3,426.21</span></span>
+  													<span class="block">Egresos</span>
 
   												</li>
   												<li>
@@ -693,55 +693,11 @@ if(!isset($_COOKIE['user'])) {
   														<i class="zmdi zmdi-caret-up pr-10 font-24 txt-success"></i><span class="txt-dark weight-300 data-rep"><span class="counter-anim">89</span>%</span>
   													</span>
 
-  													<span class="block">Since Last Month (%)</span>
+  													<span class="block">Capacidad</span>
 
   												</li>
   											</ul>
   											<div id="chart_1" class="morris-chart" style="height:314px;"></div>
-  										</div>
-  									</div>
-  								</div>
-  							</div>
-  								<div class="col-md-6 col-sm-12 col-xs-12">
-  								<div class="panel card-view">
-  									<div class="panel-wrapper collapse in">
-  										<div class="panel-body pa-0">
-  											<div class="sm-data-box pt-10 pb-10">
-  												<div class="container-fluid">
-  													<div class="row">
-  														<div class="col-xs-6 text-center data-wrap-left mt-40">
-  															<span class="block"><i class="zmdi zmdi-trending-up txt-success font-18 mr-5 mb-5 block"></i><span class="weight-500 uppercase-font">BTC Earnings</span></span>
-  															<span class="txt-dark block counter">$<span class="counter-anim">79.34</span>%</span>
-  														</div>
-  														<div class="col-xs-6 text-center data-wrap-right">
-  															<div id="sparkline_6" class="sparkline" style="width: 100%; overflow: hidden; margin: 0px auto;"></div>
-  														</div>
-  													</div>
-  												</div>
-  											</div>
-  										</div>
-  									</div>
-  								</div>
-  							</div>
-  							<div class="col-md-6 col-sm-12 col-xs-12">
-  								<div class="panel card-view">
-  									<div class="panel-wrapper collapse in">
-  										<div class="panel-body pa-0">
-  											<div class="sm-data-box pt-10 pb-10">
-  												<div class="container-fluid">
-  													<div class="row">
-  														<div class="col-xs-6 text-center data-wrap-left">
-  															<div class="flot-container" style="height:155px">
-  																<div id="flot_line_chart_moving" class="demo-placeholder"></div>
-  															</div>
-  														</div>
-  														<div class="col-xs-6 text-center data-wrap-right mt-35">
-  															<span class="txt-dark block counter">$<span class="counter-anim">125.36</span></span>
-  															<span class="block"><span class="weight-500 uppercase-font">LTC Exchange Rates</span></span>
-  														</div>
-  													</div>
-  												</div>
-  											</div>
   										</div>
   									</div>
   								</div>
@@ -753,7 +709,7 @@ if(!isset($_COOKIE['user'])) {
   									</div>
   									<div class="panel-heading">
   										<div class="pull-left">
-  											<h6 class="panel-title txt-dark">Recent Trading Activity</h6>
+  											<h6 class="panel-title txt-dark">Últimos movimientos</h6>
   										</div>
   										<div class="pull-right">
   											<a href="#" class="pull-left inline-block refresh mr-15">
@@ -780,72 +736,72 @@ if(!isset($_COOKIE['user'])) {
   													<table class="table  table-striped mb-0">
   														<thead>
   														  <tr>
-  															<th>Deal ID Number</th>
-  															<th>Trade Time</th>
-  															<th>Status</th>
-  															<th>Last Trade</th>
+  															<th>Folio Factura</th>
+  															<th>Concepto</th>
+  															<th>Estatus</th>
+  															<th>Cantidad</th>
   														  </tr>
   														</thead>
   														<tbody>
   														  <tr>
   															<td class="weight-600"><i class="fa fa-dot-circle-o pr-10 txt-success"></i>123456</td>
-  															<td>17:24 AM</td>
+  															<td>Pago Renta</td>
   															<td><span class="label label-outline label-success">Complete</span> </td>
-  															<td><i class="fa fa-plus pr-10 txt-success"></i>0.00113 BTC</td>
+  															<td><i class="fa fa-plus pr-10 txt-success"></i>$4,500.00</td>
   														  </tr>
   														  <tr>
   															<td class="weight-600"><i class="fa fa-dot-circle-o pr-10 txt-success"></i>223456</td>
-  															<td>17:24 AM</td>
+  															<td>Pago Renta</td>
   															<td><span class="label label-outline label-success">Complete</span> </td>
-  															<td><i class="fa fa-minus pr-10 txt-danger"></i>0.00113 BTC</td>
+  															<td><i class="fa fa-plus pr-10 txt-success"></i>$6,700.00</td>
   														  </tr>
   														  <tr>
   															<td class="weight-600"><i class="fa fa-dot-circle-o pr-10 txt-success"></i>323456</td>
-  															<td>17:24 AM</td>
+  															<td>Pago Renta</td>
   															<td><span class="label label-outline label-success">Complete</span> </td>
-  															<td><i class="fa fa-plus pr-10 txt-success"></i>0. 	00113 BTC</td>
+  															<td><i class="fa fa-plus pr-10 txt-success"></i>$5,000.00</td>
   														  </tr>
   														  <tr>
   															<td class="weight-600"><i class="fa fa-dot-circle-o pr-10 txt-warning"></i>423456</td>
-  															<td>17:24 AM</td>
+  															<td>Plomero</td>
   															<td><span class="label label-outline label-warning">pending</span> </td>
-  															<td><i class="fa fa-plus pr-10 txt-success"></i>0.00113 DASH</td>
+  															<td><i class="fa fa-plus pr-10 txt-success"></i>$1,899.00</td>
   														  </tr>
   														  <tr>
   															<td class="weight-600"><i class="fa fa-dot-circle-o pr-10 txt-danger"></i>523456</td>
-  															<td>17:24 AM</td>
+  															<td>Ventana</td>
   															<td><span class="label label-outline label-danger">cancled</span> </td>
-  															<td><i class="fa fa-minus pr-10 txt-danger"></i>0.00113 BTC</td>
+  															<td><i class="fa fa-minus pr-10 txt-danger"></i>$500.00</td>
   														  </tr>
   														  <tr>
   															<td class="weight-600"><i class="fa fa-dot-circle-o pr-10 txt-danger"></i>623456</td>
-  															<td>17:24 AM</td>
+  															<td>Cámara Vig.</td>
   															<td><span class="label label-outline label-danger">cancled</span> </td>
-  															<td><i class="fa fa-minus pr-10 txt-danger"></i>0.00113 BTC</td>
+  															<td><i class="fa fa-minus pr-10 txt-danger"></i>$200.00</td>
   														  </tr>
   														   <tr>
   															<td class="weight-600"><i class="fa fa-dot-circle-o pr-10 txt-warning"></i>723456</td>
-  															<td>17:24 AM</td>
+  															<td>Alarma</td>
   															<td><span class="label label-outline label-warning">pending</span> </td>
-  															<td><i class="fa fa-plus pr-10 txt-success"></i>0.00113 DASH</td>
+  															<td><i class="fa fa-plus pr-10 txt-success"></i>$750.00</td>
   														  </tr>
   														  <tr>
   															<td class="weight-600"><i class="fa fa-dot-circle-o pr-10 txt-danger"></i>823456</td>
-  															<td>17:24 AM</td>
+  															<td>Circuito Cerrado Vig.</td>
   															<td><span class="label label-outline label-danger">cancled</span> </td>
-  															<td><i class="fa fa-minus pr-10 txt-danger"></i>0.00113 BTC</td>
+  															<td><i class="fa fa-minus pr-10 txt-danger"></i>$2,500.00</td>
   														  </tr>
   														  <tr>
   															<td class="weight-600"><i class="fa fa-dot-circle-o pr-10 txt-danger"></i>923456</td>
-  															<td>17:24 AM</td>
+  															<td>Barniz</td>
   															<td><span class="label label-outline label-danger">cancled</span> </td>
-  															<td><i class="fa fa-minus pr-10 txt-danger"></i>0.00113 BTC</td>
+  															<td><i class="fa fa-minus pr-10 txt-danger"></i>$450.00</td>
   														  </tr>
   														  <tr>
   															<td class="weight-600"><i class="fa fa-dot-circle-o pr-10 txt-danger"></i>103456</td>
-  															<td>17:24 AM</td>
+  															<td>Pintura</td>
   															<td><span class="label label-outline label-danger">cancled</span> </td>
-  															<td><i class="fa fa-minus pr-10 txt-danger"></i>0.00113 BTC</td>
+  															<td><i class="fa fa-minus pr-10 txt-danger"></i>$2,999.00</td>
   														  </tr>
   														</tbody>
   													</table>
@@ -863,68 +819,7 @@ if(!isset($_COOKIE['user'])) {
   								<div class="panel panel-default border-panel card-view">
   									<div class="panel-heading">
   										<div class="pull-left">
-  											<h6 class="panel-title txt-dark">Transfer Coins</h6>
-  										</div>
-  										<div class="pull-right">
-  											<a class="pull-left inline-block mr-15" data-toggle="collapse" href="#collapse_1" aria-expanded="true">
-  												<i class="zmdi zmdi-chevron-down"></i>
-  												<i class="zmdi zmdi-chevron-up"></i>
-  											</a>
-  											<a href="javascript:void(0)" class="pull-left inline-block mr-15">
-  												<i class="zmdi zmdi-settings"></i>
-  											</a>
-  											<a class="pull-left inline-block close-panel" href="#" data-effect="fadeOut">
-  												<i class="zmdi zmdi-close"></i>
-  											</a>
-  										</div>
-  										<div class="clearfix"></div>
-  									</div>
-  									<div  id="collapse_1" class="panel-wrapper collapse in">
-  										<div  class="panel-body">
-  											<div class="form-wrap">
-  												<form>
-  													<!-- form-group -->
-  													<div class="form-group mb-20">
-  														<label class="control-label mb-10">Amount</label>
-  														<p class="text-muted inline-block mb-10 ml-10 font-13">minimum value "0.001BTC"</p>
-  														<div class="input-group mb-15"> <span class="input-group-addon">$</span>
-  															<input type="text" placeholder="Username" class="form-control">
-  															<div class="input-group-btn">
-  																<button type="button" class="btn  btn-default btn-outline dropdown-toggle" data-toggle="dropdown">BTC <span class="caret"></span></button>
-  																<ul class="dropdown-menu dropdown-menu-right">
-  																	<li><a href="javascript:void(0)">ETH</a></li>
-  																	<li><a href="javascript:void(0)">LTC</a></li>
-  																	<li><a href="javascript:void(0)">USD</a></li>
-  																	<li><a href="javascript:void(0)">XRP</a></li>
-  																	<li><a href="javascript:void(0)">XMR</a></li>
-  																	<li><a href="javascript:void(0)">DASH</a></li>
-  																</ul>
-  															</div>
-  														</div>
-  													</div>
-  													<!-- /form-group -->
-  													<!-- form-group -->
-  													<div class="form-group mb-20">
-  														<label class="control-label mb-10">Wallet Address</label>
-  														<div class="input-group mb-15"> <span class="input-group-addon"><i class="zmdi zmdi-card"></i></span>
-  															<input type="text" placeholder="12331Ox123SDAQ.." class="form-control">
-  														</div>
-
-  													</div>
-  													<!-- /form-group -->
-  													<button class="btn btn-orange btn-block mb-10">transfer now</button>
-  												</form>
-  											</div>
-
-  										</div>
-  									</div>
-  								</div>
-  							</div>
-  							<div class="col-sm-12 col-xs-12">
-  								<div class="panel panel-default border-panel card-view">
-  									<div class="panel-heading">
-  										<div class="pull-left">
-  											<h6 class="panel-title txt-dark">Recent Transaction</h6>
+  											<h6 class="panel-title txt-dark">Contratos por Expirar</h6>
   										</div>
   										<div class="pull-right">
   											<a href="javascript:void(0);" class="txt-grey weight-500 capitalize-font">View all</a>
@@ -937,17 +832,17 @@ if(!isset($_COOKIE['user'])) {
   												<div class="sl-item pb-15">
   													<a href="javascript:void(0)">
   														<div class="sl-avatar avatar-circle">
-  															<span><i class="zmdi zmdi-refresh-sync"></i></span>
+  															<span><i class="fa fa-calendar"></i></span>
   														</div>
   														<div class="sl-content no-seprator pb-0">
   															<div class="pull-left">
-  																<p class="inline-block"><span class="capitalize-font txt-dark mr-5 weight-500">Bought bitcoin</span></p>
-  																<span class="block txt-grey font-12 capitalize-font">Using USD wallet.</span>
-  																<span class="block txt-primary font-12 pt-5 capitalize-font">Oct 08</span>
+  																<p class="inline-block"><span class="capitalize-font txt-dark mr-5 weight-500">Manuel Benitez Martínez</span></p>
+  																<span class="block txt-grey font-12 capitalize-font">Oct 30, 2019</span>
+  																<span class="block txt-primary font-12 pt-5 capitalize-font">Oct 08, 2019</span>
   															</div>
   															<div class="pull-right text-right">
-  																<p class="inline-block"><span class="txt-success font-16 weight-500">+1.99 BTC</span></p>
-  																<span class="block txt-grey font-12 capitalize-font">+$12.19</span>
+  																<p class="inline-block"><span class="txt-success font-16 weight-500">Dirección</span></p>
+  																<span class="block txt-grey font-12 capitalize-font">La Paz, #87</span>
   															</div>
   															<div class="clearfix"></div>
   														</div>
@@ -956,17 +851,17 @@ if(!isset($_COOKIE['user'])) {
   												<div class="sl-item pb-15">
   													<a href="javascript:void(0)">
   														<div class="sl-avatar avatar-circle">
-  															<span><i class="zmdi zmdi-refresh-sync"></i></span>
+  															<span><i class="fa fa-calendar"></i></span>
   														</div>
   														<div class="sl-content no-seprator pb-0">
   															<div class="pull-left">
-  																<p class="inline-block"><span class="capitalize-font txt-dark mr-5 weight-500">Bought bitcoin</span></p>
-  																<span class="block txt-grey font-12 capitalize-font">Using USD wallet.</span>
-  																<span class="block txt-primary font-12 pt-5 capitalize-font">Nov 15</span>
+  																<p class="inline-block"><span class="capitalize-font txt-dark mr-5 weight-500">Fernanda Buenavidez Chávez</span></p>
+  																<span class="block txt-grey font-12 capitalize-font">Oct 30, 2019</span>
+  																<span class="block txt-primary font-12 pt-5 capitalize-font">Nov 15, 2019</span>
   															</div>
   															<div class="pull-right text-right">
-  																<p class="inline-block"><span class="txt-grey font-16 weight-500">-20.2 USD</span></p>
-  																<span class="block txt-grey font-12 capitalize-font">+$12.19</span>
+  																<p class="inline-block"><span class="txt-grey font-16 weight-500">Dirección</span></p>
+  																<span class="block txt-grey font-12 capitalize-font">La Floresta, #11</span>
   															</div>
   															<div class="clearfix"></div>
   														</div>
@@ -975,17 +870,17 @@ if(!isset($_COOKIE['user'])) {
   												<div class="sl-item pb-15">
   													<a href="javascript:void(0)">
   														<div class="sl-avatar avatar-circle">
-  															<span><i class="zmdi zmdi-airplane"></i></span>
+  															<span><i class="fa fa-calendar"></i></span>
   														</div>
   														<div class="sl-content no-seprator pb-0">
   															<div class="pull-left">
-  																<p class="inline-block"><span class="capitalize-font txt-dark mr-5 weight-500">Recived bitcoin</span></p>
-  																<span class="block txt-grey font-12 capitalize-font">From Bitcoin address</span>
-  																<span class="block txt-primary font-12 pt-5 capitalize-font">May 15</span>
+  																<p class="inline-block"><span class="capitalize-font txt-dark mr-5 weight-500">Octavio Peralta Montoalalla</span></p>
+  																<span class="block txt-grey font-12 capitalize-font">Oct 30, 2019</span>
+  																<span class="block txt-primary font-12 pt-5 capitalize-font">Nov 01, 2019</span>
   															</div>
   															<div class="pull-right text-right">
-  																<p class="inline-block"><span class="txt-success font-16 weight-500">+0 BTC</span></p>
-  																<span class="block txt-grey font-12 capitalize-font">+THB2.80</span>
+  																<p class="inline-block"><span class="txt-success font-16 weight-500">Dirección</span></p>
+  																<span class="block txt-grey font-12 capitalize-font">La Peña, ext#26 - int#02</span>
   															</div>
   															<div class="clearfix"></div>
   														</div>
@@ -1003,45 +898,45 @@ if(!isset($_COOKIE['user'])) {
   									</div>
   									<div class="panel-heading">
   										<div class="pull-left">
-  											<h6 class="panel-title txt-dark">Currency Portfolio</h6>
+  											<h6 class="panel-title txt-dark">Valance Total de Rentas</h6>
   										</div>
   										<div class="clearfix"></div>
   									</div>
   									<div class="panel-wrapper collapse in">
   										<div class="panel-body">
   											<div class="flex-stat flex-stat-3 text-center">
-  												<span class="block"><span class="initial">$ </span><span class="txt-orange weight-300 counter-anim data-rep">2,458.34</span></span>
-  												<span class="block">Total Wallet Balance</span>
+  												<span class="block"><span class="initial">$ </span><span class="txt-orange weight-300 counter-anim data-rep">7,111,582.34</span></span>
+  												<span class="block">Balance Total de Ventas</span>
   											</div>
   											<hr class="light-grey-hr row mt-10 mb-15"/>
   											<div class="label-chatrs">
   												<div class="">
-  													<div class="pull-left"><img class="pull-left" src="../img/money/bitcoin.png" alt="money"/><span class="pull-left txt-dark capitalize-font pl-10 pt-5">bitcoin</span></div>
-  													<span class="clabels-text font-12 inline-block txt-dark text-right capitalize-font pull-right"><span class="block font-15 mb-5">45,532 BTC</span><span class="block txt-grey">$ 7,15,008</span></span>
+  													<div class="pull-left"><img class="pull-left" src="../img/money/bitcoin.png" alt="money"/><span class="pull-left txt-dark capitalize-font pl-10 pt-5">CDMX</span></div>
+  													<span class="clabels-text font-12 inline-block txt-dark text-right capitalize-font pull-right"><span class="block font-15 mb-5">Anual</span><span class="block txt-grey">$ 2,15,008</span></span>
   													<div class="clearfix"></div>
   												</div>
   											</div>
   											<hr class="light-grey-hr row mt-10 mb-15"/>
   											<div class="label-chatrs">
   												<div class="">
-  													<div class="pull-left"><img class="pull-left" src="../img/money/ethereum.png" alt="money"/><span class="pull-left txt-dark capitalize-font pl-10 pt-5">ethereum</span></div>
-  													<span class="clabels-text font-12 inline-block txt-dark text-right capitalize-font pull-right"><span class="block font-15 mb-5">15.24 ETH</span><span class="block txt-grey">$ 7,15,008</span></span>
+  													<div class="pull-left"><img class="pull-left" src="../img/money/ethereum.png" alt="money"/><span class="pull-left txt-dark capitalize-font pl-10 pt-5">Guadalajara</span></div>
+  													<span class="clabels-text font-12 inline-block txt-dark text-right capitalize-font pull-right"><span class="block font-15 mb-5">Anual</span><span class="block txt-grey">$ 2,15,008</span></span>
   													<div class="clearfix"></div>
   												</div>
   											</div>
   											<hr class="light-grey-hr row mt-10 mb-15"/>
   											<div class="label-chatrs">
   												<div class="">
-  													<div class="pull-left"><img class="pull-left" src="../img/money/litecoin.png" alt="money"/><span class="pull-left txt-dark capitalize-font pl-10 pt-5">litecoin</span></div>
-  													<span class="clabels-text font-12 inline-block txt-dark text-right capitalize-font pull-right"><span class="block font-15 mb-5">3.432 LTC</span><span class="block txt-grey">$ 7,15,008</span></span>
+  													<div class="pull-left"><img class="pull-left" src="../img/money/litecoin.png" alt="money"/><span class="pull-left txt-dark capitalize-font pl-10 pt-5">Hidalgo</span></div>
+  													<span class="clabels-text font-12 inline-block txt-dark text-right capitalize-font pull-right"><span class="block font-15 mb-5">Anual</span><span class="block txt-grey">$ 2,15,008</span></span>
   													<div class="clearfix"></div>
   												</div>
   											</div>
   											<hr class="light-grey-hr row mt-10 mb-15"/>
   											<div class="label-chatrs">
   												<div class="">
-  													<div class="pull-left"><img class="pull-left" src="../img/money/usd.png" alt="money"/><span class="pull-left txt-dark capitalize-font pl-10 pt-5">US Dolars</span></div>
-  													<span class="clabels-text font-12 inline-block txt-dark text-right capitalize-font pull-right"><span class="block font-15 mb-5">1.245 USD</span><span class="block txt-grey">$ 7,15,008</span></span>
+  													<div class="pull-left"><img class="pull-left" src="../img/money/usd.png" alt="money"/><span class="pull-left txt-dark capitalize-font pl-10 pt-5">Nuevo León</span></div>
+  													<span class="clabels-text font-12 inline-block txt-dark text-right capitalize-font pull-right"><span class="block font-15 mb-5">Anual</span><span class="block txt-grey">$ 2,15,008</span></span>
   													<div class="clearfix"></div>
   												</div>
   											</div>
@@ -1053,7 +948,7 @@ if(!isset($_COOKIE['user'])) {
   								<div class="panel panel-default border-panel card-view">
   									<div class="panel-heading">
   										<div class="pull-left">
-  											<h6 class="panel-title txt-dark">Welcome Back</h6>
+  											<h6 class="panel-title txt-dark">Alertas</h6>
   										</div>
   										<div class="clearfix"></div>
   									</div>
@@ -1062,9 +957,9 @@ if(!isset($_COOKIE['user'])) {
   											<div class="sm-data-box-4">
   												<div class="relative">
   													<div class="data-wrap-right">
-  														<p>Use this deal code to get up to 15000 instant Discount. Hurry off ending soon!	 </p>
+  														<p>¡Tienes un nuevo cliente!	 </p>
   														<div class="pt-15 uppercase-font">
-  															<button class="btn btn-block btn-dark btn-sm">Take a tour</button>
+  															<button class="btn btn-block btn-dark btn-sm">Ver</button>
   														</div>
   													</div>
   												</div>

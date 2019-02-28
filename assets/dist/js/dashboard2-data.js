@@ -1,6 +1,6 @@
 /*Dashboard Init*/
- 
-"use strict"; 
+
+"use strict";
 
 /*****Ready function start*****/
 $(document).ready(function(){
@@ -16,84 +16,84 @@ if($('#chart_1').length > 0) {
 	// Line Chart
 	var data=[{
 		period: '2010',
-		iphone: 50,
-		ipad: 80,
-		itouch: 20
+		Pagadas: 300,
+		Pendientes: 180,
+		Proyección: 390
 	}, {
 		period: '2011',
-		iphone: 130,
-		ipad: 100,
-		itouch: 80
+		Pagadas: 250,
+		Pendientes: 100,
+		Proyección: 270
 	}, {
 		period: '2012',
-		iphone: 80,
-		ipad: 60,
-		itouch: 70
+		Pagadas: 280,
+		Pendientes: 60,
+		Proyección: 310
 	}, {
 		period: '2013',
-		iphone: 70,
-		ipad: 200,
-		itouch: 140
+		Pagadas: 270,
+		Pendientes: 100,
+		Proyección: 250
 	}, {
 		period: '2014',
-		iphone: 180,
-		ipad: 150,
-		itouch: 140
+		Pagadas: 280,
+		Pendientes: 150,
+		Proyección: 290
 	}, {
 		period: '2015',
-		iphone: 105,
-		ipad: 100,
-		itouch: 80
+		Pagadas: 205,
+		Pendientes: 100,
+		Proyección: 220
 	},
 	 {
 		period: '2016',
-		iphone: 250,
-		ipad: 150,
-		itouch: 200
+		Pagadas: 250,
+		Pendientes: 120,
+		Proyección: 300
 	}];
 	var dataNew=[{
 		period: '2010',
-		iphone: 10,
-		ipad: 80,
-		itouch: 40
+		Pagadas: 210,
+		Pendientes: 80,
+		Proyección: 200
 	}, {
 		period: '2011',
-		iphone: 110,
-		ipad: 150,
-		itouch: 80
+		Pagadas: 210,
+		Pendientes: 150,
+		Proyección: 230
 	}, {
 		period: '2012',
-		iphone: 80,
-		ipad: 60,
-		itouch: 70
+		Pagadas: 280,
+		Pendientes: 160,
+		Proyección: 250
 	}, {
 		period: '2013',
-		iphone: 70,
-		ipad: 100,
-		itouch: 190
+		Pagadas: 270,
+		Pendientes: 70,
+		Proyección: 90
 	}, {
 		period: '2014',
-		iphone: 180,
-		ipad: 150,
-		itouch: 140
+		Pagadas: 280,
+		Pendientes: 50,
+		Proyección: 90
 	}, {
 		period: '2015',
-		iphone: 315,
-		ipad: 100,
-		itouch: 80
+		Pagadas: 315,
+		Pendientes: 20,
+		Proyección: 290
 	},
 	 {
 		period: '2016',
-		iphone: 850,
-		ipad: 120,
-		itouch: 100
+		Pagadas: 250,
+		Pendientes: 90,
+		Proyección: 200
 	}];
 	var lineChart = Morris.Area({
 		element: 'chart_1',
 		data: data,
 		xkey: 'period',
-		ykeys: ['iphone', 'ipad', 'itouch'],
-		labels: ['iPhone', 'iPad', 'iPod Touch'],
+		ykeys: ['Pagadas', 'Pendientes', 'Proyección'],
+		labels: ['Pagadas', 'Pendientes', 'Proyección'],
 		pointSize: 3,
 		lineWidth: 2,
 		pointStrokeColors:['#ff6028'],
@@ -108,7 +108,7 @@ if($('#chart_1').length > 0) {
 		gridTextFamily:"Roboto",
 		parseTime: false,
 		fillOpacity:0.4
-	});	
+	});
 	/* Switchery Init*/
 	var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
 	$('#morris_switch').each(function() {
@@ -123,10 +123,10 @@ if($('#chart_1').length > 0) {
 			lineChart.redraw();
 		}
 	}
-	swichMorris();	
+	swichMorris();
 	$(document).on('change', '#morris_switch', function () {
 		swichMorris();
-	});	
+	});
 	}
 });
 /*****Ready function end*****/
@@ -140,7 +140,7 @@ $(window).on("load",function(){
 			position: 'bottom-right',
 			loaderBg:'#e8af48',
 			icon: 'warning',
-			hideAfter: 3500, 
+			hideAfter: 3500,
 			stack: 6
 		});
 	}, 3000);
@@ -148,12 +148,12 @@ $(window).on("load",function(){
 /*****Load function* end*****/
 
 /*****E-Charts function start*****/
-var echartsConfig = function() { 
+var echartsConfig = function() {
 }
 /*****E-Charts function end*****/
 
 /*****Sparkline function start*****/
-var sparklineLogin = function() { 
+var sparklineLogin = function() {
 	if( $('#sparkline_6').length > 0 ){
 		$("#sparkline_6").sparkline([9,7,7,8,8,6,8,5,6], {
 			type: 'bar',
@@ -165,7 +165,7 @@ var sparklineLogin = function() {
 			barColor: '#ff6028',
 			highlightSpotColor: '#ff6028'
 		});
-	}	
+	}
 }
 /*****Sparkline function end*****/
 
@@ -175,11 +175,11 @@ $(window).on("resize", function () {
 	/*Sparkline Resize*/
 	clearTimeout(sparkResize);
 	sparkResize = setTimeout(sparklineLogin, 200);
-	
+
 	/*E-Chart Resize*/
 	clearTimeout(echartResize);
 	echartResize = setTimeout(echartsConfig, 200);
-}).resize(); 
+}).resize();
 /*****Resize function end*****/
 
 /*****Function Call start*****/
