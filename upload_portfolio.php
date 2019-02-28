@@ -661,199 +661,167 @@ if(!isset($_COOKIE['user'])) {
 				<div class="row">
           <!-- ==========content goes here========== -->
 
-          <div class="col-sm-4 pull-right mb-40">
-            <a href="#" class="btn btn-primary btn-sm btn-block" role="button">Nuevo Portafolio</a>
-          </div>
-
-          <!-- Property -->
-
-          <div class="col-sm-12">
-            <div class="panel panel-default border-panel card-view">
-              <div class="panel-heading">
-                <div class="pull-left">
-                  <h4 class="panel-title txt-dark">Portafolio RealBlock</h4>
-                  <p class="">Damasco + Coliving Valle + Vallarta</p>
-                </div>
-                <div class="pull-right">
-                  <p class="text-muted">Portafolio Venta <i class="fa fa-th-large font-13"></i></p>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-
-              <div class="panel-body">
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-1.jpg" alt="" class="" width="100%">
-                </div>
-
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-2.jpg" alt="" class="" width="100%">
-                </div>
-
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-3.jpg" alt="" class="" width="100%">
-                </div>
-
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-4.jpg" alt="" class="" width="100%">
-                </div>
-
-                <hr class="light-grey-hr row mt-0 mb-10"/>
-                <div class="text-center">
-                  <div class="inline-block "><h5></h5></div>
-                </div>
-                <hr class="light-grey-hr row mt-10 mb-15"/>
-                  <div class="text-center">
-                    <div class="inline-block mr-45 pixelef" style="v"><h6>4 Propiedades</h6><small></small></div>
-                    <div class="inline-block mr-45"><h6>Costo real</h6><small>$160,000</small></div>
-                    <!-- <div class="inline-block mr-45"><h6>Portafolio costo</h6><small class="text-danger">130,000 <i class="fa fa-level-down"></i></small></div> -->
-                    <div class="inline-block mr-45"><h6>TIR promedio</h6><small class="text-primary">23% <i class="fa fa-level-up"></i></small></div>
-                    <div class="inline-block mr-45"><h6>ROÍ promedio</h6><small class="text-primary">8% <i class="fa fa-level-up"></i></small></div>
-
-                    <div class="clearfix"></div>
+          <!-- Row -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-default border-panel card-view">
+                <div class="panel-heading">
+                  <div class="pull-left">
+                    <h6 class="panel-title txt-dark">New Portfolio</h6>
                   </div>
-                <hr class="light-grey-hr row mt-10 mb-15"/>
-                <div class="">
-
+                  <div class="clearfix"></div>
                 </div>
-              </div>
+                <div class="panel-wrapper collapse in">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-sm-12 col-xs-12">
+                        <div class="form-wrap">
+                          <form action="#">
+                            <div class="form-body">
+                              <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account mr-10"></i>Info Portfolio</h6>
+                              <hr class="light-grey-hr"/>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="control-label mb-10">Portfolio Name</label>
+                                    <input type="text" id="firstName" class="form-control" placeholder="Name">
+                                    <span class="help-block"> This is inline help </span>
+                                  </div>
+                                </div>
 
-            </div>
+                              </div>
+                              <!-- /Row -->
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="control-label mb-10">Select Properties</label>
+                                    <select class="form-control">
+                                      <option value="">Male</option>
+                                      <option value="">Female</option>
+                                    </select>
+                                    <span class="help-block"> Select your gender </span>
+                                  </div>
+                                </div>
+                                <!--/span-->
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="control-label mb-10">Date of Birth</label>
+                                    <input
+    type="text"
+    multiple
+    class="multipleInputDynamicWithInitialValue"
+    value="Algeria,Angola"
+    data-initial-value='[{"text": "Algeria", "value" : "Algeria"}, {"text": "Angola", "value" : "Angola"}]'
+    data-url="demo/data.json"
+    data-load-once="true"
+    name="language"/>
+                                    <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                  </div>
+                                </div>
+                                <!--/span-->
+                              </div>
+                              <!-- /Row -->
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="control-label mb-10">Category</label>
+                                    <select class="form-control" data-placeholder="Choose a Category" tabindex="1">
+                                      <option value="Category 1">Category 1</option>
+                                      <option value="Category 2">Category 2</option>
+                                      <option value="Category 3">Category 5</option>
+                                      <option value="Category 4">Category 4</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <!--/span-->
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="control-label mb-10">Membership</label>
+                                    <div class="radio-list">
+                                      <div class="radio-inline pl-0">
+                                        <span class="radio radio-info">
+                                          <input type="radio" name="radio5" id="radio_5" value="option1">
+                                      <label for="radio_5">Option 1</label>
+                                      </span>
+                                      </div>
+                                      <div class="radio-inline">
+                                        <span class="radio radio-info">
+                                          <input type="radio" name="radio5" id="radio_6" value="option2">
+                                      <label for="radio_6">Option 2 </label>
+                                      </span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--/span-->
+                              </div>
+                              <!-- /Row -->
 
-            <div class="ui-offer-ribbon" style="">
-              <div class="ui-offer-ribbon-amount">28<small style="color: #FFF;"class="ui-offer-ribbon-percentage">%</small></div>
-              <div class="ui-offer-ribbon-text">- OFF -</div>
-            </div>
+                              <div class="seprator-block"></div>
 
-
-          </div>
-          <!-- Property -->
-
-          <!-- Property -->
-          <div class="col-sm-12">
-            <div class="panel panel-default border-panel card-view">
-              <div class="panel-heading">
-                <div class="pull-left">
-                  <h4 class="panel-title txt-dark">Portafolio RealBlock</h4>
-                  <p class="">Damasco + Coliving Valle + Vallarta</p>
-                </div>
-                <div class="pull-right">
-                  <p class="text-muted">Portafolio Venta <i class="fa fa-th-large font-13"></i></p>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-
-              <div class="panel-body">
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-6.jpg" alt="" class="" width="100%">
-                </div>
-
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-5.jpg" alt="" class="" width="100%">
-                </div>
-
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-3.jpg" alt="" class="" width="100%">
-                </div>
-
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-2.jpg" alt="" class="" width="100%">
-                </div>
-
-                <hr class="light-grey-hr row mt-0 mb-10"/>
-                <div class="text-center">
-                  <div class="inline-block "><h5></h5></div>
-                </div>
-                <hr class="light-grey-hr row mt-10 mb-15"/>
-                  <div class="text-center">
-                    <div class="inline-block mr-45 pixelef" style="v"><h6>4 Propiedades</h6><small></small></div>
-                    <div class="inline-block mr-45"><h6>Costo real</h6><small>$230,000</small></div>
-                    <!-- <div class="inline-block mr-45"><h6>Portafolio costo</h6><small class="text-danger">30,000 <i class="fa fa-level-down"></i></small></div> -->
-                    <div class="inline-block mr-45"><h6>TIR promedio</h6><small class="text-primary">34% <i class="fa fa-level-up"></i></small></div>
-                    <div class="inline-block mr-45"><h6>ROÍ promedio</h6><small class="text-primary">12% <i class="fa fa-level-up"></i></small></div>
-
-
-
-                    <div class="clearfix"></div>
+                              <h6 class="txt-dark capitalize-font"><i class="zmdi zmdi-account-box mr-10"></i>Category</h6>
+                              <hr class="light-grey-hr"/>
+                              <div class="row">
+                                <div class="col-md-12 ">
+                                  <div class="form-group">
+                                    <label class="control-label mb-10">Street</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="control-label mb-10">City</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+                                <!--/span-->
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="control-label mb-10">State</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+                                <!--/span-->
+                              </div>
+                              <!-- /Row -->
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="control-label mb-10">Post Code</label>
+                                    <input type="text" class="form-control">
+                                  </div>
+                                </div>
+                                <!--/span-->
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label class="control-label mb-10">Country</label>
+                                    <select class="form-control">
+                                      <option>--Select your Country--</option>
+                                      <option>India</option>
+                                      <option>Sri Lanka</option>
+                                      <option>USA</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <!--/span-->
+                              </div>
+                            </div>
+                            <div class="form-actions mt-10">
+                              <button type="submit" class="btn btn-success  mr-10"> Save</button>
+                              <button type="button" class="btn btn-default">Cancel</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                <hr class="light-grey-hr row mt-10 mb-15"/>
-                <div class="">
-
                 </div>
               </div>
-
             </div>
-
-            <div class="ui-offer-ribbon" style="">
-              <div class="ui-offer-ribbon-amount">28<small style="color: #FFF;"class="ui-offer-ribbon-percentage">%</small></div>
-              <div class="ui-offer-ribbon-text">- OFF -</div>
-            </div>
-
-
           </div>
-          <!-- Property -->
-
-
-          <!-- Property -->
-          <div class="col-sm-12">
-            <div class="panel panel-default border-panel card-view">
-              <div class="panel-heading">
-                <div class="pull-left">
-                  <h4 class="panel-title txt-dark">Portafolio RealBlock</h4>
-                  <p class="">Damasco + Coliving Valle + Vallarta</p>
-                </div>
-                <div class="pull-right">
-                  <p class="text-muted">Portafolio Venta <i class="fa fa-th-large font-13"></i></p>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-
-              <div class="panel-body">
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-4.jpg" alt="" class="" width="100%">
-                </div>
-
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-5.jpg" alt="" class="" width="100%">
-                </div>
-
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-3.jpg" alt="" class="" width="100%">
-                </div>
-
-                <div class="col-sm-3">
-                  <img src="assets/img/uploads/property-3.jpg" alt="" class="" width="100%">
-                </div>
-
-                <hr class="light-grey-hr row mt-0 mb-10"/>
-                <div class="text-center">
-                  <div class="inline-block "><h5></h5></div>
-                </div>
-                <hr class="light-grey-hr row mt-10 mb-15"/>
-                  <div class="text-center">
-                    <div class="inline-block mr-45 pixelef" style="v"><h6>4 Propiedades</h6><small></small></div>
-                    <div class="inline-block mr-45"><h6>Costo real</h6><small>$430,000</small></div>
-                    <!-- <div class="inline-block mr-45"><h6>Portafolio costo</h6><small class="text-danger">390,000 <i class="fa fa-level-down"></i></small></div> -->
-                    <div class="inline-block mr-45"><h6>TIR promedio</h6><small class="text-primary">10% <i class="fa fa-level-up"></i></small></div>
-                    <div class="inline-block mr-45"><h6>ROÍ promedio</h6><small class="text-primary">5% <i class="fa fa-level-up"></i></small></div>
-
-                    <div class="clearfix"></div>
-                  </div>
-                <hr class="light-grey-hr row mt-10 mb-15"/>
-                <div class="">
-
-                </div>
-              </div>
-
-            </div>
-
-            <div class="ui-offer-ribbon" style="">
-              <div class="ui-offer-ribbon-amount">28<small style="color: #FFF;"class="ui-offer-ribbon-percentage">%</small></div>
-              <div class="ui-offer-ribbon-text">- OFF -</div>
-            </div>
-
-
-          </div>
-          <!-- Property -->
+          <!-- /Row -->
 
 
 
@@ -900,6 +868,79 @@ box-sizing: border-box; position: absolute;left: -5px; bottom: 12%; background-c
   vertical-align: middle;
 }
   </style>
+
+  <!-- selectable -->
+  <script type="text/javascript">
+  var $select = $('select');
+
+// Run, fire and forget
+$select.fastselect()
+
+// Run via plugin facade and get instance
+var fastSelectInstance = $select.fastselect(options).data('fastselect');
+
+// run directly
+var fastSelectInstance = new $.Fastselect($select.get(0), options);
+
+  </script>
+
+  <script type="text/javascript">
+  $.Fastselect.defaults = {
+
+    elementClass: 'fstElement',
+    singleModeClass: 'fstSingleMode',
+    noneSelectedClass: 'fstNoneSelected',
+    multipleModeClass: 'fstMultipleMode',
+    queryInputClass: 'fstQueryInput',
+    queryInputExpandedClass: 'fstQueryInputExpanded',
+    fakeInputClass: 'fstFakeInput',
+    controlsClass: 'fstControls',
+    toggleButtonClass: 'fstToggleBtn',
+    activeClass: 'fstActive',
+    itemSelectedClass: 'fstSelected',
+    choiceItemClass: 'fstChoiceItem',
+    choiceRemoveClass: 'fstChoiceRemove',
+    userOptionClass: 'fstUserOption',
+
+    resultsContClass: 'fstResults',
+    resultsOpenedClass: 'fstResultsOpened',
+    resultsFlippedClass: 'fstResultsFilpped',
+    groupClass: 'fstGroup',
+    itemClass: 'fstResultItem',
+    groupTitleClass: 'fstGroupTitle',
+    loadingClass: 'fstLoading',
+    noResultsClass: 'fstNoResults',
+    focusedItemClass: 'fstFocused',
+
+    matcher: null,
+
+    url: null,
+    loadOnce: false,
+    apiParam: 'query',
+    initialValue: null,
+    clearQueryOnSelect: true,
+    minQueryLength: 1,
+    focusFirstItem: false,
+    flipOnBottom: true,
+    typeTimeout: 150,
+    userOptionAllowed: false,
+    valueDelimiter: ',',
+    maxItems: null,
+
+    parseData: null,
+    onItemSelect: null,
+    onItemCreate: null,
+    onMaxItemsReached: null,
+
+    placeholder: 'Choose option',
+    searchPlaceholder: 'Search options',
+    noResultsText: 'No results',
+    userOptionPrefix: 'Add '
+
+};
+
+  </script>
+  <!--  -->
 
     <!-- jQuery -->
     <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
