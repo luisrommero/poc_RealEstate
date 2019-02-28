@@ -67,7 +67,7 @@ if(!isset($_COOKIE['user'])) {
 				<div class="mobile-only-brand pull-left">
 					<div class="nav-header pull-left">
 						<div class="logo-wrap">
-							<a href="index.html">
+							<a href="index.php">
 								<img class="brand-img" src="assets/img/logo.png" alt="brand"/>
 								<span class="brand-text"><img  src="assets/img/brand.png" alt="brand"/></span>
 							</a>

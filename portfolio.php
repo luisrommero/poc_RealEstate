@@ -55,7 +55,7 @@ if(!isset($_COOKIE['user'])) {
 				<div class="mobile-only-brand pull-left">
 					<div class="nav-header pull-left">
 						<div class="logo-wrap">
-							<a href="index.html">
+							<a href="index.php">
 								<img class="brand-img" src="assets/img/logo.png" alt="brand"/>
 								<span class="brand-text"><img  src="assets/img/brand.png" alt="brand"/></span>
 							</a>
@@ -332,10 +332,10 @@ if(!isset($_COOKIE['user'])) {
             </a>
             <ul id="dashboard_dr" class="collapse collapse-level-1">
               <li>
-                <a class="active-page" href="upload-properties.php">Nuevo Proyecto</a>
+                <a href="upload-properties.php">Nuevo Proyecto</a>
               </li>
               <li>
-                <a href="portfolio.php">Nuevo Portafolio</a>
+                <a class="active-page" href="portfolio.php">Portafolios</a>
               </li>
               <li>
                 <a href="my_projects.php">
@@ -654,11 +654,210 @@ if(!isset($_COOKIE['user'])) {
 
 
         <!-- Main Content -->
+
 		<div class="page-wrapper">
             <div class="container pt-30">
 				<!-- Row -->
 				<div class="row">
           <!-- ==========content goes here========== -->
+
+          <div class="col-sm-4 pull-right mb-40">
+            <a href="#" class="btn btn-primary btn-sm btn-block" role="button">Nuevo Portafolio</a>
+          </div>
+
+          <!-- Property -->
+
+          <div class="col-sm-12">
+            <div class="panel panel-default border-panel card-view">
+              <div class="panel-heading">
+                <div class="pull-left">
+                  <h4 class="panel-title txt-dark">Portafolio RealBlock</h4>
+                  <p class="">Damasco + Coliving Valle + Vallarta</p>
+                </div>
+                <div class="pull-right">
+                  <p class="text-muted">Portafolio Venta <i class="fa fa-th-large font-13"></i></p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+
+              <div class="panel-body">
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-1.jpg" alt="" class="" width="100%">
+                </div>
+
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-2.jpg" alt="" class="" width="100%">
+                </div>
+
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-3.jpg" alt="" class="" width="100%">
+                </div>
+
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-4.jpg" alt="" class="" width="100%">
+                </div>
+
+                <hr class="light-grey-hr row mt-0 mb-10"/>
+                <div class="text-center">
+                  <div class="inline-block "><h5></h5></div>
+                </div>
+                <hr class="light-grey-hr row mt-10 mb-15"/>
+                  <div class="text-center">
+                    <div class="inline-block mr-45 pixelef" style="v"><h6>4 Propiedades</h6><small></small></div>
+                    <div class="inline-block mr-45"><h6>Costo real</h6><small>$160,000</small></div>
+                    <div class="inline-block mr-45"><h6>Portafolio costo</h6><small class="text-danger">130,000 <i class="fa fa-level-down"></i></small></div>
+                    <div class="inline-block mr-45"><h6>TIR promedio</h6><small class="text-primary">45,000 <i class="fa fa-level-up"></i></small></div>
+                    <div class="inline-block mr-45"><h6>ROÍ promedio</h6><small class="text-primary">8,000 <i class="fa fa-level-up"></i></small></div>
+
+                    <div class="clearfix"></div>
+                  </div>
+                <hr class="light-grey-hr row mt-10 mb-15"/>
+                <div class="">
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="ui-offer-ribbon" style="">
+              <div class="ui-offer-ribbon-amount">28<small style="color: #FFF;"class="ui-offer-ribbon-percentage">%</small></div>
+              <div class="ui-offer-ribbon-text">- OFF -</div>
+            </div>
+
+
+          </div>
+          <!-- Property -->
+
+          <!-- Property -->
+          <div class="col-sm-12">
+            <div class="panel panel-default border-panel card-view">
+              <div class="panel-heading">
+                <div class="pull-left">
+                  <h4 class="panel-title txt-dark">Portafolio RealBlock</h4>
+                  <p class="">Damasco + Coliving Valle + Vallarta</p>
+                </div>
+                <div class="pull-right">
+                  <p class="text-muted">Portafolio Venta <i class="fa fa-th-large font-13"></i></p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+
+              <div class="panel-body">
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-6.jpg" alt="" class="" width="100%">
+                </div>
+
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-5.jpg" alt="" class="" width="100%">
+                </div>
+
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-3.jpg" alt="" class="" width="100%">
+                </div>
+
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-2.jpg" alt="" class="" width="100%">
+                </div>
+
+                <hr class="light-grey-hr row mt-0 mb-10"/>
+                <div class="text-center">
+                  <div class="inline-block "><h5></h5></div>
+                </div>
+                <hr class="light-grey-hr row mt-10 mb-15"/>
+                  <div class="text-center">
+                    <div class="inline-block mr-45 pixelef" style="v"><h6>4 Propiedades</h6><small></small></div>
+                    <div class="inline-block mr-45"><h6>Costo real</h6><small>$230,000</small></div>
+                    <div class="inline-block mr-45"><h6>Portafolio costo</h6><small class="text-danger">30,000 <i class="fa fa-level-down"></i></small></div>
+                    <div class="inline-block mr-45"><h6>TIR promedio</h6><small class="text-primary">25,000 <i class="fa fa-level-up"></i></small></div>
+                    <div class="inline-block mr-45"><h6>ROÍ promedio</h6><small class="text-primary">16,000 <i class="fa fa-level-up"></i></small></div>
+
+
+
+                    <div class="clearfix"></div>
+                  </div>
+                <hr class="light-grey-hr row mt-10 mb-15"/>
+                <div class="">
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="ui-offer-ribbon" style="">
+              <div class="ui-offer-ribbon-amount">28<small style="color: #FFF;"class="ui-offer-ribbon-percentage">%</small></div>
+              <div class="ui-offer-ribbon-text">- OFF -</div>
+            </div>
+
+
+          </div>
+          <!-- Property -->
+
+
+          <!-- Property -->
+          <div class="col-sm-12">
+            <div class="panel panel-default border-panel card-view">
+              <div class="panel-heading">
+                <div class="pull-left">
+                  <h4 class="panel-title txt-dark">Portafolio RealBlock</h4>
+                  <p class="">Damasco + Coliving Valle + Vallarta</p>
+                </div>
+                <div class="pull-right">
+                  <p class="text-muted">Portafolio Venta <i class="fa fa-th-large font-13"></i></p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+
+              <div class="panel-body">
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-4.jpg" alt="" class="" width="100%">
+                </div>
+
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-5.jpg" alt="" class="" width="100%">
+                </div>
+
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-3.jpg" alt="" class="" width="100%">
+                </div>
+
+                <div class="col-sm-3">
+                  <img src="assets/img/uploads/property-3.jpg" alt="" class="" width="100%">
+                </div>
+
+                <hr class="light-grey-hr row mt-0 mb-10"/>
+                <div class="text-center">
+                  <div class="inline-block "><h5></h5></div>
+                </div>
+                <hr class="light-grey-hr row mt-10 mb-15"/>
+                  <div class="text-center">
+                    <div class="inline-block mr-45 pixelef" style="v"><h6>4 Propiedades</h6><small></small></div>
+                    <div class="inline-block mr-45"><h6>Costo real</h6><small>$430,000</small></div>
+                    <div class="inline-block mr-45"><h6>Portafolio costo</h6><small class="text-danger">390,000 <i class="fa fa-level-down"></i></small></div>
+                    <div class="inline-block mr-45"><h6>TIR promedio</h6><small class="text-primary">4,000 <i class="fa fa-level-up"></i></small></div>
+                    <div class="inline-block mr-45"><h6>ROÍ promedio</h6><small class="text-primary">2,000 <i class="fa fa-level-up"></i></small></div>
+
+                    <div class="clearfix"></div>
+                  </div>
+                <hr class="light-grey-hr row mt-10 mb-15"/>
+                <div class="">
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="ui-offer-ribbon" style="">
+              <div class="ui-offer-ribbon-amount">28<small style="color: #FFF;"class="ui-offer-ribbon-percentage">%</small></div>
+              <div class="ui-offer-ribbon-text">- OFF -</div>
+            </div>
+
+
+          </div>
+          <!-- Property -->
+
+
+
+
 
           <!-- ==========content goes here========== -->
         </div>
@@ -691,6 +890,16 @@ if(!isset($_COOKIE['user'])) {
     <!-- /#wrapper -->
 
 	<!-- JavaScript -->
+  <style>
+
+.ui-offer-ribbon{
+box-sizing: border-box; position: absolute;left: -5px; bottom: 12%; background-color: #32c058; width: 60px; height: 60px; color: white; text-align: center; padding-top: 9px;
+}
+
+.pixelef{
+  vertical-align: middle;
+}
+  </style>
 
     <!-- jQuery -->
     <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
