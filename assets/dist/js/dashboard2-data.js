@@ -15,85 +15,80 @@ $(document).ready(function(){
 if($('#chart_1').length > 0) {
 	// Line Chart
 	var data=[{
-		period: '2010',
-		Pagadas: 300,
-		Pendientes: 180,
-		Proyección: 390
-	}, {
-		period: '2011',
+		period: '2018',
 		Pagadas: 250,
 		Pendientes: 100,
-		Proyección: 270
+		EBITDA: 270
 	}, {
-		period: '2012',
+		period: '2019',
 		Pagadas: 280,
 		Pendientes: 60,
-		Proyección: 310
+		EBITDA: 310
 	}, {
-		period: '2013',
+		period: '2020',
 		Pagadas: 270,
 		Pendientes: 100,
-		Proyección: 250
+		EBITDA: 250
 	}, {
-		period: '2014',
+		period: '2021',
 		Pagadas: 280,
 		Pendientes: 150,
-		Proyección: 290
+		EBITDA: 290
 	}, {
-		period: '2015',
+		period: '2022',
 		Pagadas: 205,
 		Pendientes: 100,
-		Proyección: 220
+		EBITDA: 220
 	},
 	 {
-		period: '2016',
+		period: '2023',
 		Pagadas: 250,
 		Pendientes: 120,
-		Proyección: 300
+		EBITDA: 300
 	}];
 	var dataNew=[{
 		period: '2010',
 		Pagadas: 210,
 		Pendientes: 80,
-		Proyección: 200
+		EBITDA: 200
 	}, {
 		period: '2011',
 		Pagadas: 210,
 		Pendientes: 150,
-		Proyección: 230
+		EBITDA: 230
 	}, {
 		period: '2012',
 		Pagadas: 280,
 		Pendientes: 160,
-		Proyección: 250
+		EBITDA: 250
 	}, {
 		period: '2013',
 		Pagadas: 270,
 		Pendientes: 70,
-		Proyección: 90
+		EBITDA: 90
 	}, {
 		period: '2014',
 		Pagadas: 280,
 		Pendientes: 50,
-		Proyección: 90
+		EBITDA: 90
 	}, {
 		period: '2015',
 		Pagadas: 315,
 		Pendientes: 20,
-		Proyección: 290
+		EBITDA: 290
 	},
 	 {
 		period: '2016',
 		Pagadas: 250,
 		Pendientes: 90,
-		Proyección: 200
+		EBITDA: 200
 	}];
 	var lineChart = Morris.Area({
 		element: 'chart_1',
 		data: data,
 		xkey: 'period',
-		ykeys: ['Pagadas', 'Pendientes', 'Proyección'],
-		labels: ['Pagadas', 'Pendientes', 'Proyección'],
+		ykeys: ['Pagadas', 'Pendientes', 'EBITDA'],
+		labels: ['Pagadas', 'Pendientes', 'EBITDA'],
 		pointSize: 3,
 		lineWidth: 2,
 		pointStrokeColors:['#ff6028'],
@@ -118,9 +113,11 @@ if($('#chart_1').length > 0) {
 		if($("#morris_switch").is(":checked")) {
 			lineChart.setData(data);
 			lineChart.redraw();
+			$('#tipoPropiedad').text('Comercial');
 		} else {
 			lineChart.setData(dataNew);
 			lineChart.redraw();
+			$('#tipoPropiedad').text('Habitacional');
 		}
 	}
 	swichMorris();

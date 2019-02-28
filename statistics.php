@@ -665,10 +665,10 @@ if(!isset($_COOKIE['user'])) {
   								<div class="panel panel-default border-panel card-view">
   									<div class="panel-heading">
   										<div class="pull-left">
-  											<h6 class="panel-title txt-dark">Estadísticas de Propiedades</h6>
+  											<h6 class="panel-title txt-dark">Estadísticas de Renta de Propiedades</h6>
   										</div>
   										<div class="pull-right">
-  											<span class="data-text weight-500 pr-5">Comerciales</span>
+  											<span class="data-text weight-500 pr-5" id="tipoPropiedad">Comerciales</span>
   											<span class="no-margin-switcher">
   												<input type="checkbox" checked id="morris_switch"  class="js-switch" data-color="#ffcfbe" data-secondary-color="#dedede" data-size="small"/>
   											</span>
@@ -874,7 +874,7 @@ if(!isset($_COOKIE['user'])) {
   														</div>
   														<div class="sl-content no-seprator pb-0">
   															<div class="pull-left">
-  																<p class="inline-block"><span class="capitalize-font txt-dark mr-5 weight-500">Octavio Peralta Montoalalla</span></p>
+  																<p class="inline-block"><span class="capitalize-font txt-dark mr-5 weight-500">Octavio Peralta Santoalalla</span></p>
   																<span class="block txt-grey font-12 capitalize-font">Oct 30, 2019</span>
   																<span class="block txt-primary font-12 pt-5 capitalize-font">Nov 01, 2019</span>
   															</div>
@@ -898,7 +898,7 @@ if(!isset($_COOKIE['user'])) {
   									</div>
   									<div class="panel-heading">
   										<div class="pull-left">
-  											<h6 class="panel-title txt-dark">Valance Total de Rentas</h6>
+  											<h6 class="panel-title txt-dark">Balance Total de Rentas</h6>
   										</div>
   										<div class="clearfix"></div>
   									</div>
