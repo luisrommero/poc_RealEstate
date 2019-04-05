@@ -56,18 +56,16 @@ if(!isset($_COOKIE['user'])) {
 	<div class="preloader-it">
 		<div class="la-anim-1"></div>
 	</div>
-	<!-- /Preloader -->
+    <!-- /Preloader -->
     <div class="wrapper theme-2-active navbar-top-light horizontal-nav">
 
-      <!--  -->
-      <?php include('import/header.php'); ?>
-      <!--  -->
+    <!--  -->
+    <?php include('import/header.php'); ?>
+    <!--  -->
 
-
-
-        <!-- Main Content -->
+    <!-- Main Content -->
 		<div class="page-wrapper">
-            <div class="container pt-30">
+        <div class="container pt-30">
 				<!-- Row -->
 				<div class="row">
           <!-- ==========content goes here========== -->
