@@ -253,24 +253,6 @@
       <span>Main</span>
       <hr />
     </li>
-    <li>
-      <a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr">
-        <div class="pull-left"><i class="fa fa-user mr-20"></i><span class="right-nav-text">My portfolio</span></div>
-        <div class="pull-right"><i class="ti-angle-down"></i></div>
-        <div class="clearfix"></div>
-      </a>
-      <ul id="dashboard_dr" class="collapse collapse-level-1">
-        <li>
-          <a class="active-page" href="home.php">Pagos Recibidos</a>
-        </li>
-        <li>
-          <a href="sumary.php"><div class="pull-left"><span>Resumen</span></div><div class="pull-right"><span class="label label-success">New</span></div><div class="clearfix"></div></a>
-        </li>
-        <li>
-          <a href="docs.php">Documentos</a>
-        </li>
-      </ul>
-    </li>
     <?php if($_COOKIE['user'] == "investor") { ?>
     <!-- properties -->
     <li>
@@ -312,6 +294,25 @@
       </a>
     </li>
   <?php } ?>
+    <li>
+      <a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr">
+        <div class="pull-left"><i class="fa fa-user mr-20"></i><span class="right-nav-text">Mi Portafolio</span></div>
+        <div class="pull-right"><i class="ti-angle-down"></i></div>
+        <div class="clearfix"></div>
+      </a>
+      <ul id="dashboard_dr" class="collapse collapse-level-1">
+        <li>
+          <a class="active-page" href="home.php">Pagos Recibidos</a>
+        </li>
+        <li>
+          <a href="sumary.php"><div class="pull-left"><span>Resumen</span></div><div class="pull-right"><span class="label label-success">New</span></div><div class="clearfix"></div></a>
+        </li>
+        <li>
+          <a href="docs.php">Documentos</a>
+        </li>
+      </ul>
+    </li>
+
     <li>
       <a href="calendar.php">
         <div class="pull-left"><i class="fa fa-calendar mr-20"></i><span class="right-nav-text">Calendario de pagos</span></div>
