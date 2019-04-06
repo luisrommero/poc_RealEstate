@@ -127,10 +127,10 @@
                   </div>
                   <div class="sl-content">
                     <span class="inline-block capitalize-font  pull-left truncate head-notifications">
-                    New property created</span>
+                    Nueva propiedad creada.</span>
                     <span class="inline-block font-11  pull-right notifications-time">2pm</span>
                     <div class="clearfix"></div>
-                    <p class="truncate">Your customer subscribed for the basic plan. The customer will pay $25 per month.</p>
+                    <p class="truncate">Tu propiedad se ha dado de alta.</p>
                   </div>
                 </a>
               </div>
@@ -142,10 +142,10 @@
                     <i class="zmdi zmdi-trending-down"></i>
                   </div>
                   <div class="sl-content">
-                    <span class="inline-block capitalize-font  pull-left truncate head-notifications txt-warning">2 new investors</span>
+                    <span class="inline-block capitalize-font  pull-left truncate head-notifications txt-warning">2 Oportunidades nuevas</span>
                     <span class="inline-block font-11 pull-right notifications-time">1pm</span>
                     <div class="clearfix"></div>
-                    <p class="truncate">Some technical error occurred needs to be resolved.</p>
+                    <p class="truncate">Se han detectado dos nuevas oportunidades.</p>
                   </div>
                 </a>
               </div>
@@ -157,10 +157,10 @@
                     <i class="zmdi zmdi-email"></i>
                   </div>
                   <div class="sl-content">
-                    <span class="inline-block capitalize-font  pull-left truncate head-notifications">a new investor</span>
+                    <span class="inline-block capitalize-font  pull-left truncate head-notifications">Nueva Inversi&oacute;n</span>
                     <span class="inline-block font-11  pull-right notifications-time">4pm</span>
                     <div class="clearfix"></div>
-                    <p class="truncate"> The last payment for your G Suite Basic subscription failed.</p>
+                    <p class="truncate">Haz recibido una nueva inversi&oacute;n por $68,400.<sup>00</sup></p>
                   </div>
                 </a>
               </div>
@@ -171,10 +171,10 @@
                     <img class="img-responsive" src="assets/img/avatar.jpg" alt="avatar"/>
                   </div>
                   <div class="sl-content">
-                    <span class="inline-block capitalize-font  pull-left truncate head-notifications">Sandy Doe</span>
+                    <span class="inline-block capitalize-font  pull-left truncate head-notifications">Nuevo Inversor</span>
                     <span class="inline-block font-11  pull-right notifications-time">1pm</span>
                     <div class="clearfix"></div>
-                    <p class="truncate">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+                    <p class="truncate">Edith Martinez es tu nuevo inversor</p>
                   </div>
                 </a>
               </div>
